@@ -30,8 +30,18 @@ def build_aoi(source: Path, output: Path, buffer_km: float) -> None:
     aoi.to_crs("EPSG:4326").to_file(output, driver="GeoJSON")
 
 
-def write_config(name: str, display: str, project: str, variant: str) -> Path:
+def write_config(name: str, display: str, project: str, variant: str,
+                 thresholds: tuple[float, float, float] | None = None) -> Path:
     text = TEMPLATE.read_text()
+    if thresholds is not None:
+        grassland, modification, influence = thresholds
+        for key, value in (("grassland_probability", grassland),
+                           ("human_modification", modification),
+                           ("human_influence", influence)):
+            text, count = re.subn(rf"(?m)^({key} = )[0-9.]+\s*$", rf"\g<1>{value}",
+                                  text, count=1)
+            if count != 1:
+                raise ValueError(f"threshold {key} not found in template")
     text = re.sub(r'(?m)^name = "south_africa_reference_condition_2018"',
                   f'name = "{name}_{variant}_2018"', text, count=1)
     text = re.sub(r'(?m)^display_name = "South Africa"',
@@ -50,10 +60,14 @@ def main() -> None:
     parser.add_argument("source", type=Path)
     parser.add_argument("--ee-project", required=True)
     parser.add_argument("--buffer-km", type=float, default=25)
+    parser.add_argument("--reference-thresholds", type=float, nargs=3,
+                        metavar=("GRASSLAND_P", "HMI", "HII"),
+                        help="Override the template's reference-site thresholds.")
     args = parser.parse_args()
     build_aoi(args.source, ROOT / "config" / "aoi" / f"{args.name}.geojson", args.buffer_km)
     for variant in ("all", "predictors_only"):
-        print(write_config(args.name, args.display_name, args.ee_project, variant))
+        print(write_config(args.name, args.display_name, args.ee_project, variant,
+                           tuple(args.reference_thresholds) if args.reference_thresholds else None))
 
 
 if __name__ == "__main__":
