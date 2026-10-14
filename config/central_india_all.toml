@@ -764,7 +764,7 @@ responses = []
 #     must be strictly between 0 and 1 and changes multivariate distance and P_i,
 #     not the individual expected-response or standardized-deviation rasters.
 [inference]
-application_mask_path = "../data/grassland_mask_2018.tif"
+application_mask_path = "../data/grassland_masks/central_india_all_grassland_mask_2018.tif"
 application_mask_label = "2018 grassland extent"
 worker_count = 8
 window_size_pixels = 256

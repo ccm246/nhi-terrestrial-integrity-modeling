@@ -48,6 +48,9 @@ def write_config(name: str, display: str, project: str, variant: str,
                   f'display_name = "{display} ({variant})"', text, count=1)
     text = text.replace("aoi/south_africa.geojson", f"aoi/{name}.geojson")
     text = text.replace('project = "ecoshard-202922"', f'project = "{project}"')
+    # Per-landscape mask built by scripts.tools.make_grassland_mask.
+    text = text.replace("../data/grassland_mask_2018.tif",
+                        f"../data/grassland_masks/{name}_all_grassland_mask_2018.tif")
     path = ROOT / "config" / f"{name}_{variant}.toml"
     path.write_text(text)
     return path
