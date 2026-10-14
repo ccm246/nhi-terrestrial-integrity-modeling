@@ -20,7 +20,7 @@ TEMPLATE = ROOT / "config" / "south_africa_reference_condition_analysis.toml"
 
 
 def build_aoi(sources: list[Path], output: Path, buffer_km: float,
-              mode: str = "hull") -> None:
+              mode: str = "hull", min_part_km2: float = 0) -> None:
     """Write the landscape AOI from one or more vector files (PAs, corridors, ...).
 
     mode: "dissolve" = the features themselves, "hull" = convex hull around all
@@ -36,6 +36,9 @@ def build_aoi(sources: list[Path], output: Path, buffer_km: float,
     combined = gpd.GeoSeries(
         [g for part in parts for g in part], crs="EPSG:6933"
     ).union_all()
+    if min_part_km2 > 0 and hasattr(combined, "geoms"):
+        kept = [g for g in combined.geoms if g.area >= min_part_km2 * 1e6]
+        combined = gpd.GeoSeries(kept, crs="EPSG:6933").union_all()
     if mode == "hull":
         combined = combined.convex_hull
     elif mode == "bbox":
@@ -67,6 +70,8 @@ def write_config(name: str, display: str, project: str, variant: str,
                   f'display_name = "{display} ({variant})"', text, count=1)
     text = text.replace("aoi/south_africa.geojson", f"aoi/{name}.geojson")
     text = text.replace('project = "ecoshard-202922"', f'project = "{project}"')
+    # Fewer inference workers than the template's 8 to fit in 8 GB of RAM.
+    text = text.replace("worker_count = 8", "worker_count = 4")
     # Per-landscape mask built by scripts.tools.make_grassland_mask.
     text = text.replace("../data/grassland_mask_2018.tif",
                         f"../data/grassland_masks/{name}_all_grassland_mask_2018.tif")
@@ -85,6 +90,8 @@ def main() -> None:
                         default="hull",
                         help="hull (default): convex hull around all features, so "
                              "the space between them is included.")
+    parser.add_argument("--min-part-km2", type=float, default=0,
+                        help="Drop AOI parts smaller than this (stray islands).")
     parser.add_argument("--ee-project", required=True)
     parser.add_argument("--buffer-km", type=float, default=25)
     parser.add_argument("--reference-thresholds", type=float, nargs=3,
@@ -92,7 +99,7 @@ def main() -> None:
                         help="Override the template's reference-site thresholds.")
     args = parser.parse_args()
     build_aoi(args.sources, ROOT / "config" / "aoi" / f"{args.name}.geojson",
-              args.buffer_km, args.aoi_mode)
+              args.buffer_km, args.aoi_mode, args.min_part_km2)
     for variant in ("all", "predictors_only"):
         print(write_config(args.name, args.display_name, args.ee_project, variant,
                            tuple(args.reference_thresholds) if args.reference_thresholds else None))
