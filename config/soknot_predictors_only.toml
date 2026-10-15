@@ -117,9 +117,9 @@ year = 2018
 # failed run can resume from its valid cache entries.
 [earth_engine]
 project = "charged-sled-403915"
-cache_directory = "../data/gee_raster_cache"
+cache_directory = "../data/gee_cache_soknot"
 request_timeout_seconds = 360
-request_retry_count = 1
+request_retry_count = 3
 
 # -----------------------------------------------------------------------------
 # Raster-stack contract
@@ -209,10 +209,9 @@ origin_y = 0
 #     mean by 7000. The test is < 0.08 here and uses the same persistence rule;
 #     lower values require less human influence and are stricter.
 [reference]
-grassland_probability = 80
+grassland_probability = 80.0
 human_modification = 0.1
 human_influence = 0.08
-
 # Dataset aliases keep Earth Engine IDs separate from band definitions. Change this
 # section when an asset moves, a collection version is replaced, or a new band
 # computation requires another source. Do not substitute a superficially similar
