@@ -14,6 +14,7 @@ import re
 from pathlib import Path
 
 import geopandas as gpd
+import shapely
 
 ROOT = Path(__file__).resolve().parents[2]
 TEMPLATE = ROOT / "config" / "south_africa_reference_condition_analysis.toml"
@@ -46,7 +47,7 @@ def build_aoi(sources: list[Path], output: Path, buffer_km: float,
         combined = box(*combined.bounds)
     elif mode != "dissolve":
         raise ValueError(f"unknown AOI mode {mode}")
-    geometry = combined.buffer(buffer_km * 1000)
+    geometry = shapely.force_2d(combined.buffer(buffer_km * 1000))  # EE rejects Z
     aoi = gpd.GeoDataFrame({"name": [output.stem]}, geometry=[geometry], crs="EPSG:6933")
     output.parent.mkdir(parents=True, exist_ok=True)
     aoi.to_crs("EPSG:4326").to_file(output, driver="GeoJSON")
@@ -70,6 +71,10 @@ def write_config(name: str, display: str, project: str, variant: str,
                   f'display_name = "{display} ({variant})"', text, count=1)
     text = text.replace("aoi/south_africa.geojson", f"aoi/{name}.geojson")
     text = text.replace('project = "ecoshard-202922"', f'project = "{project}"')
+    # Own tile cache per landscape: the manifest is not safe for concurrent writers.
+    text = text.replace('cache_directory = "../data/gee_raster_cache"',
+                        f'cache_directory = "../data/gee_cache_{name}"')
+    text = text.replace("request_retry_count = 1", "request_retry_count = 3")
     # Fewer inference workers than the template's 8 to fit in 8 GB of RAM.
     text = text.replace("worker_count = 8", "worker_count = 4")
     # Per-landscape mask built by scripts.tools.make_grassland_mask.

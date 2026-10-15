@@ -209,10 +209,9 @@ origin_y = 0
 #     mean by 7000. The test is < 0.08 here and uses the same persistence rule;
 #     lower values require less human influence and are stricter.
 [reference]
-grassland_probability = 80
-human_modification = 0.1
-human_influence = 0.08
-
+grassland_probability = 50.0
+human_modification = 0.3
+human_influence = 0.2
 # Dataset aliases keep Earth Engine IDs separate from band definitions. Change this
 # section when an asset moves, a collection version is replaced, or a new band
 # computation requires another source. Do not substitute a superficially similar

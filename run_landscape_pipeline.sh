@@ -11,14 +11,20 @@ L=logs/$NAME; mkdir -p "$L"
 ALL=config/${NAME}_all.toml
 PRED=config/${NAME}_predictors_only.toml
 S=outputs/samples/${NAME}_all_2018_spatial_sample.parquet
-step() { local log=$1; shift; echo "$(date +%T) $*" >> "$L/steps.log"; "$@" > "$L/$log.log" 2>&1 || { echo "FAILED: $log" >> "$L/steps.log"; exit 1; }; }
-step fetch        $PY -m scripts.fetch_gee_raster_tiles $ALL --no-progress
-step mask         $PY -m scripts.tools.make_grassland_mask $ALL
-step sample       $PY -m scripts.build_spatial_sample $ALL --no-progress
-step fit_pred     $PY -m scripts.fit_grassland_integrity_parameters $PRED $S \
+step() { local log=$1; shift; echo "$(date +%T) $*" >> "$L/steps.log"; "$@" > "$L/$log.log" 2>&1 || { echo "FAILED: $log" >> "$L/steps.log"; return 1; }; }
+run() { step "$@" || exit 1; }
+# Fetch resumes from cached tiles, so retry through transient Earth Engine errors.
+for try in 1 2 3 4 5 6; do
+  step fetch_$try $PY -m scripts.fetch_gee_raster_tiles $ALL --no-progress && break
+  [ $try = 6 ] && { echo "FAILED: fetch" >> "$L/steps.log"; exit 1; }
+  sed -i '' '/^FAILED: fetch_/d' "$L/steps.log"; sleep 120
+done
+run mask         $PY -m scripts.tools.make_grassland_mask $ALL
+run sample       $PY -m scripts.build_spatial_sample $ALL --no-progress
+run fit_pred     $PY -m scripts.fit_grassland_integrity_parameters $PRED $S \
                     --output-directory outputs/integrity_parameters/${NAME}_predictors_only --no-progress
-step fit_all      $PY -m scripts.fit_all_variables_models $ALL $S \
+run fit_all      $PY -m scripts.fit_all_variables_models $ALL $S \
                     --output-directory outputs/integrity_parameters/${NAME}_all_variables --no-progress
-step apply        $PY -m scripts.apply_reference_condition_models $PRED \
+run apply        $PY -m scripts.apply_reference_condition_models $PRED \
                     outputs/integrity_parameters/${NAME}_predictors_only --no-progress
 echo done > "$L/DONE"

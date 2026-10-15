@@ -66,6 +66,27 @@ def make_configs(name, display, sources, mode, buffer_km, min_part, thresholds, 
     return run(command, log) == 0
 
 
+DEFAULT_MIN_PIXELS = 3000
+# Marginal landscapes: accept the loosest triple if it still has ~1,000 pixels.
+MIN_PIXELS = {"sabah": 1000, "nepal_tal": 1000}
+
+
+def choose_threshold_index(sweep_log, min_pixels):
+    """Strictest ladder index whose logged 500 m reference-pixel count is enough."""
+    counts = {}
+    for line in sweep_log.read_text().splitlines():
+        parts = line.split()
+        if len(parts) == 4 and parts[0].isdigit():
+            try:
+                counts[(float(parts[0]), float(parts[1]), float(parts[2]))] = float(parts[3])
+            except ValueError:
+                pass
+    for index, triple in enumerate(LADDER):
+        if counts.get(tuple(map(float, triple)), 0) >= min_pixels:
+            return index
+    return None
+
+
 def process(entry):
     name, display, sources, mode, buffer_km, min_part = entry
     logs = ROOT / "logs" / name
@@ -77,14 +98,14 @@ def process(entry):
         record["error"] = "AOI/config creation failed"
         return record
     sweep_log = logs / "sweep.log"
-    sweep_log.write_text("")
-    run([PY, "-m", "scripts.tools.reference_threshold_sweep",
-         f"config/{name}_all.toml"], sweep_log)
-    chosen_lines = [l for l in sweep_log.read_text().splitlines() if l.startswith("CHOSEN")]
-    if not chosen_lines or chosen_lines[-1].strip() == "CHOSEN none":
+    if not (sweep_log.exists() and "CHOSEN" in sweep_log.read_text()):
+        sweep_log.write_text("")
+        run([PY, "-m", "scripts.tools.reference_threshold_sweep",
+             f"config/{name}_all.toml", "--min-pixels", "1e18"], sweep_log)
+    index = choose_threshold_index(sweep_log, MIN_PIXELS.get(name, DEFAULT_MIN_PIXELS))
+    if index is None:
         record["error"] = "no threshold triple gave enough reference pixels"
         return record
-    index = int(chosen_lines[-1].split()[-1])
     for attempt in range(MAX_FALLBACKS + 1):
         if index >= len(LADDER):
             break
@@ -102,8 +123,8 @@ def process(entry):
             record["thresholds"] = triple
             break
         failed_step = record["attempts"][-1]["failed_step"] or ""
-        if "fit_pred" not in failed_step and "sample" not in failed_step:
-            break  # only a looser reference definition can fix fit/sample failures
+        if "fit_pred" not in failed_step:
+            break  # only a looser reference definition can fix a model-fit failure
         index += 1
     record["hours"] = round((time.time() - started) / 3600, 2)
     return record
