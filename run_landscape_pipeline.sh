@@ -19,6 +19,8 @@ for try in 1 2 3 4 5 6; do
   [ $try = 6 ] && { echo "FAILED: fetch" >> "$L/steps.log"; exit 1; }
   sed -i '' '/^FAILED: fetch_/d' "$L/steps.log"; sleep 120
 done
+# The mask only needs Earth Engine if it does not exist yet (e.g. not unzipped from a hand-off).
+[ -f data/grassland_masks/${NAME}_all_grassland_mask_2018.tif ] || \
 run mask         $PY -m scripts.tools.make_grassland_mask $ALL
 run sample       $PY -m scripts.build_spatial_sample $ALL --no-progress
 run fit_pred     $PY -m scripts.fit_grassland_integrity_parameters $PRED $S \
