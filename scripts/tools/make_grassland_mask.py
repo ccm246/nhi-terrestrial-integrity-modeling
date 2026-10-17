@@ -19,9 +19,10 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import ee
+import numpy as np
 import rasterio
 from pyproj import CRS
-from rasterio.merge import merge
+from rasterio.transform import from_origin
 
 from ..analysis_config import load_analysis_configuration
 from ..raster_cache_utils import resolve_analysis_cache_tiles
@@ -111,15 +112,24 @@ def main() -> None:
                     pending[index] = pool.submit(fetch_tile, cache.tiles[index])
             print(f"{len(results)}/{len(cache.tiles)} tiles", flush=True)
         pool.shutdown(wait=False, cancel_futures=True)
-        tile_paths = [results[i] for i in sorted(results)]
-        sources = [rasterio.open(p) for p in tile_paths]
-        mosaic, transform = merge(sources)
-        profile = sources[0].profile | {
-            "height": mosaic.shape[1], "width": mosaic.shape[2],
-            "transform": transform, "compress": "zstd", "nodata": None,
+        # Assemble the mosaic one tile at a time (never hold every tile open at once).
+        pixel = grid.pixel_size_meters
+        left = min(c.tile.left for c in cache.tiles)
+        right = max(c.tile.right for c in cache.tiles)
+        top = max(c.tile.top for c in cache.tiles)
+        bottom = min(c.tile.bottom for c in cache.tiles)
+        width, height = round((right - left) / pixel), round((top - bottom) / pixel)
+        mosaic = np.zeros((1, height, width), dtype="uint8")
+        for index, path in results.items():
+            tile = cache.tiles[index].tile
+            col0, row0 = round((tile.left - left) / pixel), round((top - tile.top) / pixel)
+            with rasterio.open(path) as source_file:
+                mosaic[0, row0:row0 + size, col0:col0 + size] = source_file.read(1)
+        profile = {
+            "driver": "GTiff", "height": height, "width": width, "count": 1,
+            "dtype": "uint8", "crs": CRS.from_string(grid.crs).to_wkt(),
+            "transform": from_origin(left, top, pixel, pixel), "compress": "zstd",
         }
-        for source_file in sources:
-            source_file.close()
         with rasterio.open(output, "w", **profile) as sink:
             sink.write(mosaic)
     print(f"Wrote {output}  grassland pixels: {int(mosaic.sum()):,} "
