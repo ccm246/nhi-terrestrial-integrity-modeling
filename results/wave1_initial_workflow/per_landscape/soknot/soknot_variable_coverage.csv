@@ -1,0 +1,14 @@
+band,variable,grassland_median,reference_median,std_mean_difference,histogram_overlap,grassland_inside_reference_min_max,grassland_inside_reference_5_95
+d20,Maximum annual temperature (C),37.5047,37.8687,0.4894,0.7692,1.0,0.7333
+d21,Mean annual temperature (C),27.1124,27.2949,0.5115,0.755,1.0,0.7511
+d22,Median annual temperature (C),27.2386,27.3843,0.5113,0.755,1.0,0.7409
+d23,Minimum annual temperature (C),19.3678,19.4275,0.5183,0.7467,0.9775,0.7173
+d24,Annual precipitation (mm),537.8049,517.6465,-0.5076,0.7468,0.9545,0.7487
+d27,"Interannual rainfall variability (CV%, 10-year)",21.5007,23.342,0.0204,0.8366,0.9708,0.8021
+d30,Fire frequency (burned months),0.0,0.0,-0.1485,0.9782,1.0,0.978
+d31,Annual variation in water presence,0.0,0.0,,1.0,1.0,1.0
+d32,Distance to streams (m),2828.4272,2236.0679,-0.1483,0.8962,1.0,0.9084
+d33,"Soil organic carbon (10 cm, g/kg)",10.6,10.3,-0.433,0.7814,0.9818,0.704
+d34,Soil moisture annual mean (GLDAS 10-40 cm),68.7205,62.1834,-0.0338,0.7967,0.977,0.9075
+d36,Topographic diversity (ALOS),0.0191,0.017,-0.4357,0.7847,0.9918,0.7024
+d37,"Annual evapotranspiration (MODIS ET, mm)",271.1,251.5,-0.5278,0.7592,0.97,0.7083

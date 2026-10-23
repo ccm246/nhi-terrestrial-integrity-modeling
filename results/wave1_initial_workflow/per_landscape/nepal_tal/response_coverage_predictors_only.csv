@@ -1,0 +1,19 @@
+response,response_band,display_name,selected,status,defined_reference_rows,usable_reference_rows,defined_reference_area_m2,usable_reference_area_m2,reference_area_coverage,unique_reference_values,reference_weighted_sd,minimum_fold_training_rows,minimum_fold_validation_rows
+y2018_d02_ndvi_95th_percentile_across,d02,NDVI 95th percentile,True,fit,1207,1222,309500000.0,313250000.0,0.9880287310454908,1207,0.17060804025963677,937,211
+y2018_d03_ndvi_50th_percentile_across,d03,NDVI median,True,fit,1207,1222,309500000.0,313250000.0,0.9880287310454908,1207,0.1673035716385199,937,211
+y2018_d04_length_of_growing_season_1,d04,Growing-season length 1,True,fit,1151,1222,295345000.0,313250000.0,0.9428411811652035,132,23.947210737290874,886,206
+y2018_d05_length_of_growing_season_2,d05,Growing-season length 2,True,insufficient_reference_coverage,39,1222,9750000.0,313250000.0,0.03112529928172386,25,13.105850358121272,19,0
+y2018_d06_timing_of_green_up_1,d06,Green-up timing 1,True,fit,1151,1222,295345000.0,313250000.0,0.9428411811652035,121,33.46407773492955,886,206
+y2018_d07_timing_of_green_up_2,d07,Green-up timing 2,True,insufficient_reference_coverage,39,1222,9750000.0,313250000.0,0.03112529928172386,27,10.956671584130756,19,0
+y2018_d08_short_vegetation_height,d08,Short vegetation height,True,fit,1222,1222,313250000.0,313250000.0,1.0,67,1.3499539925729582,949,211
+y2018_d09_percent_tree_cover,d09,Tree cover,True,fit,1222,1222,313250000.0,313250000.0,1.0,50,10.219961643431956,949,211
+y2018_d10_percent_veg_but_not_tree_cov,d10,Non-tree vegetation cover,True,fit,1222,1222,313250000.0,313250000.0,1.0,59,10.265954251231381,949,211
+y2018_d11_percent_bare,d11,Bare ground,True,fit,1222,1222,313250000.0,313250000.0,1.0,69,15.228914536025824,949,211
+y2018_d12_leaf_area_index_lai_annual_m,d12,Maximum leaf area index,True,fit,1222,1222,313250000.0,313250000.0,1.0,68,3.381483073967187,949,211
+y2018_d13_leaf_area_index_lai_annual_s,d13,Leaf area index variability,True,fit,1222,1222,313250000.0,313250000.0,1.0,1185,0.42597022925461503,949,211
+y2018_d14_fraction_of_photosynthetical,d14,Mean FPAR,True,fit,1222,1222,313250000.0,313250000.0,1.0,856,0.290952461450339,949,211
+y2018_d15_fraction_of_photosynthetical,d15,FPAR variability,True,fit,1222,1222,313250000.0,313250000.0,1.0,1197,0.04680931543303238,949,211
+y2018_d16_fpar_variability_max,d16,Maximum FPAR variability,True,fit,1222,1222,313250000.0,313250000.0,1.0,12,0.3216683579887622,949,211
+y2018_d17_number_of_growing_seasons,d17,Number of growing seasons,True,fit,1151,1222,295345000.0,313250000.0,0.9428411811652035,2,0.1786684973297797,886,206
+y2018_d18_npp,d18,Net primary productivity,True,fit,1201,1222,307845000.0,313250000.0,0.9827454110135675,1048,0.20024481261937596,931,208
+y2018_d19_gpp,d19,Gross primary productivity,True,fit,1222,1222,313250000.0,313250000.0,1.0,1133,0.7772729116689057,949,211
