@@ -713,7 +713,7 @@ random_seed = 42
 #
 # Coverage and missingness values are proportions strictly between 0 and 1.
 [model]
-fold_count = 4
+fold_count = 2
 validation_block_size_meters = 100000
 minimum_predictor_coverage = 0.80
 maximum_row_missing_fraction = 0.20

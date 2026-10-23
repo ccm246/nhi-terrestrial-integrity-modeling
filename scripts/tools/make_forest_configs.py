@@ -16,8 +16,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 # (validation block size in metres, fold count) where the 100 km / 5-fold default has too few
-# reference-containing blocks (reference blocks: SEKA 3, SOKNOT 4 at 100 km; SEKA 4 at 75 km).
-CV_OVERRIDES = {"seka": (75000, 4), "soknot": (100000, 4)}
+# reference-containing blocks (blocks holding sampled reference rows: SEKA 4 at 75 km, SOKNOT 2 at 100 km, Sabah 6 at 100 km).
+CV_OVERRIDES = {"seka": (75000, 4), "soknot": (100000, 2)}
 
 
 def main() -> None:
