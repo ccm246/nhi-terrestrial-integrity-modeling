@@ -4,6 +4,9 @@
 # scripts.tools.make_landscape_config: tile fetch -> grassland mask -> sample ->
 # predictors-only fit -> all-variables fit -> integrity map (predictors-only).
 set -u
+# macOS allows only 256 open files per process by default; the inference worker pool and
+# model saving exceed that on larger landscapes ("Too many open files").
+ulimit -n 4096 2>/dev/null || ulimit -n 2048 2>/dev/null || true
 NAME=$1
 cd "$(dirname "$0")"
 PY=.venv/bin/python
