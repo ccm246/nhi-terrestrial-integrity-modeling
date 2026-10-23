@@ -16,4 +16,8 @@ over the kept responses only.
 - Central India (boundary): departure map vs wave 1 - Pearson 0.91 on 12,010 scored pixels;
   mean departure 0.52 -> 0.50; share beyond the 95th percentile 10.5% -> 9.2%; 2.9% of
   pixels change side of the 95th-percentile line.
-- Other landscapes' wave-2 maps: pending (need the tiles on the second machine).
+- All seven wave-2 maps are now done (`landscape_summary_w2.*`, `wave1_vs_wave2_maps.csv`).
+  Rank correlation of wave-1 vs wave-2 departure maps: PACHA 1.00 (all 13 responses kept),
+  KAZA 0.99, Nepal TAL 0.95, Central India 0.91, SOKNOT 0.84, Sabah 0.79, Carpathian 0.73.
+  The fewer responses kept, the more the map changes: 27% (SOKNOT), 33% (Carpathian) and 40%
+  (Sabah) of scored pixels move by more than 0.2 in departure percentile.
