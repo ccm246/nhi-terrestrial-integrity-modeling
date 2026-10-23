@@ -71,7 +71,7 @@ def main() -> None:
         ("reference_km2", "Reference area (km², log scale)", dict(log=True)),
         ("reference_share_pct", "Reference share of all grassland (%)", {}),
         ("joint_envelope_pct", "Grassland inside the reference envelope (%)\n(dashed line = 95%, a perfectly representative reference)", dict(ref=95, lo=40, hi=104)),
-        ("mean_r2_predictors_only", "Held-out R²: environmental predictors only", dict(zero=True, extra="mean_r2_all_variables")),
+        ("mean_r2_predictors_only", "Held-out R²: environmental predictors only (bars)\nvs all variables (circles; inflated, responses predict each other)", dict(zero=True, extra="mean_r2_all_variables")),
         ("mean_departure", "Mean departure percentile (0 = like reference, 1 = far)", dict(lo=0, hi=1)),
         ("pct_beyond_95th", "Scored grassland beyond the 95th percentile (%)", {}),
     ]
