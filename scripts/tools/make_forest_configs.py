@@ -15,6 +15,9 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+# (validation block size in metres, fold count) where the 100 km / 5-fold default has too few
+# reference-containing blocks (reference blocks: SEKA 3, SOKNOT 4 at 100 km; SEKA 4 at 75 km).
+CV_OVERRIDES = {"seka": (75000, 4), "soknot": (100000, 4)}
 
 
 def main() -> None:
@@ -33,6 +36,10 @@ def main() -> None:
                 (r'(?m)^display_name = "Grassland reference sites"', 'display_name = "Forest reference sites (IFL + high integrity)"'),
                 (r'(?m)^responses = \[.*\]', 'responses = []'),
             ]
+            if name in CV_OVERRIDES:
+                block, folds = CV_OVERRIDES[name]
+                subs += [(r'(?m)^validation_block_size_meters = \d+', f'validation_block_size_meters = {block}'),
+                         (r'(?m)^fold_count = \d+', f'fold_count = {folds}')]
             for pattern, replacement in subs:
                 text, count = re.subn(pattern, replacement, text, count=1)
                 if count != 1:
