@@ -1,0 +1,8 @@
+landscape,grassland_km2,reference_km2,reference_share_pct,joint_envelope_pct,median_variable_inside_pct,responses_fitted,mean_r2_predictors_only,responses_r2_above_0.3,mean_r2_all_variables,scored_km2,mean_departure,pct_beyond_95th
+KAZA,75974.518,44470.75,58.534,90.705,90.529,13.0,0.596,11.0,0.886,0.0,,
+PACHA,18066.89,9572.0,52.981,92.682,91.999,13.0,0.646,12.0,0.91,0.0,,
+Central India,4300.505,1205.25,28.026,85.365,86.37,12.0,0.495,11.0,0.785,3002.5,0.504,9.167
+Nepal TAL,2645.92,313.25,11.839,84.334,89.787,11.0,0.422,7.0,0.834,0.0,,
+SOKNOT,3053.678,1247.25,40.844,69.184,74.868,6.0,0.552,5.0,0.721,0.0,,
+Carpathian,1694.682,966.5,57.031,90.625,90.458,5.0,0.398,3.0,0.901,0.0,,
+Sabah,1220.422,293.25,24.029,89.973,87.564,3.0,0.3,1.0,0.655,0.0,,

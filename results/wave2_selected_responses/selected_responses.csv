@@ -1,0 +1,105 @@
+landscape,response_band,display_name,wave1_r2,kept,forced_minimum
+kaza,d19,Gross primary productivity,0.98,True,False
+kaza,d18,Net primary productivity,0.952,True,False
+kaza,d14,Mean FPAR,0.839,True,False
+kaza,d03,NDVI median,0.741,True,False
+kaza,d08,Short vegetation height,0.704,True,False
+kaza,d09,Tree cover,0.584,True,False
+kaza,d16,Maximum FPAR variability,0.574,True,False
+kaza,d11,Bare ground,0.554,True,False
+kaza,d15,FPAR variability,0.533,True,False
+kaza,d10,Non-tree vegetation cover,0.438,True,False
+kaza,d02,NDVI 95th percentile,0.371,True,False
+kaza,d13,Leaf area index variability,0.256,True,False
+kaza,d04,Growing-season length 1,0.216,True,False
+kaza,d12,Maximum leaf area index,0.155,False,False
+kaza,d06,Green-up timing 1,0.004,False,False
+kaza,d17,Number of growing seasons,-0.011,False,False
+pacha,d14,Mean FPAR,0.903,True,False
+pacha,d03,NDVI median,0.877,True,False
+pacha,d02,NDVI 95th percentile,0.769,True,False
+pacha,d08,Short vegetation height,0.744,True,False
+pacha,d18,Net primary productivity,0.709,True,False
+pacha,d19,Gross primary productivity,0.682,True,False
+pacha,d11,Bare ground,0.63,True,False
+pacha,d15,FPAR variability,0.619,True,False
+pacha,d09,Tree cover,0.572,True,False
+pacha,d10,Non-tree vegetation cover,0.55,True,False
+pacha,d12,Maximum leaf area index,0.548,True,False
+pacha,d13,Leaf area index variability,0.547,True,False
+pacha,d16,Maximum FPAR variability,0.246,True,False
+central_india_boundary,d04,Growing-season length 1,0.763,True,False
+central_india_boundary,d14,Mean FPAR,0.743,True,False
+central_india_boundary,d15,FPAR variability,0.593,True,False
+central_india_boundary,d18,Net primary productivity,0.533,True,False
+central_india_boundary,d08,Short vegetation height,0.518,True,False
+central_india_boundary,d11,Bare ground,0.469,True,False
+central_india_boundary,d19,Gross primary productivity,0.452,True,False
+central_india_boundary,d10,Non-tree vegetation cover,0.449,True,False
+central_india_boundary,d13,Leaf area index variability,0.447,True,False
+central_india_boundary,d06,Green-up timing 1,0.388,True,False
+central_india_boundary,d03,NDVI median,0.377,True,False
+central_india_boundary,d12,Maximum leaf area index,0.209,True,False
+central_india_boundary,d09,Tree cover,0.144,False,False
+central_india_boundary,d16,Maximum FPAR variability,-0.065,False,False
+central_india_boundary,d02,NDVI 95th percentile,-0.089,False,False
+nepal_tal,d17,Number of growing seasons,0.839,True,False
+nepal_tal,d06,Green-up timing 1,0.83,True,False
+nepal_tal,d11,Bare ground,0.525,True,False
+nepal_tal,d04,Growing-season length 1,0.416,True,False
+nepal_tal,d02,NDVI 95th percentile,0.363,True,False
+nepal_tal,d18,Net primary productivity,0.334,True,False
+nepal_tal,d10,Non-tree vegetation cover,0.329,True,False
+nepal_tal,d15,FPAR variability,0.271,True,False
+nepal_tal,d13,Leaf area index variability,0.259,True,False
+nepal_tal,d03,NDVI median,0.246,True,False
+nepal_tal,d09,Tree cover,0.225,True,False
+nepal_tal,d08,Short vegetation height,0.177,False,False
+nepal_tal,d19,Gross primary productivity,0.019,False,False
+nepal_tal,d12,Maximum leaf area index,0.005,False,False
+nepal_tal,d14,Mean FPAR,-0.101,False,False
+nepal_tal,d16,Maximum FPAR variability,-0.128,False,False
+soknot,d04,Growing-season length 1,0.757,True,False
+soknot,d19,Gross primary productivity,0.707,True,False
+soknot,d14,Mean FPAR,0.544,True,False
+soknot,d18,Net primary productivity,0.533,True,False
+soknot,d06,Green-up timing 1,0.512,True,False
+soknot,d03,NDVI median,0.255,True,False
+soknot,d15,FPAR variability,0.188,False,False
+soknot,d11,Bare ground,0.159,False,False
+soknot,d02,NDVI 95th percentile,0.115,False,False
+soknot,d10,Non-tree vegetation cover,0.098,False,False
+soknot,d09,Tree cover,0.002,False,False
+soknot,d16,Maximum FPAR variability,-0.104,False,False
+soknot,d13,Leaf area index variability,-0.143,False,False
+soknot,d08,Short vegetation height,-0.199,False,False
+soknot,d12,Maximum leaf area index,-0.239,False,False
+soknot,d17,Number of growing seasons,-0.352,False,False
+carpathian,d06,Green-up timing 1,0.774,True,False
+carpathian,d18,Net primary productivity,0.387,True,False
+carpathian,d04,Growing-season length 1,0.386,True,False
+carpathian,d13,Leaf area index variability,0.228,True,False
+carpathian,d15,FPAR variability,0.216,True,False
+carpathian,d08,Short vegetation height,0.117,False,False
+carpathian,d19,Gross primary productivity,0.068,False,False
+carpathian,d12,Maximum leaf area index,0.037,False,False
+carpathian,d03,NDVI median,-0.028,False,False
+carpathian,d02,NDVI 95th percentile,-0.051,False,False
+carpathian,d14,Mean FPAR,-0.079,False,False
+carpathian,d11,Bare ground,-0.182,False,False
+carpathian,d09,Tree cover,-0.274,False,False
+carpathian,d16,Maximum FPAR variability,-0.334,False,False
+carpathian,d10,Non-tree vegetation cover,-0.533,False,False
+sabah,d18,Net primary productivity,0.463,True,True
+sabah,d13,Leaf area index variability,0.261,True,True
+sabah,d08,Short vegetation height,0.175,True,True
+sabah,d15,FPAR variability,0.173,False,True
+sabah,d09,Tree cover,0.029,False,True
+sabah,d10,Non-tree vegetation cover,-0.0,False,True
+sabah,d12,Maximum leaf area index,-0.026,False,True
+sabah,d11,Bare ground,-0.048,False,True
+sabah,d14,Mean FPAR,-0.249,False,True
+sabah,d03,NDVI median,-0.258,False,True
+sabah,d19,Gross primary productivity,-0.354,False,True
+sabah,d16,Maximum FPAR variability,-0.442,False,True
+sabah,d02,NDVI 95th percentile,-0.484,False,True
