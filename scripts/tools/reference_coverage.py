@@ -50,12 +50,14 @@ def histogram_overlap(a, wa, b, wb, bins):
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("run")
+    parser.add_argument("--forest", action="store_true", help="use the forest configs/sample/mask for RUN")
     args = parser.parse_args()
-    config = load_analysis_configuration(ROOT / "config" / f"{args.run}_all.toml")
+    stem = f"{args.run}_forest" if args.forest else args.run
+    config = load_analysis_configuration(ROOT / "config" / f"{stem}_all.toml")
     sample = pd.read_parquet(
-        ROOT / "outputs" / "samples" / f"{args.run}_all_2018_spatial_sample.parquet"
+        ROOT / "outputs" / "samples" / f"{stem}_all_2018_spatial_sample.parquet"
     )
-    mask_path = ROOT / "data" / "grassland_masks" / f"{args.run}_all_grassland_mask_2018.tif"
+    mask_path = (ROOT / "forest_inputs" / "forest_masks" / f"{args.run}_forest_mask_2018.tif") if args.forest else (ROOT / "data" / "grassland_masks" / f"{args.run}_all_grassland_mask_2018.tif")
     with rasterio.open(mask_path) as mask:
         x, y = Transformer.from_crs("EPSG:4326", mask.crs, always_xy=True).transform(
             sample["longitude"].to_numpy(), sample["latitude"].to_numpy()
@@ -133,8 +135,8 @@ def main() -> None:
 
     out = ROOT / "outputs" / "reference_coverage"
     out.mkdir(parents=True, exist_ok=True)
-    table.round(4).to_csv(out / f"{args.run}_variable_coverage.csv", index=False)
-    shares.round(4).to_csv(out / f"{args.run}_landform_shares.csv")
+    table.round(4).to_csv(out / f"{stem}_variable_coverage.csv", index=False)
+    shares.round(4).to_csv(out / f"{stem}_landform_shares.csv")
     summary = {
         "grassland_km2": weight_all.sum() / 1e6, "reference_km2": weight_ref.sum() / 1e6,
         "reference_share_of_grassland": weight_ref.sum() / weight_all.sum(),
@@ -142,7 +144,7 @@ def main() -> None:
         "grassland_outside_range_of_any_variable": outside_any,
         "median_var_inside_5_95": table["grassland_inside_reference_5_95"].median(),
     }
-    pd.Series(summary).to_csv(out / f"{args.run}_summary.csv", header=["value"])
+    pd.Series(summary).to_csv(out / f"{stem}_summary.csv", header=["value"])
     print(pd.Series(summary).round(3).to_string())
     print(table.sort_values("grassland_inside_reference_5_95")[
         ["variable", "std_mean_difference", "histogram_overlap",
@@ -177,7 +179,7 @@ def main() -> None:
     fig.suptitle(f"{config.display_name}: environmental range of reference pixels vs all natural grassland",
                  x=0.01, ha="left", fontsize=13)
     fig.tight_layout(rect=(0, 0, 1, 0.95))
-    fig.savefig(out / f"{args.run}_variable_distributions.png", dpi=150)
+    fig.savefig(out / f"{stem}_variable_distributions.png", dpi=150)
 
     # Figure 2: joint environmental space (weighted PCA of all grassland).
     mean, cov = wmean_cov(G, weight_all)
@@ -198,7 +200,7 @@ def main() -> None:
     for side in ("top", "right"):
         ax.spines[side].set_visible(False)
     ax.legend(frameon=False)
-    fig.savefig(out / f"{args.run}_environmental_space.png", dpi=150, bbox_inches="tight")
+    fig.savefig(out / f"{stem}_environmental_space.png", dpi=150, bbox_inches="tight")
     print("wrote", out)
 
 

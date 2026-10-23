@@ -19,3 +19,14 @@ Within-AOI reference area: PACHA 40,647 km2, SEKA 1,643, Sabah 1,149, SOKNOT 454
 Open points: (a) `Forest_mask` marks 99% of Carpathian and 97% of PACHA as forest, so it looks like
 a forest *zone*, not actual forest cover - the inference mask should be confirmed with the forest
 team; (b) the stack still carries grassland-oriented variables (e.g. short vegetation height).
+
+## First results (SEKA and Sabah, reference = IFL + FLII >= 9.6)
+- Reference area: SEKA 1,643 km2 (10% of its forest AOI), Sabah 1,149 km2 (1.6%).
+- Predictors-only held-out R2 (mean): SEKA -0.22, Sabah -0.16 (only 1 response > 0.3 in each);
+  all-variables 0.61 / 0.49 (inflated). SEKA uses 75 km blocks / 4 folds (only 4 reference blocks).
+- Departure maps are not interpretable as integrity: 54% (SEKA) and 75% (Sabah) of scored forest is
+  beyond the 95th percentile. Only 26% (SEKA) / 32% (Sabah) of forest lies inside the reference
+  environmental envelope: the IFL reference sits in cooler (-1 sd), more rugged (+1.0-1.2 sd
+  topographic diversity) terrain than most of the forest, so scores extrapolate.
+- Reference responses are nearly saturated (e.g. SEKA max LAI sd 0.15 vs 0.70 in other forest),
+  leaving little variance for the environmental models to explain.
