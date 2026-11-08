@@ -1,0 +1,17 @@
+class,forest_km2,reference_km2,reference_share_pct,scored_km2,mean_departure,pct_beyond_95th
+Private: Resource Management,5746.5,3023.75,52.62,2711.0,0.48,7.49
+State: Wild Forest,5499.5,3818.25,69.43,1667.0,0.48,8.14
+State: Wilderness,4847.0,4269.25,88.08,573.75,0.47,5.05
+Private: Rural Use,3853.5,882.25,22.89,2963.75,0.54,8.81
+Private: Low Intensity,1008.0,50.5,5.01,951.75,0.63,16.86
+Private: Moderate Intensity,359.5,0.75,0.21,344.0,0.75,35.25
+Outside classified land,220.0,66.0,30.0,139.25,0.74,33.93
+Private: Hamlet,167.5,0.0,0.0,153.75,0.84,52.52
+State: Primitive,150.75,91.0,60.36,58.75,0.52,8.94
+State: Intensive Use,86.25,4.75,5.51,79.75,0.65,19.44
+State: Canoe Area,73.75,60.25,81.69,13.0,0.42,1.92
+Private: Industrial Use,39.25,5.5,14.01,33.5,0.76,41.04
+State: Pending Classification,14.5,1.25,8.62,12.5,0.68,32.0
+State: State Administrative,7.75,0.25,3.23,7.5,0.82,46.67
+Private: Pending Private,1.25,0.0,0.0,1.25,0.46,0.0
+State: Historic,1.25,0.0,0.0,1.25,0.82,60.0

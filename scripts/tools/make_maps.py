@@ -22,7 +22,8 @@ from shapely import affinity
 
 ROOT = Path(__file__).resolve().parents[2]
 NAMES = {"kaza": "KAZA", "pacha": "PACHA", "central_india_boundary": "Central India", "nepal_tal": "Nepal TAL",
-         "soknot": "SOKNOT", "carpathian": "Carpathian", "sabah": "Sabah", "seka": "SEKA"}
+         "soknot": "SOKNOT", "carpathian": "Carpathian", "sabah": "Sabah", "seka": "SEKA",
+         "adirondacks": "Adirondacks", "nepal_tal_2026": "Nepal TAL 2026"}
 RAMP = LinearSegmentedColormap.from_list("departure", ["#1a9850", "#a6d96a", "#fee08b", "#f46d43", "#a50026"])
 PURPLE, GREY, INK, MUTED = "#7b3294", "#e9e8e3", "#0b0b0b", "#52514e"
 # MODIS IGBP land cover (2018), grouped and muted so the departure ramp stays the focus.
@@ -39,9 +40,12 @@ LANDCOVER = {  # group: (color, label, IGBP codes)
 
 
 def describe(run: str) -> tuple[str, str, str]:
-    base = run.replace("_w2", "").replace("_forest", "")
-    kind = "forest" if run.endswith("_forest") else "grassland"
-    wave = "wave 2: selected responses" if "_w2" in run else ("forest reference (IFL + high integrity)" if kind == "forest" else "wave 1: stock workflow")
+    base = run.replace("_w2", "").replace("_forestv2", "").replace("_forest", "")
+    kind = "forest" if "_forest" in run else "grassland"
+    if run.endswith("_forestv2"):
+        wave = "forest v2: canopy + human-pressure reference"
+    else:
+        wave = "wave 2: selected responses" if "_w2" in run else ("forest reference (IFL + high integrity)" if kind == "forest" else "wave 1: stock workflow")
     return base, f"{NAMES.get(base, base)} {kind}", wave
 
 
@@ -141,7 +145,7 @@ def main() -> None:
     parser.add_argument("output_dir", type=Path)
     parser.add_argument("runs", nargs="*")
     args = parser.parse_args()
-    runs = args.runs or [f"{n}{t}" for t in ("", "_w2") for n in ("kaza", "pacha", "central_india_boundary", "nepal_tal", "soknot", "carpathian", "sabah")] + ["seka_forest", "sabah_forest", "soknot_forest", "pacha_forest"]
+    runs = args.runs or [f"{n}{t}" for t in ("", "_w2") for n in ("kaza", "pacha", "central_india_boundary", "nepal_tal", "soknot", "carpathian", "sabah")] + ["seka_forest", "sabah_forest", "soknot_forest", "pacha_forest"] + [f"{n}_forestv2" for n in ("adirondacks", "nepal_tal_2026", "seka", "sabah")]
     for run in runs:
         path = make_map(run, args.output_dir)
         print(f"{run:28} {'wrote ' + str(path.name) if path else 'no inference output yet'}", flush=True)
