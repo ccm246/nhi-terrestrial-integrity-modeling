@@ -25,6 +25,17 @@ NAMES = {"kaza": "KAZA", "pacha": "PACHA", "central_india_boundary": "Central In
          "soknot": "SOKNOT", "carpathian": "Carpathian", "sabah": "Sabah", "seka": "SEKA"}
 RAMP = LinearSegmentedColormap.from_list("departure", ["#1a9850", "#a6d96a", "#fee08b", "#f46d43", "#a50026"])
 PURPLE, GREY, INK, MUTED = "#7b3294", "#e9e8e3", "#0b0b0b", "#52514e"
+# MODIS IGBP land cover (2018), grouped and muted so the departure ramp stays the focus.
+LANDCOVER = {  # group: (color, label, IGBP codes)
+    1: ("#c4d3b8", "Forest", (1, 2, 3, 4, 5)),
+    2: ("#d9d2b4", "Shrubland / savanna", (6, 7, 8, 9)),
+    3: ("#e7e3b0", "Grassland", (10,)),
+    4: ("#b9d6cf", "Wetland", (11,)),
+    5: ("#ecd9b8", "Cropland / mosaic", (12, 14)),
+    6: ("#c9c5c0", "Built-up", (13,)),
+    7: ("#e4dccf", "Barren / snow", (15, 16)),
+    8: ("#bcd3e4", "Water", (17,)),
+}
 
 
 def describe(run: str) -> tuple[str, str, str]:
@@ -43,6 +54,26 @@ def block(array, valid, factor, how):
         return count > 0
     with np.errstate(invalid="ignore", divide="ignore"):
         return np.where(count > 0, v.sum(axis=(1, 3)) / count, np.nan)
+
+
+def landcover_groups(base, run, aoi, transform, shape, factor, block_shape):
+    """Grouped IGBP land cover subsampled to the map grid and clipped to the AOI (None if not fetched)."""
+    from rasterio.features import geometry_mask
+    path = ROOT / "data" / "landcover" / f"{run.replace('_w2', '')}_igbp_2018.tif"
+    if not path.exists():
+        return None
+    with rasterio.open(path) as src:
+        if (src.height, src.width) != shape:
+            return None
+        cover = src.read(1)
+    inside = geometry_mask(aoi.geometry, out_shape=shape, transform=transform, invert=True)
+    groups = np.zeros(shape, dtype="uint8")
+    for k, (_, _, codes) in LANDCOVER.items():
+        groups[np.isin(cover, codes)] = k
+    groups[~inside] = 0
+    rows, cols = block_shape
+    offset = factor // 2
+    return groups[offset::factor, offset::factor][:rows, :cols]
 
 
 def make_map(run: str, out_dir: Path) -> Path | None:
@@ -77,12 +108,21 @@ def make_map(run: str, out_dir: Path) -> Path | None:
     fig_w = 9.5
     fig, ax = plt.subplots(figsize=(fig_w, min(fig_w * aspect + 2.0, 13)), facecolor="white")
     outline.plot(ax=ax, facecolor=GREY, edgecolor=MUTED, linewidth=0.7, zorder=0)
+    groups = landcover_groups(base, run, aoi, transform, (height, width), factor, p_block.shape)
+    if groups is not None:
+        ax.imshow(np.ma.masked_equal(groups, 0), extent=extent, interpolation="nearest", zorder=1,
+                  cmap=ListedColormap(["white"] + [LANDCOVER[k][0] for k in sorted(LANDCOVER)]), vmin=0, vmax=len(LANDCOVER))
     ax.imshow(np.ma.masked_invalid(p_block), extent=extent, cmap=RAMP, vmin=0, vmax=1, interpolation="nearest", zorder=2)
     ax.imshow(np.where(ref_block, 1.0, np.nan), extent=extent, cmap=ListedColormap([PURPLE]), interpolation="nearest", zorder=3)
     ax.set_xlim(extent[0], extent[1]); ax.set_ylim(extent[2], extent[3]); ax.set_aspect("equal")
     ax.set_xticks([]); ax.set_yticks([]); ax.set_xlabel(""); ax.set_ylabel("")
     for side in ax.spines.values():
         side.set_visible(False)
+    if groups is not None:
+        from matplotlib.patches import Patch
+        present = [k for k in sorted(LANDCOVER) if (groups == k).any()]
+        ax.legend(handles=[Patch(facecolor=LANDCOVER[k][0], label=LANDCOVER[k][1]) for k in present] + [Patch(facecolor=PURPLE, label="Reference (not scored)")],
+                  title="Land cover (MODIS 2018)", loc="upper left", bbox_to_anchor=(1.01, 1), frameon=False, fontsize=8, title_fontsize=8.5)
     ax.set_title(f"{title}\n{wave}", fontsize=13, loc="left", color=INK)
     sm = plt.cm.ScalarMappable(cmap=RAMP, norm=plt.Normalize(0, 1))
     cbar = fig.colorbar(sm, ax=ax, orientation="horizontal", fraction=0.035, pad=0.03, aspect=40)
