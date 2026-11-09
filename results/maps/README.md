@@ -13,3 +13,10 @@ One map per finished run, made by `python -m scripts.tools.make_maps results/map
   cover little of the landscape's environment give scores that mostly reflect extrapolation.
   The straight-edged blocks visible in some maps (e.g. Sabah forest) come from the coarse 0.25 degree
   (~28 km) ERA5 / GLDAS climate and soil-moisture predictors, which are constant inside each cell.
+
+
+## Update: land-cover background, forest v2 maps and habitat maps
+- Every integrity map now has a MODIS 2018 land-cover background (muted colors) behind the scores.
+- `*_forestv2_map.png`: forest runs with the canopy + human-pressure reference (Adirondacks, Nepal TAL 2026, SEKA, Sabah).
+- `habitat_<landscape>_map.png`: the forest / grassland / unscored split for ten landscapes
+  (ESA WorldCover land cover + Hansen canopy > 20 %; tree cover that fails the canopy test is "disturbed", unscored).
