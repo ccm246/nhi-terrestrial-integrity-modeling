@@ -28,8 +28,10 @@ def main() -> None:
 
     def local_bytes(_stack, tile, _grid, _bands):
         matches = list(args.source_cache.glob(f"tiles/*/{tile.tile_id}.tif"))
-        if len(matches) != 1:
-            raise FileNotFoundError(f"{tile.tile_id}: {len(matches)} source tiles in {args.source_cache}")
+        if not matches:
+            raise FileNotFoundError(f"{tile.tile_id}: no source tile in {args.source_cache}")
+        if len(matches) > 1:   # several stacks (e.g. different reference thresholds): predictors are identical, take the fullest
+            matches.sort(key=lambda m: -len(list(m.parent.glob("*.tif"))))
         return matches[0].read_bytes()
 
     with rasterio.open(args.reference) as reference:

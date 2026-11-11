@@ -10,6 +10,7 @@ departure percentile: green = within the common range of reference variation, re
 from it. Pixels are aggregated to <= ~1,800 px on the long side (reference wins, otherwise the
 mean departure), so small patches stay visible.
 """
+import re
 import argparse
 from pathlib import Path
 
@@ -23,7 +24,8 @@ from shapely import affinity
 ROOT = Path(__file__).resolve().parents[2]
 NAMES = {"kaza": "KAZA", "pacha": "PACHA", "central_india_boundary": "Central India", "nepal_tal": "Nepal TAL",
          "soknot": "SOKNOT", "carpathian": "Carpathian", "sabah": "Sabah", "seka": "SEKA",
-         "adirondacks": "Adirondacks", "nepal_tal_2026": "Nepal TAL 2026"}
+         "adirondacks": "Adirondacks", "nepal_tal_2026": "Nepal TAL 2026",
+         "adirondacks_large": "Adirondacks (large extent)", "upper_midwest": "Upper Midwest", "guatemala": "Guatemala"}
 RAMP = LinearSegmentedColormap.from_list("departure", ["#1a9850", "#a6d96a", "#fee08b", "#f46d43", "#a50026"])
 PURPLE, GREY, INK, MUTED = "#7b3294", "#e9e8e3", "#0b0b0b", "#52514e"
 # MODIS IGBP land cover (2018), grouped and muted so the departure ramp stays the focus.
@@ -40,10 +42,14 @@ LANDCOVER = {  # group: (color, label, IGBP codes)
 
 
 def describe(run: str) -> tuple[str, str, str]:
-    base = run.replace("_w2", "").replace("_forestv2", "").replace("_forest", "")
-    kind = "forest" if "_forest" in run else "grassland"
-    if run.endswith("_forestv2"):
+    base = re.sub(r"_(w2|forestv2|grassv2|forest|hm|wild)$", "", run)
+    kind = "grassland" if run.endswith("_grassv2") else ("forest" if re.search(r"_(forest|forestv2|hm|wild)$", run) else "grassland")
+    if run.endswith("_forestv2") or run.endswith("_hm"):
         wave = "forest v2: canopy + human-pressure reference"
+    elif run.endswith("_wild"):
+        wave = "forest, wilderness-only reference"
+    elif run.endswith("_grassv2"):
+        wave = "grassland v2: habitat-split reference"
     else:
         wave = "wave 2: selected responses" if "_w2" in run else ("forest reference (IFL + high integrity)" if kind == "forest" else "wave 1: stock workflow")
     return base, f"{NAMES.get(base, base)} {kind}", wave

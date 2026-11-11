@@ -4,7 +4,7 @@ Usage:
     python -m scripts.tools.make_similarity_maps OUTPUT_DIR RUN [RUN ...]
     e.g. python -m scripts.tools.make_similarity_maps results/maps/similarity adirondacks_forestv2
 
-For every forest-zone pixel in the run's target mask (reference pixels included), computes the
+For every zone pixel in the run's target mask (reference pixels included), computes the
 Mahalanobis distance of its continuous climate, soil and terrain predictors to the reference-pixel
 distribution (same standardization and 10% covariance shrinkage as flag_extrapolation.py).
 Similarity = the share of reference pixels that are farther from the reference center than this
@@ -51,7 +51,7 @@ def run_one(run: str, out_dir: Path) -> None:
     with rasterio.open(folder / f"{stem}_standardized_deviation.tif") as src:
         reference = ~np.ma.getmaskarray(src.read(1, masked=True)) & ~scored
 
-    with rasterio.open(ROOT / "forest_inputs" / "forest_masks_v2" / f"{base}_forest_mask_2018.tif") as mask:
+    with rasterio.open(config.application_mask_path) as mask:
         x, y = Transformer.from_crs("EPSG:4326", mask.crs, always_xy=True).transform(
             sample["longitude"].to_numpy(), sample["latitude"].to_numpy())
         in_mask = np.array([v[0] for v in mask.sample(zip(x, y))]) == 1
@@ -110,7 +110,7 @@ def run_one(run: str, out_dir: Path) -> None:
     km = (abs(transform.a) / 1000) ** 2
     summary = pd.Series({
         "predictors_used": len(ids), "reference_environments_km2": reference.sum() * km,
-        "forest_zone_km2": target.sum() * km, "outside_reference_environment_km2": outside.sum() * km,
+        "zone_km2": target.sum() * km, "outside_reference_environment_km2": outside.sum() * km,
         "outside_share": outside[target].mean(),
         "mean_similarity_scored": float(np.nanmean(sim[scored])) if scored.any() else np.nan,
         "mean_similarity_reference": float(np.nanmean(sim[reference])) if reference.any() else np.nan})
@@ -142,7 +142,7 @@ def run_one(run: str, out_dir: Path) -> None:
     cb = fig.colorbar(sm, ax=list(axes), orientation="horizontal", fraction=0.04, pad=0.03, aspect=60)
     cb.set_label("Share of reference pixels farther from the reference core (1 = typical of reference)", fontsize=8.5, color=MUTED)
     cb.outline.set_visible(False)
-    axes[1].legend(handles=[Patch(facecolor=ORANGE, label=f"Outside reference range: {100 * summary['outside_share']:.0f}% of forest zone")],
+    axes[1].legend(handles=[Patch(facecolor=ORANGE, label=f"Outside reference range: {100 * summary['outside_share']:.0f}% of the scored zone")],
                    loc="lower left", frameon=False, fontsize=9)
     fig.suptitle(f"{title}: abiotic similarity to reference (climate, soil and terrain only)", x=0.01, ha="left", fontsize=13, color=INK)
     fig.savefig(out_dir / f"{run}_similarity_map.png", dpi=150, bbox_inches="tight", facecolor="white")
