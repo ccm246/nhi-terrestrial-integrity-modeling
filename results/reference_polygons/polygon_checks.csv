@@ -1,0 +1,830 @@
+source,polygon,contributor,note,area_km2,lon,lat,canopy_2018,canopy_lost_2001_2018,esa_bare,esa_built,esa_cropland,esa_grass,esa_mangrove,esa_moss,esa_shrub,esa_snow,esa_tree,esa_water,esa_wetland,hii_ok_share,hm_mean,tag,flag_farmed_or_built,flag_cleared,flag_high_pressure,flag_mostly_water,verdict
+hand_drawn,low condition,Colleen,empty forest,2657.77,-62.973,3.835,0.999,0.001,0.0,0.0,0.0,0.007,0,0.0,0.001,0,0.992,0.0,0.0,1.0,0.002,low,False,False,False,False,clean
+hand_drawn,high condition,Colleen,,495.1,-62.523,4.67,0.998,0.002,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,1.0,0.002,high_candidate,False,False,False,False,clean
+hand_drawn,high condition,Colleen,,3576.28,-65.68,3.612,0.984,0.009,0.003,0.0,0.0,0.025,0,0.0,0.0,0,0.969,0.002,0.0,0.999,0.002,high_candidate,False,False,False,False,clean
+hand_drawn,High integrity,Colleen,This is note (and an example).,857.34,104.67,-4.905,0.839,0.078,0.0,0.019,0.034,0.014,0,0.0,0.0,0,0.925,0.007,0.001,0.01,0.255,high_candidate,True,False,True,False,review
+hand_drawn,Low integrity,Colleen,Example. Actually I had misgivings. ,3882.13,8.596,5.555,0.958,0.018,0.0,0.001,0.001,0.004,0,0.0,0.002,0,0.992,0.0,0.0,0.633,0.029,low,False,False,True,False,review
+hand_drawn,West Leuser: High Integrity,Ardian,"West core area of Leuser Ecosystem, separated from East forests by roads and settlements. Intact forests mostly dominated by hill and mountain forests. This forest patch is definitely more intact than one in Bukit Barisan Selatan, mostly due to the vast size and difficult access. Some high-integrity forest areas are outside the KBA boundary.",5072.15,97.438,3.501,0.994,0.005,0.0,0.0,0.0,0.005,0,0.0,0.0,0,0.995,0.0,0.0,0.983,0.003,high_candidate,False,False,False,False,clean
+hand_drawn,Bukit Barisan Selatan - High Integrity,Ardian,"High integrity tropical forests. This is part of the Intensive Protection Zone of Bukit Barisan Selatan National Park. It is well protected and retains most of the primary forests, although human activities are present due to its elongated shape (easier to access from the east and west sides). At the north and south of this polygon, there are two national roads cutting through the forests. 
+
+Some of the north and south blocks of the national park harbour intact forests too, but are mixed with settlements; therefore, I excluded them for now. Local expert can help in delineate the polygons in these parts.
+
+Note: Compared to Leuser Ecosystem at North, this forests have more human activities due to easy access, but the forest is still remains pretty intact.",642.08,104.168,-5.288,0.997,0.002,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.608,0.003,high_candidate,False,False,True,False,review
+hand_drawn,Bukit Barisan Selatan - Low Integrity,Ardian,Cleared/degraded forest converted to coffee plantation,251.6,104.343,-5.181,0.917,0.03,0.0,0.002,0.002,0.093,0,0.0,0.0,0,0.902,0.0,0.0,0.0,0.142,low,False,False,True,False,review
+hand_drawn,Example Polygon (READ),Ardian,"Kerinci Seblat is one of the largest forest landscape in Sumatra, I believe it should become a reference area for forest. But I am not familiar with this landscape therefore I added this note in case folks from WWF want to check this. ",1716.93,101.225,-1.754,0.911,0.061,0.002,0.005,0.053,0.066,0,0.0,0.0,0,0.869,0.006,0.0,0.423,0.097,high_candidate,True,False,True,False,review
+hand_drawn,East Leuser-High Integrity,Ardian,"East core area of Leuser Ecosystem, separated from West forests by roads and settlements. Also intact forest dominated by hill and mountain forests; the vegetation is slightly different with the east (e.g., in higher elevation (>2000 m) we can still find large trees, while in West Leuser not). It remains intact due to its large size and difficult access.",2222.07,97.933,3.635,0.993,0.006,0.0,0.0,0.0,0.006,0,0.0,0.0,0,0.994,0.0,0.0,0.947,0.004,high_candidate,False,False,False,False,clean
+hand_drawn,Example Polygon,Colleen 2,High integrity,2571.69,101.713,-2.561,0.878,0.104,0.0,0.001,0.006,0.071,0,0.0,0.0,0,0.92,0.002,0.0,0.527,0.055,high_candidate,False,True,True,False,review
+hand_drawn,medium integrity,Fabi,"Tropical Dry Forest within private lands. Nesting Honduran Emerald hummingbird documented alongside other endemic plant species. However, this is an isolated patch of dry forest like many others in this valley which is why medium integrity is a conservative label",0.04,-85.843,15.224,0.816,0.0,0.0,0.0,0.0,0.186,0,0.0,0.0,0,0.814,0.0,0.0,0.0,0.292,medium,False,False,True,False,review
+hand_drawn,low condition,Glenn,invasive plant,0.57,19.579,-34.203,0.864,0.125,0.0,0.0,0.0,0.159,0,0.0,0.003,0,0.838,0.0,0.0,0.096,0.136,low,False,True,True,False,review
+hand_drawn,low condition,Glenn,invasive plant,1.96,19.479,-34.213,0.741,0.18,0.0,0.0,0.0,0.423,0,0.0,0.025,0,0.552,0.0,0.0,0.827,0.045,low,False,True,False,False,review
+hand_drawn,low condition,Glenn,overgrazing and erosion,2.86,27.26,-30.556,0.0,0.0,0.041,0.0,0.156,0.802,0,0.0,0.0,0,0.0,0.0,0.0,0.0,0.197,low,True,False,True,False,review
+hand_drawn,low condition,Glenn,overgrazing and erosion,2.63,27.139,-30.648,0.0,0.0,0.054,0.001,0.041,0.903,0,0.0,0.001,0,0.0,0.0,0.0,0.667,0.254,low,False,False,True,False,review
+hand_drawn,Polygon 1,Kendall Jones,"High Integrity - Tropical Savanna inside Kakadu national park, a very large area with limited human impact. Some invasive species present (e.g. Buffalo, goats) but composition otherwise quite intact. ",86.6,132.791,-12.581,0.003,0.0,0.0,0.0,0.0,0.319,0,0.0,0.004,0,0.676,0.0,0.0,0.983,0.023,high_candidate,False,False,False,False,clean
+hand_drawn,Lamington national park,Kendall Jones,High Integrity subtropical rainforest and wet sclerophyl forest inside a large and well managed national park. Structure and species composition should all be fairly intact. ,4.72,153.175,-28.222,0.997,0.001,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,1.0,0.004,high_candidate,False,False,False,False,clean
+hand_drawn,Ben Bennet Park,Kendall Jones,"Medium/Low Integrity Eucalpytus Forest - small remnant patch but heavily used by mountain bikers, dog walkers etc. Species composition substantially altered with likely loss of Koala, a number of important bird species etc. ",0.01,153.124,-26.794,0.859,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.76,medium,False,False,True,False,unfit
+hand_drawn,High Peaks wilderness,Rachel,"Designated wilderness, no permanent structures, no motorized recreation. Contains a combination of relatively natural forest (some areas burned in the 1800s so not ""old growth), relatively high elevation areas including natural alpine vegetation and naturally open areas above treeline, some natural disturbance (landslides), also natural lakes as well as man-made (dammed rivers)",883.78,-74.072,44.14,0.975,0.001,0.0,0.0,0.0,0.006,0,0.0,0.0,0,0.978,0.015,0.001,0.896,0.017,high_candidate,False,False,False,False,clean
+pacha_antelo,low integrity,Rafael Antelo,"burned every year, like all the grassland area in this national park. Also the natural flooding has been reduced and is not receiveing water from the Paraguay reiver since 2918",60.95,-57.963,-19.986,0.01,0.0,0.0,0.0,0.0,0.09,0,0.0,0.0,0,0.0,0.0,0.909,0.829,0.041,low,False,False,False,False,clean
+pacha_antelo,low integrity,Rafael Antelo,"burned in 2019, is a special kind of dry forest (abayoy) that still is not recovered ",2586.82,-59.454,-18.972,0.994,0.005,0.0,0.0,0.0,0.003,0,0.0,0.067,0,0.93,0.0,0.0,0.939,0.007,low,False,False,False,False,clean
+pacha_antelo,low integrity,Rafael Antelo,chaco forest degrador by overgrazing,2.57,-62.534,-20.062,0.104,0.0,0.0,0.0,0.0,0.0,0,0.0,1.0,0,0.0,0.0,0.0,1.0,0.027,low,False,False,False,False,clean
+pacha_antelo,high intergrity,Rafael Antelo,,3833.62,-61.231,-19.036,0.993,0.002,0.0,0.0,0.0,0.0,0,0.0,0.307,0,0.692,0.0,0.0,0.956,0.021,high_candidate,False,False,False,False,clean
+pacha_antelo,high integrity,Rafael Antelo,,1946.99,-58.419,-19.354,0.998,0.002,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.996,0.0,0.003,1.0,0.004,high_candidate,False,False,False,False,clean
+wisconsin_sna,Kroenke Lake,,,0.6,-88.701,44.852,0.707,0.001,0.0,0.0,0.112,0.076,0,0.0,0.0,0,0.784,0.028,0.0,0.0,0.175,high_candidate,True,False,True,False,review
+wisconsin_sna,Rose Lake,,,1.96,-88.868,42.959,0.202,0.0,0.0,0.0,0.033,0.38,0,0.0,0.0,0,0.268,0.058,0.26,0.0,0.292,high_candidate,False,False,True,False,review
+wisconsin_sna,Roche-a-Cri Mound,,,0.08,-89.819,44.003,0.99,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.142,high_candidate,False,False,True,False,review
+wisconsin_sna,Ancient Aztalan Village,,,0.1,-88.861,43.066,0.073,0.018,0.0,0.0,0.0,0.948,0,0.0,0.0,0,0.052,0.0,0.0,0.0,0.435,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Maiden Rock Bluff,,,0.98,-92.286,44.504,0.526,0.079,0.0,0.0,0.122,0.342,0,0.0,0.0,0,0.536,0.0,0.0,0.0,0.289,high_candidate,True,False,True,False,review
+wisconsin_sna,Battle Bluff Prairie,,,1.37,-91.199,43.456,0.917,0.0,0.0,0.002,0.001,0.024,0,0.0,0.0,0,0.973,0.0,0.0,0.0,0.118,high_candidate,False,False,True,False,review
+wisconsin_sna,Parfrey's Glen,,,2.06,-89.643,43.418,0.981,0.001,0.0,0.001,0.0,0.004,0,0.0,0.0,0,0.996,0.0,0.0,0.0,0.151,high_candidate,False,False,True,False,review
+wisconsin_sna,Cedarburg Bog,,,7.11,-88.008,43.387,0.847,0.0,0.0,0.002,0.0,0.094,0,0.0,0.0,0,0.803,0.048,0.053,0.0,0.147,high_candidate,False,False,True,False,review
+wisconsin_sna,Maiden Rock Bluff,,,0.08,-92.29,44.503,0.412,0.0,0.007,0.094,0.0,0.0,0,0.0,0.0,0,0.863,0.036,0.0,0.0,0.81,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Lake of the Pines Conifer-Hardwoods,,,0.22,-90.714,45.777,0.98,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.94,0.06,0.0,0.925,0.011,high_candidate,False,False,False,False,clean
+wisconsin_sna,Wyalusing Hardwood Forest,,,1.63,-91.083,42.99,0.984,0.0,0.0,0.0,0.005,0.007,0,0.0,0.0,0,0.938,0.051,0.0,0.0,0.065,high_candidate,False,False,True,False,review
+wisconsin_sna,Scuppernong Prairie,,,0.7,-88.513,42.901,0.517,0.0,0.0,0.005,0.24,0.257,0,0.0,0.0,0,0.499,0.0,0.0,0.0,0.256,high_candidate,True,False,True,False,review
+wisconsin_sna,Necedah Oak-Pine Savanna,,,0.97,-90.199,44.133,0.372,0.593,0.0,0.0,0.0,0.639,0,0.0,0.0,0,0.361,0.0,0.0,0.814,0.106,high_candidate,False,True,False,False,unfit
+wisconsin_sna,Cedar Grove Hawk Research Station,,,0.14,-87.791,43.571,0.934,0.0,0.0,0.0,0.0,0.074,0,0.0,0.0,0,0.926,0.0,0.0,0.0,0.34,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Brady's Bluff Prairie,,,0.23,-91.485,44.02,0.95,0.0,0.0,0.0,0.0,0.011,0,0.0,0.0,0,0.989,0.0,0.0,0.0,0.296,high_candidate,False,False,True,False,review
+wisconsin_sna,Dewey Heights Prairie,,,0.12,-91.019,42.734,0.619,0.0,0.0,0.0,0.0,0.177,0,0.0,0.0,0,0.822,0.0,0.0,0.0,0.616,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Haskell Noyes Woods,,,0.25,-88.173,43.612,0.97,0.0,0.0,0.011,0.0,0.0,0,0.0,0.0,0,0.989,0.0,0.0,0.0,0.293,high_candidate,False,False,True,False,review
+wisconsin_sna,Peninsula Park Beech Forest,,,0.33,-87.199,45.156,0.998,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.996,0.004,0.0,0.0,0.188,high_candidate,False,False,True,False,review
+wisconsin_sna,Necedah Oak-Pine Forest,,,0.4,-90.115,44.073,0.004,0.898,0.0,0.003,0.0,0.997,0,0.0,0.0,0,0.0,0.0,0.0,0.0,0.136,high_candidate,False,True,True,False,unfit
+wisconsin_sna,Mount Pisgah Hemlock-Hardwoods,,,0.3,-90.579,43.69,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.098,high_candidate,False,False,True,False,review
+wisconsin_sna,Midway Railroad Prairie,,,0.02,-91.251,43.922,0.156,0.0,0.0,0.059,0.0,0.429,0,0.0,0.0,0,0.512,0.0,0.0,0.0,0.73,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Pine Cliff,,,0.09,-90.108,43.009,0.978,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.954,0.046,0.0,0.0,0.033,high_candidate,False,False,True,False,review
+wisconsin_sna,Tichigan Springs and Fen,,,0.35,-88.248,42.796,0.801,0.0,0.0,0.0,0.001,0.163,0,0.0,0.0,0,0.836,0.0,0.0,0.0,0.211,high_candidate,False,False,True,False,review
+wisconsin_sna,Krueger Pines,,,0.12,-89.738,45.181,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.272,high_candidate,False,False,True,False,review
+wisconsin_sna,Browntown Oak Forest,,,0.3,-89.765,42.587,0.757,0.0,0.0,0.0,0.065,0.093,0,0.0,0.0,0,0.842,0.0,0.0,0.0,0.262,high_candidate,True,False,True,False,review
+wisconsin_sna,Devil's Lake Oak Forest,,,0.27,-89.715,43.409,0.979,0.0,0.003,0.0,0.0,0.006,0,0.0,0.0,0,0.991,0.0,0.0,0.0,0.238,high_candidate,False,False,True,False,review
+wisconsin_sna,Lawin Sedge Meadow,,,0.21,-91.239,45.011,0.353,0.0,0.0,0.0,0.0,0.663,0,0.0,0.0,0,0.337,0.0,0.0,0.0,0.329,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Lawin Sedge Meadow,,,0.85,-91.25,45.021,0.27,0.0,0.0,0.0,0.0,0.793,0,0.0,0.0,0,0.207,0.0,0.0,0.303,0.129,high_candidate,False,False,True,False,review
+wisconsin_sna,Crex Sand Prairie,,,0.32,-92.636,45.88,0.146,0.0,0.0,0.0,0.219,0.778,0,0.0,0.0,0,0.002,0.0,0.002,0.0,0.229,high_candidate,True,False,True,False,review
+wisconsin_sna,Tower Hill Bottoms,,,1.95,-90.041,43.158,0.954,0.003,0.0,0.004,0.0,0.002,0,0.0,0.0,0,0.968,0.026,0.0,0.0,0.126,high_candidate,False,False,True,False,review
+wisconsin_sna,Seagull Bar,,,0.17,-87.591,45.084,0.111,0.001,0.034,0.0,0.0,0.076,0,0.0,0.0,0,0.135,0.56,0.196,0.0,0.266,high_candidate,False,False,True,True,review
+wisconsin_sna,Hub City Bog,,,0.2,-90.352,43.465,0.544,0.0,0.0,0.008,0.0,0.218,0,0.0,0.0,0,0.599,0.0,0.175,0.0,0.343,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Kangaroo Lake,,,1.2,-87.152,45.046,0.849,0.0,0.0,0.014,0.0,0.061,0,0.0,0.0,0,0.895,0.011,0.017,0.0,0.207,high_candidate,False,False,True,False,review
+wisconsin_sna,Smith Drumlin Prairie,,,0.16,-89.06,42.991,0.014,0.0,0.0,0.0,0.128,0.871,0,0.0,0.0,0,0.002,0.0,0.0,0.0,0.391,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Lehto Lake,,,6.53,-90.047,46.023,0.907,0.004,0.0,0.0,0.0,0.134,0,0.0,0.008,0,0.816,0.021,0.02,0.915,0.015,high_candidate,False,False,False,False,clean
+wisconsin_sna,Albany Sand Prairie and Oak Savanna,,,0.37,-89.441,42.731,0.528,0.209,0.0,0.0,0.0,0.471,0,0.0,0.0,0,0.528,0.0,0.0,0.0,0.291,high_candidate,False,True,True,False,review
+wisconsin_sna,Badfish Creek Wet Prairie and Spring Seeps,,,0.41,-89.276,42.866,0.264,0.0,0.0,0.0,0.337,0.372,0,0.0,0.0,0,0.291,0.0,0.0,0.0,0.271,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Clifford F. Messinger Dry Prairie and Savanna Preserve,,,0.02,-88.694,42.771,0.683,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.819,0.181,0.0,0.0,0.294,high_candidate,False,False,True,False,review
+wisconsin_sna,Clifford F. Messinger Dry Prairie and Savanna Preserve,,,0.69,-88.669,42.78,0.97,0.001,0.0,0.0,0.0,0.01,0,0.0,0.0,0,0.989,0.0,0.0,0.0,0.232,high_candidate,False,False,True,False,review
+wisconsin_sna,Clifford F. Messinger Dry Prairie and Savanna Preserve,,,0.0,-88.588,42.818,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.114,high_candidate,False,False,True,False,review
+wisconsin_sna,Clifford F. Messinger Dry Prairie and Savanna Preserve,,,0.02,-88.586,42.822,0.963,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.115,high_candidate,False,False,True,False,review
+wisconsin_sna,Rice Lake,,,5.03,-89.232,45.82,0.584,0.0,0.0,0.0,0.0,0.469,0,0.0,0.0,0,0.429,0.076,0.027,0.71,0.022,high_candidate,False,False,False,False,clean
+wisconsin_sna,Summerton Bog,,,1.73,-89.524,43.75,0.574,0.009,0.0,0.0,0.008,0.371,0,0.0,0.0,0,0.621,0.0,0.0,0.0,0.129,high_candidate,False,False,True,False,review
+wisconsin_sna,Poppy's Rock,,,0.07,-88.761,44.354,0.726,0.0,0.0,0.0,0.0,0.046,0,0.0,0.0,0,0.954,0.0,0.0,0.0,0.342,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Hemlock Draw,,,3.98,-89.94,43.368,0.935,0.0,0.0,0.0,0.0,0.041,0,0.0,0.0,0,0.959,0.0,0.0,0.312,0.096,high_candidate,False,False,True,False,review
+wisconsin_sna,Schluckebier Prairie,,,0.09,-89.793,43.292,0.024,0.0,0.0,0.067,0.09,0.819,0,0.0,0.0,0,0.024,0.0,0.0,0.0,0.487,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Spruce Grouse Swamp,,,1.6,-89.209,46.096,0.938,0.035,0.0,0.0,0.0,0.054,0,0.0,0.0,0,0.946,0.0,0.0,0.709,0.017,high_candidate,False,False,False,False,clean
+wisconsin_sna,Haley Creek Swamp,,,0.11,-88.474,45.867,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,1.0,0.005,high_candidate,False,False,False,False,clean
+wisconsin_sna,Haley Creek Swamp,,,1.66,-88.474,45.859,0.995,0.005,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.993,0.0,0.005,0.98,0.007,high_candidate,False,False,False,False,clean
+wisconsin_sna,Plainfield Tunnel Channel Lakes,,,0.4,-89.433,44.199,0.874,0.055,0.0,0.0,0.0,0.021,0,0.0,0.0,0,0.914,0.065,0.0,0.0,0.199,high_candidate,False,False,True,False,review
+wisconsin_sna,Rhine Center Bog,,,0.22,-87.945,43.871,0.818,0.0,0.0,0.006,0.0,0.028,0,0.0,0.0,0,0.822,0.102,0.042,0.0,0.352,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Olson Oak Woods,,,0.08,-89.587,42.953,0.961,0.0,0.0,0.005,0.0,0.007,0,0.0,0.0,0,0.988,0.0,0.0,0.0,0.247,high_candidate,False,False,True,False,review
+wisconsin_sna,Bauer-Brockway Barrens,,,0.48,-90.751,44.297,0.564,0.001,0.0,0.032,0.0,0.396,0,0.0,0.0,0,0.572,0.0,0.0,0.0,0.197,high_candidate,False,False,True,False,review
+wisconsin_sna,Mazomanie Bottoms,,,1.42,-89.828,43.21,0.968,0.005,0.0,0.0,0.0,0.009,0,0.0,0.0,0,0.973,0.018,0.0,0.0,0.084,high_candidate,False,False,True,False,review
+wisconsin_sna,Mud Lake Fen and Wet Prairie,,,0.64,-88.922,43.039,0.274,0.001,0.0,0.0,0.035,0.39,0,0.0,0.0,0,0.535,0.038,0.003,0.0,0.193,high_candidate,False,False,True,False,review
+wisconsin_sna,Texas Island Woods,,,0.29,-88.587,42.98,0.978,0.0,0.0,0.0,0.0,0.015,0,0.0,0.0,0,0.985,0.0,0.0,0.0,0.079,high_candidate,False,False,True,False,review
+wisconsin_sna,Waterloo Quartzite Outcrops,,,0.09,-88.946,43.224,0.958,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.144,high_candidate,False,False,True,False,review
+wisconsin_sna,Pine Hollow,,,1.36,-89.91,43.37,0.879,0.001,0.0,0.0,0.0,0.045,0,0.0,0.0,0,0.955,0.0,0.0,0.308,0.108,high_candidate,False,False,True,False,review
+wisconsin_sna,Miscauno Cedar Swamp,,,1.79,-87.952,45.581,0.988,0.002,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.549,0.051,high_candidate,False,False,True,False,review
+wisconsin_sna,Cherney Maribel Caves,,,0.04,-87.773,44.288,0.977,0.01,0.0,0.0,0.0,0.035,0,0.0,0.0,0,0.965,0.0,0.0,0.0,0.166,high_candidate,False,False,True,False,review
+wisconsin_sna,Black Tern Bog,,,0.08,-89.698,45.967,0.789,0.0,0.0,0.0,0.0,0.167,0,0.0,0.0,0,0.637,0.0,0.196,0.0,0.259,high_candidate,False,False,True,False,review
+wisconsin_sna,Two Creeks Buried Forest,,,0.06,-87.545,44.325,0.147,0.0,0.02,0.009,0.0,0.647,0,0.0,0.0,0,0.162,0.162,0.0,0.0,0.863,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Waupun Park Maple Forest,,,0.16,-88.752,43.646,0.981,0.0,0.0,0.0,0.006,0.016,0,0.0,0.0,0,0.978,0.0,0.0,0.0,0.459,high_candidate,False,False,True,False,unfit
+wisconsin_sna,New Munster Bog Island,,,0.17,-88.228,42.566,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.166,high_candidate,False,False,True,False,review
+wisconsin_sna,Marinette County Beech Forest,,,0.15,-88.328,45.445,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.025,high_candidate,False,False,True,False,review
+wisconsin_sna,Sander's Park Hardwoods,,,0.13,-87.84,42.674,0.986,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.352,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Toft Point,,,2.8,-87.086,45.07,0.898,0.0,0.0,0.0,0.0,0.05,0,0.0,0.0,0,0.88,0.038,0.03,0.0,0.065,high_candidate,False,False,True,False,review
+wisconsin_sna,Spruce Lake Bog,,,0.59,-88.202,43.671,0.827,0.0,0.0,0.0,0.0,0.007,0,0.0,0.0,0,0.804,0.134,0.054,0.0,0.133,high_candidate,False,False,True,False,review
+wisconsin_sna,Tamarack Creek Bog,,,0.57,-91.45,44.153,0.606,0.0,0.0,0.001,0.0,0.444,0,0.0,0.0,0,0.555,0.0,0.0,0.0,0.205,high_candidate,False,False,True,False,review
+wisconsin_sna,Cedarburg Beech Woods,,,0.3,-88.027,43.386,0.966,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.0,0.141,high_candidate,False,False,True,False,review
+wisconsin_sna,Waterloo Prairie,,,0.89,-88.959,43.198,0.133,0.0,0.0,0.0,0.46,0.344,0,0.0,0.0,0,0.181,0.0,0.015,0.0,0.313,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Solon Springs Sharptail Barrens,,,0.92,-91.827,46.306,0.407,0.006,0.0,0.0,0.0,0.383,0,0.0,0.0,0,0.584,0.001,0.032,0.0,0.102,high_candidate,False,False,True,False,review
+wisconsin_sna,Eagle Oak Opening,,,0.42,-88.534,42.866,0.939,0.0,0.0,0.0,0.0,0.021,0,0.0,0.0,0,0.979,0.0,0.0,0.0,0.125,high_candidate,False,False,True,False,review
+wisconsin_sna,Avoca Prairie and Savanna,,,8.94,-90.318,43.198,0.465,0.0,0.002,0.0,0.036,0.455,0,0.0,0.0,0,0.462,0.041,0.004,0.0,0.134,high_candidate,False,False,True,False,review
+wisconsin_sna,Blue River Sand Barrens,,,0.52,-90.533,43.193,0.191,0.0,0.004,0.0,0.0,0.751,0,0.0,0.0,0,0.246,0.0,0.0,0.0,0.196,high_candidate,False,False,True,False,review
+wisconsin_sna,Lawrence Creek,,,1.17,-89.61,43.897,0.661,0.315,0.0,0.0,0.0,0.364,0,0.0,0.0,0,0.635,0.001,0.0,0.0,0.179,high_candidate,False,True,True,False,unfit
+wisconsin_sna,Kohler Park Dunes,,,0.62,-87.72,43.665,0.067,0.002,0.091,0.031,0.0,0.699,0,0.0,0.0,0,0.16,0.018,0.0,0.0,0.586,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Cady's Marsh,,,0.33,-89.967,43.522,0.902,0.002,0.0,0.0,0.0,0.062,0,0.0,0.0,0,0.938,0.0,0.0,0.0,0.355,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Gibraltar Rock,,,0.27,-89.602,43.346,0.985,0.0,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.998,0.0,0.0,0.0,0.168,high_candidate,False,False,True,False,review
+wisconsin_sna,Flora Spring Pond,,,0.17,-88.81,45.2,0.816,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.833,0.087,0.08,1.0,0.021,high_candidate,False,False,False,False,clean
+wisconsin_sna,Holmboe Conifer Forest,,,0.14,-89.422,45.627,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.994,0.006,0.0,0.0,0.396,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Nelson-Trevino Bottoms,,,14.6,-92.049,44.41,0.911,0.001,0.0,0.001,0.006,0.066,0,0.0,0.0,0,0.872,0.017,0.038,0.0,0.088,high_candidate,False,False,True,False,review
+wisconsin_sna,Baxter's Hollow,,,24.5,-89.816,43.403,0.929,0.002,0.0,0.0,0.005,0.046,0,0.0,0.0,0,0.949,0.0,0.0,0.094,0.096,high_candidate,False,False,True,False,review
+wisconsin_sna,Moquah Barrens,,,2.49,-91.21,46.624,0.975,0.009,0.0,0.0,0.0,0.011,0,0.0,0.0,0,0.989,0.0,0.0,0.468,0.095,high_candidate,False,False,True,False,review
+wisconsin_sna,Schmidt Maple Woods,,,0.35,-90.907,44.91,0.882,0.0,0.0,0.0,0.001,0.009,0,0.0,0.0,0,0.989,0.0,0.0,0.0,0.183,high_candidate,False,False,True,False,review
+wisconsin_sna,Lower Chippewa River,,,0.8,-91.926,44.74,0.51,0.0,0.0,0.0,0.115,0.256,0,0.0,0.0,0,0.612,0.017,0.001,0.0,0.183,high_candidate,True,False,True,False,review
+wisconsin_sna,Tiffany Bottoms,,,2.9,-92.03,44.522,0.942,0.0,0.0,0.0,0.0,0.067,0,0.0,0.0,0,0.929,0.004,0.0,0.193,0.038,high_candidate,False,False,True,False,review
+wisconsin_sna,Audubon Goose Pond,,,0.33,-89.366,43.319,0.002,0.0,0.0,0.01,0.229,0.308,0,0.0,0.0,0,0.024,0.366,0.063,0.0,0.479,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Cave Point-Clay Banks,,,2.5,-87.218,44.878,0.976,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.974,0.025,0.0,0.0,0.076,high_candidate,False,False,True,False,review
+wisconsin_sna,Kettle Moraine Low Prairie,,,1.01,-88.486,42.913,0.659,0.0,0.0,0.0,0.002,0.317,0,0.0,0.0,0,0.662,0.0,0.018,0.0,0.137,high_candidate,False,False,True,False,review
+wisconsin_sna,Wyalusing Walnut Forest,,,0.55,-91.121,42.995,0.955,0.001,0.0,0.0,0.032,0.041,0,0.0,0.0,0,0.841,0.04,0.046,0.0,0.096,high_candidate,False,False,True,False,review
+wisconsin_sna,Honey Creek,,,1.73,-89.986,43.374,0.881,0.0,0.0,0.0,0.016,0.069,0,0.0,0.0,0,0.916,0.0,0.0,0.763,0.121,high_candidate,False,False,False,False,clean
+wisconsin_sna,Milwaukee River and Swamp,,,3.35,-88.188,43.599,0.982,0.001,0.0,0.0,0.0,0.109,0,0.0,0.0,0,0.883,0.0,0.008,0.0,0.097,high_candidate,False,False,True,False,review
+wisconsin_sna,Spring Lake,,,0.19,-88.202,43.596,0.704,0.0,0.0,0.0,0.0,0.022,0,0.0,0.0,0,0.719,0.26,0.0,0.0,0.217,high_candidate,False,False,True,False,review
+wisconsin_sna,Renak - Polak Maple-Beech Woods,,,0.43,-87.863,42.805,0.873,0.0,0.0,0.005,0.009,0.078,0,0.0,0.0,0,0.908,0.0,0.0,0.0,0.311,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Muir Park,,,0.64,-89.39,43.689,0.443,0.0,0.0,0.003,0.0,0.407,0,0.0,0.0,0,0.417,0.163,0.009,0.0,0.194,high_candidate,False,False,True,False,review
+wisconsin_sna,South Bluff/Devil's Nose,,,14.14,-89.729,43.4,0.981,0.0,0.0,0.002,0.0,0.005,0,0.0,0.0,0,0.993,0.0,0.0,0.0,0.102,high_candidate,False,False,True,False,review
+wisconsin_sna,East Bluff,,,1.03,-89.716,43.416,0.857,0.001,0.019,0.003,0.0,0.032,0,0.0,0.0,0,0.946,0.0,0.0,0.0,0.191,high_candidate,False,False,True,False,review
+wisconsin_sna,Karcher Springs,,,0.12,-88.252,42.613,0.547,0.0,0.0,0.007,0.0,0.296,0,0.0,0.0,0,0.698,0.0,0.0,0.0,0.271,high_candidate,False,False,True,False,review
+wisconsin_sna,Fountain Creek Wet Prairie,,,1.02,-89.211,43.701,0.292,0.001,0.0,0.001,0.063,0.712,0,0.0,0.0,0,0.224,0.0,0.0,0.264,0.255,high_candidate,True,False,True,False,review
+wisconsin_sna,Tellock's Hill Woods,,,0.21,-88.862,44.556,0.938,0.0,0.0,0.0,0.0,0.007,0,0.0,0.0,0,0.993,0.0,0.0,0.0,0.253,high_candidate,False,False,True,False,review
+wisconsin_sna,Peninsula Park White Cedar Forest,,,0.53,-87.235,45.136,0.788,0.0,0.0,0.008,0.0,0.098,0,0.0,0.0,0,0.837,0.017,0.04,0.0,0.163,high_candidate,False,False,True,False,review
+wisconsin_sna,Beaver Brook,,,1.24,-91.862,45.792,0.924,0.022,0.0,0.0,0.0,0.047,0,0.0,0.0,0,0.904,0.033,0.016,0.0,0.115,high_candidate,False,False,True,False,review
+wisconsin_sna,Lampson Moraine Pines,,,0.48,-91.867,45.969,1.0,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.983,0.026,high_candidate,False,False,False,False,clean
+wisconsin_sna,Dunbar Barrens,,,5.72,-88.251,45.673,0.59,0.113,0.0,0.0,0.0,0.673,0,0.0,0.0,0,0.327,0.0,0.0,0.946,0.039,high_candidate,False,True,False,False,review
+wisconsin_sna,Natural Bridge and Rockshelter,,,0.25,-89.931,43.35,0.998,0.0,0.0,0.0,0.0,0.003,0,0.0,0.0,0,0.997,0.0,0.0,0.0,0.109,high_candidate,False,False,True,False,review
+wisconsin_sna,Peat Lake,,,0.92,-88.155,42.499,0.178,0.0,0.0,0.001,0.003,0.64,0,0.0,0.0,0,0.166,0.144,0.045,0.0,0.352,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Dells of the Eau Claire River,,,0.17,-89.342,45.004,1.0,0.0,0.0,0.009,0.0,0.0,0,0.0,0.0,0,0.991,0.0,0.0,0.0,0.183,high_candidate,False,False,True,False,review
+wisconsin_sna,Jackson Harbor Ridges,,,0.27,-86.855,45.397,0.758,0.0,0.006,0.006,0.0,0.044,0,0.0,0.0,0,0.847,0.095,0.002,0.0,0.211,high_candidate,False,False,True,False,review
+wisconsin_sna,Bean Lake,,,0.8,-88.943,43.06,0.729,0.0,0.0,0.0,0.009,0.054,0,0.0,0.0,0,0.767,0.169,0.001,0.0,0.116,high_candidate,False,False,True,False,review
+wisconsin_sna,Kelly Lynn Bog,,,3.14,-89.307,45.461,0.879,0.007,0.0,0.0,0.0,0.365,0,0.0,0.007,0,0.587,0.0,0.041,0.849,0.021,high_candidate,False,False,False,False,clean
+wisconsin_sna,Lake Helane,,,1.58,-91.24,46.123,0.896,0.002,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.872,0.117,0.009,0.095,0.064,high_candidate,False,False,True,False,review
+wisconsin_sna,Navarino Cedar Swamp,,,1.82,-88.519,44.698,0.997,0.002,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.206,0.031,high_candidate,False,False,True,False,review
+wisconsin_sna,Navarino Sedge Meadow,,,1.34,-88.503,44.676,0.173,0.0,0.0,0.0,0.0,0.859,0,0.0,0.0,0,0.141,0.0,0.0,0.193,0.094,high_candidate,False,False,True,False,review
+wisconsin_sna,Goose Lake,,,0.27,-91.609,46.223,0.265,0.068,0.0,0.0,0.0,0.032,0,0.0,0.0,0,0.299,0.369,0.299,0.737,0.023,high_candidate,False,False,False,False,clean
+wisconsin_sna,Nemadji River Floodplain Forest,,,1.49,-92.099,46.615,0.994,0.001,0.0,0.0,0.0,0.017,0,0.0,0.0,0,0.982,0.001,0.0,0.0,0.09,high_candidate,False,False,True,False,review
+wisconsin_sna,Big Rock Pines,,,0.64,-90.923,46.714,1.0,0.0,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.998,0.0,0.0,0.0,0.082,high_candidate,False,False,True,False,review
+wisconsin_sna,North Pikes Creek Boreal Forest,,,1.6,-90.893,46.798,0.986,0.013,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.044,0.065,high_candidate,False,False,True,False,review
+wisconsin_sna,Gobler Lake,,,0.3,-89.876,45.642,0.981,0.0,0.0,0.0,0.0,0.314,0,0.0,0.0,0,0.675,0.0,0.011,0.91,0.01,high_candidate,False,False,False,False,clean
+wisconsin_sna,Gobler Lake,,,0.3,-89.866,45.642,0.923,0.0,0.0,0.0,0.0,0.279,0,0.0,0.0,0,0.7,0.0,0.02,0.747,0.022,high_candidate,False,False,False,False,clean
+wisconsin_sna,Ottawa Lake Fen,,,0.18,-88.48,42.941,0.44,0.0,0.0,0.0,0.0,0.201,0,0.0,0.0,0,0.523,0.2,0.076,0.0,0.207,high_candidate,False,False,True,False,review
+wisconsin_sna,Jung Hemlock-Beech Forest,,,0.32,-88.769,44.808,0.925,0.005,0.0,0.0,0.001,0.04,0,0.0,0.0,0,0.959,0.0,0.0,0.0,0.172,high_candidate,False,False,True,False,review
+wisconsin_sna,Cherokee Marsh,,,1.15,-89.344,43.163,0.111,0.0,0.0,0.0,0.023,0.915,0,0.0,0.0,0,0.06,0.0,0.002,0.0,0.377,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Powers Bluff Maple Woods,,,0.24,-90.067,44.53,0.986,0.008,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.151,high_candidate,False,False,True,False,review
+wisconsin_sna,Young Prairie,,,3.26,-88.628,42.847,0.71,0.0,0.0,0.001,0.053,0.143,0,0.0,0.0,0,0.802,0.0,0.002,0.0,0.197,high_candidate,True,False,True,False,review
+wisconsin_sna,Putnam Park,,,0.45,-91.515,44.798,0.983,0.005,0.0,0.001,0.0,0.006,0,0.0,0.0,0,0.973,0.02,0.0,0.0,0.756,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Kewaskum Maple-Oak Woods,,,0.17,-88.209,43.507,0.995,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.259,high_candidate,False,False,True,False,review
+wisconsin_sna,Bark Bay Slough,,,2.61,-91.208,46.85,0.699,0.002,0.001,0.001,0.0,0.354,0,0.0,0.0,0,0.349,0.105,0.191,0.0,0.115,high_candidate,False,False,True,False,review
+wisconsin_sna,Muralt Bluff Prairie,,,0.27,-89.493,42.7,0.444,0.002,0.0,0.0,0.032,0.461,0,0.0,0.0,0,0.506,0.0,0.0,0.0,0.26,high_candidate,False,False,True,False,review
+wisconsin_sna,Hook Lake Bog,,,2.13,-89.337,42.945,0.602,0.006,0.0,0.0,0.005,0.402,0,0.0,0.0,0,0.318,0.02,0.256,0.0,0.187,high_candidate,False,False,True,False,review
+wisconsin_sna,Waterloo Quartzite Outcrops,,,0.1,-88.83,43.273,0.919,0.0,0.0,0.0,0.003,0.024,0,0.0,0.0,0,0.973,0.0,0.0,0.0,0.352,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Muskego Park Hardwoods,,,0.25,-88.162,42.9,0.909,0.0,0.0,0.002,0.0,0.0,0,0.0,0.0,0,0.964,0.034,0.0,0.0,0.47,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Newark Road Prairie,,,0.13,-89.14,42.542,0.159,0.0,0.0,0.001,0.021,0.663,0,0.0,0.0,0,0.309,0.0,0.005,0.0,0.473,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Dory's Bog and Hunt Hill,,,0.64,-91.71,45.726,0.882,0.001,0.0,0.0,0.0,0.183,0,0.0,0.0,0,0.796,0.013,0.007,0.0,0.157,high_candidate,False,False,True,False,review
+wisconsin_sna,Cherry Lake Sedge Meadow,,,0.32,-88.244,42.726,0.931,0.0,0.0,0.0,0.0,0.079,0,0.0,0.0,0,0.868,0.0,0.053,0.0,0.195,high_candidate,False,False,True,False,review
+wisconsin_sna,Plagge Woods,,,0.33,-91.199,45.276,0.988,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.128,0.089,high_candidate,False,False,True,False,review
+wisconsin_sna,Beulah Bog,,,0.32,-88.411,42.818,0.843,0.0,0.0,0.003,0.015,0.054,0,0.0,0.0,0,0.915,0.013,0.0,0.0,0.336,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Comstock Bog-Meadow,,,2.65,-89.291,43.878,0.344,0.001,0.0,0.0,0.012,0.417,0,0.0,0.0,0,0.354,0.0,0.216,0.0,0.098,high_candidate,False,False,True,False,review
+wisconsin_sna,Chippewa Trail,,,3.57,-90.004,45.932,0.952,0.001,0.0,0.0,0.0,0.051,0,0.0,0.0,0,0.913,0.005,0.031,0.115,0.089,high_candidate,False,False,True,False,review
+wisconsin_sna,Kieper Creek,,,3.53,-88.494,45.909,0.93,0.043,0.0,0.0,0.0,0.037,0,0.0,0.0,0,0.951,0.001,0.01,0.885,0.029,high_candidate,False,False,False,False,clean
+wisconsin_sna,Rush Creek,,,0.46,-91.128,43.404,0.83,0.0,0.0,0.0,0.003,0.06,0,0.0,0.0,0,0.937,0.0,0.0,0.523,0.148,high_candidate,False,False,True,False,review
+wisconsin_sna,Trout Lake Conifer Swamp,,,0.09,-89.659,46.013,0.923,0.077,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.299,high_candidate,False,False,True,False,review
+wisconsin_sna,Waubesa Wetlands,,,0.78,-89.354,42.991,0.346,0.0,0.0,0.0,0.009,0.522,0,0.0,0.0,0,0.454,0.0,0.015,0.0,0.283,high_candidate,False,False,True,False,review
+wisconsin_sna,Mud Lake,,,0.64,-87.115,45.136,0.929,0.002,0.0,0.001,0.0,0.066,0,0.0,0.0,0,0.933,0.0,0.0,0.0,0.06,high_candidate,False,False,True,False,review
+wisconsin_sna,Osceola Bedrock Glades,,,0.03,-92.682,45.352,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.267,high_candidate,False,False,True,False,review
+wisconsin_sna,Gobler Lake,,,0.49,-89.866,45.65,0.976,0.0,0.0,0.0,0.0,0.357,0,0.0,0.0,0,0.625,0.0,0.018,1.0,0.007,high_candidate,False,False,False,False,clean
+wisconsin_sna,Gobler Lake,,,0.17,-89.856,45.647,0.977,0.005,0.0,0.0,0.0,0.099,0,0.0,0.0,0,0.901,0.0,0.0,1.0,0.012,high_candidate,False,False,False,False,clean
+wisconsin_sna,St. Croix Islands,,,3.45,-92.744,45.158,0.625,0.014,0.0,0.0,0.108,0.302,0,0.0,0.0,0,0.27,0.172,0.148,0.0,0.074,high_candidate,True,False,True,False,review
+wisconsin_sna,Cylon,,,0.63,-92.351,45.182,0.513,0.005,0.0,0.0,0.0,0.449,0,0.0,0.0,0,0.499,0.0,0.052,0.0,0.143,high_candidate,False,False,True,False,review
+wisconsin_sna,Lower Narrows,,,0.43,-89.638,43.496,0.849,0.0,0.0,0.001,0.0,0.029,0,0.0,0.0,0,0.97,0.0,0.0,0.0,0.389,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Pleasant Valley Conservancy,,,0.58,-89.807,43.106,0.599,0.019,0.0,0.005,0.019,0.24,0,0.0,0.0,0,0.736,0.0,0.0,0.0,0.277,high_candidate,False,False,True,False,review
+wisconsin_sna,Moose River Cedar Hills,,,2.43,-90.979,46.011,0.949,0.005,0.0,0.0,0.0,0.027,0,0.0,0.0,0,0.972,0.0,0.001,0.812,0.013,high_candidate,False,False,False,False,clean
+wisconsin_sna,Beaver Creek,,,2.82,-89.136,46.0,0.931,0.022,0.0,0.0,0.0,0.042,0,0.0,0.0,0,0.956,0.0,0.002,0.618,0.053,high_candidate,False,False,True,False,review
+wisconsin_sna,Rush Creek,,,0.21,-91.135,43.421,0.998,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.164,0.083,high_candidate,False,False,True,False,review
+wisconsin_sna,Rush Creek,,,0.06,-91.124,43.408,0.933,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.048,high_candidate,False,False,True,False,review
+wisconsin_sna,East Fork Chippewa River,,,4.86,-90.703,46.042,0.989,0.004,0.0,0.0,0.0,0.008,0,0.0,0.0,0,0.99,0.001,0.002,0.46,0.052,high_candidate,False,False,True,False,review
+wisconsin_sna,Hedmark Pines,,,3.42,-88.562,45.765,0.948,0.004,0.0,0.0,0.0,0.115,0,0.0,0.0,0,0.88,0.0,0.005,0.693,0.007,high_candidate,False,False,True,False,review
+wisconsin_sna,Diamond Roof,,,6.05,-88.69,45.348,0.964,0.003,0.0,0.0,0.0,0.053,0,0.0,0.0,0,0.931,0.016,0.0,0.567,0.02,high_candidate,False,False,True,False,review
+wisconsin_sna,Woods Creek,,,1.73,-88.571,45.829,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.823,0.012,high_candidate,False,False,False,False,clean
+wisconsin_sna,Spring Brook Drumlins,,,12.81,-90.686,45.986,0.975,0.001,0.0,0.0,0.0,0.048,0,0.0,0.001,0,0.95,0.0,0.002,0.834,0.024,high_candidate,False,False,False,False,clean
+wisconsin_sna,Elk River Valley,,,5.85,-90.142,45.744,0.99,0.0,0.0,0.0,0.0,0.013,0,0.0,0.0,0,0.987,0.0,0.0,0.718,0.031,high_candidate,False,False,False,False,clean
+wisconsin_sna,Mondeaux Hardwoods,,,11.42,-90.458,45.313,0.978,0.003,0.0,0.0,0.0,0.016,0,0.0,0.0,0,0.981,0.0,0.002,0.485,0.079,high_candidate,False,False,True,False,review
+wisconsin_sna,Lost Lake Esker,,,5.12,-90.554,45.271,0.978,0.0,0.0,0.0,0.0,0.02,0,0.0,0.0,0,0.978,0.001,0.002,0.578,0.062,high_candidate,False,False,True,False,review
+wisconsin_sna,White Cliff Fen and Forest,,,0.4,-87.273,45.073,0.934,0.008,0.0,0.0,0.0,0.009,0,0.0,0.0,0,0.968,0.0,0.022,0.0,0.137,high_candidate,False,False,True,False,review
+wisconsin_sna,Chimney Rock Oak Savanna,,,0.12,-91.462,44.486,0.987,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.186,high_candidate,False,False,True,False,review
+wisconsin_sna,Vosse Coulee,,,0.4,-91.169,44.339,0.514,0.024,0.0,0.021,0.008,0.406,0,0.0,0.0,0,0.566,0.0,0.0,0.0,0.33,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Blackjack Springs,,,5.66,-89.079,45.979,0.98,0.003,0.0,0.0,0.0,0.008,0,0.0,0.0,0,0.99,0.001,0.001,0.897,0.026,high_candidate,False,False,False,False,clean
+wisconsin_sna,Gasner Hollow Prairie,,,0.2,-91.12,42.919,0.912,0.0,0.0,0.0,0.0,0.003,0,0.0,0.0,0,0.996,0.0,0.0,0.0,0.452,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Town Corner Cedars,,,1.24,-88.08,45.534,0.934,0.035,0.0,0.0,0.0,0.007,0,0.0,0.0,0,0.956,0.037,0.001,0.633,0.039,high_candidate,False,False,True,False,review
+wisconsin_sna,Franklin & Butternut Lakes,,,6.27,-88.979,45.931,0.877,0.001,0.0,0.0,0.0,0.013,0,0.0,0.0,0,0.873,0.111,0.002,0.382,0.068,high_candidate,False,False,True,False,review
+wisconsin_sna,Arbutus Oaks,,,0.87,-90.694,44.425,0.95,0.036,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.974,0.026,0.0,0.542,0.193,high_candidate,False,False,True,False,review
+wisconsin_sna,East Fork of the Black River,,,2.08,-90.645,44.415,0.984,0.001,0.0,0.0,0.0,0.003,0,0.0,0.0,0,0.963,0.033,0.0,0.473,0.049,high_candidate,False,False,True,False,review
+wisconsin_sna,Wildcat Ridge,,,1.54,-90.61,44.263,0.771,0.225,0.0,0.0,0.0,0.201,0,0.0,0.0,0,0.799,0.0,0.0,0.757,0.025,high_candidate,False,True,False,False,review
+wisconsin_sna,Starlight Wetlands,,,4.26,-90.563,44.194,0.834,0.0,0.0,0.0,0.0,0.162,0,0.0,0.0,0,0.827,0.003,0.008,0.972,0.025,high_candidate,False,False,False,False,clean
+wisconsin_sna,Red Oak Bottoms,,,0.1,-90.062,44.382,1.0,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.175,0.081,high_candidate,False,False,True,False,review
+wisconsin_sna,Skunk Creek Woods,,,0.27,-90.261,44.384,0.925,0.0,0.0,0.0,0.0,0.061,0,0.0,0.0,0,0.939,0.0,0.0,0.48,0.074,high_candidate,False,False,True,False,review
+wisconsin_sna,Canoe Landing Prairie,,,0.18,-90.985,44.734,0.183,0.0,0.0,0.0,0.058,0.456,0,0.0,0.0,0,0.487,0.0,0.0,0.033,0.205,high_candidate,True,False,True,False,review
+wisconsin_sna,North Fork Eau Claire River,,,1.49,-90.966,44.775,0.98,0.0,0.0,0.0,0.0,0.003,0,0.0,0.0,0,0.995,0.002,0.0,0.841,0.054,high_candidate,False,False,False,False,clean
+wisconsin_sna,Pokegama Carnegie Wetlands,,,4.88,-92.148,46.633,0.975,0.001,0.0,0.0,0.0,0.079,0,0.0,0.0,0,0.921,0.001,0.0,0.0,0.08,high_candidate,False,False,True,False,review
+wisconsin_sna,Flat Lake,,,0.38,-91.732,46.325,0.343,0.063,0.0,0.0,0.0,0.046,0,0.0,0.0,0,0.339,0.527,0.088,0.0,0.035,high_candidate,False,False,True,True,review
+wisconsin_sna,Upper Nemadji River Floodplain Forest,,,3.04,-92.278,46.533,0.972,0.001,0.002,0.0,0.0,0.003,0,0.0,0.0,0,0.978,0.016,0.0,0.766,0.051,high_candidate,False,False,False,False,clean
+wisconsin_sna,Squirrel River Pines,,,2.6,-89.871,45.856,0.988,0.008,0.0,0.0,0.0,0.058,0,0.0,0.0,0,0.918,0.0,0.024,0.326,0.036,high_candidate,False,False,True,False,review
+wisconsin_sna,Arena Pines and Sand Barrens,,,0.38,-89.93,43.18,0.93,0.01,0.0,0.0,0.0,0.045,0,0.0,0.0,0,0.955,0.0,0.0,0.0,0.156,high_candidate,False,False,True,False,review
+wisconsin_sna,Bakken's Pond,,,0.62,-90.148,43.179,0.373,0.006,0.0,0.02,0.193,0.347,0,0.0,0.0,0,0.417,0.0,0.023,0.0,0.314,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Mazomanie Oak Barrens,,,0.55,-89.742,43.24,0.552,0.0,0.0,0.009,0.0,0.55,0,0.0,0.0,0,0.441,0.0,0.0,0.0,0.226,high_candidate,False,False,True,False,review
+wisconsin_sna,Smith Slough and Sand Prairie,,,1.61,-90.219,43.182,0.579,0.004,0.0,0.0,0.026,0.289,0,0.0,0.0,0,0.61,0.002,0.074,0.0,0.195,high_candidate,False,False,True,False,review
+wisconsin_sna,Woodman Lake Sand Prairie and Dead Lake,,,1.16,-90.798,43.098,0.315,0.0,0.0,0.001,0.068,0.17,0,0.0,0.0,0,0.36,0.016,0.385,0.0,0.21,high_candidate,True,False,True,False,review
+wisconsin_sna,Woodland Dunes,,,1.56,-87.609,44.142,0.991,0.0,0.0,0.001,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.0,0.206,high_candidate,False,False,True,False,review
+wisconsin_sna,Milwaukee River Floodplain Forest,,,0.31,-88.198,43.503,0.972,0.0,0.0,0.0,0.0,0.022,0,0.0,0.0,0,0.978,0.0,0.0,0.0,0.179,high_candidate,False,False,True,False,review
+wisconsin_sna,Kettle Hole Woods,,,0.31,-88.155,43.594,0.984,0.0,0.0,0.0,0.0,0.017,0,0.0,0.0,0,0.979,0.004,0.0,0.0,0.112,high_candidate,False,False,True,False,review
+wisconsin_sna,Totagatic Highlands Hemlocks,,,0.65,-91.58,46.099,1.0,0.0,0.0,0.0,0.002,0.0,0,0.0,0.0,0,0.998,0.0,0.0,1.0,0.017,high_candidate,False,False,False,False,clean
+wisconsin_sna,Mud Lake Bog,,,0.63,-89.097,44.639,0.851,0.009,0.0,0.0,0.0,0.067,0,0.0,0.0,0,0.774,0.103,0.056,0.225,0.044,high_candidate,False,False,True,False,review
+wisconsin_sna,Millville Oak Woodlands,,,5.13,-90.929,43.048,0.963,0.001,0.0,0.0,0.0,0.021,0,0.0,0.0,0,0.968,0.01,0.001,0.391,0.115,high_candidate,False,False,True,False,review
+wisconsin_sna,Mayville Ledge Beech-Maple Woods,,,0.27,-88.539,43.456,0.961,0.0,0.0,0.0,0.0,0.008,0,0.0,0.0,0,0.992,0.0,0.0,0.0,0.312,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Genesee Oak Opening and Fen,,,0.2,-88.373,42.954,0.682,0.0,0.0,0.0,0.001,0.251,0,0.0,0.0,0,0.748,0.0,0.0,0.0,0.325,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Port Wing Boreal Forest,,,0.91,-91.368,46.793,0.758,0.011,0.032,0.002,0.001,0.264,0,0.0,0.0,0,0.521,0.097,0.083,0.0,0.281,high_candidate,False,False,True,False,review
+wisconsin_sna,Norway Point Bottomlands,,,0.12,-92.639,45.928,0.33,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.213,0.787,0.0,0.926,0.017,high_candidate,False,False,False,True,review
+wisconsin_sna,St. Croix Seeps,,,1.42,-92.874,45.687,0.669,0.0,0.0,0.0,0.0,0.003,0,0.0,0.0,0,0.646,0.349,0.002,0.049,0.083,high_candidate,False,False,True,False,review
+wisconsin_sna,Sterling Barrens,,,2.68,-92.751,45.556,0.64,0.003,0.0,0.0,0.002,0.091,0,0.0,0.0,0,0.599,0.297,0.011,0.325,0.061,high_candidate,False,False,True,False,review
+wisconsin_sna,Oshkosh - Larsen Trail Prairies,,,0.05,-88.625,44.164,0.045,0.0,0.0,0.0,0.542,0.097,0,0.0,0.0,0,0.361,0.0,0.0,0.0,0.509,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Big Bay Sand Spit and Bog,,,3.9,-90.693,46.802,0.802,0.004,0.001,0.0,0.0,0.055,0,0.0,0.0,0,0.699,0.146,0.099,0.0,0.045,high_candidate,False,False,True,False,review
+wisconsin_sna,Olson Oak Woods,,,0.66,-89.584,42.947,0.994,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.999,0.0,0.0,0.0,0.15,high_candidate,False,False,True,False,review
+wisconsin_sna,Keller Whitcomb Creek Woods,,,0.52,-89.067,44.588,0.992,0.008,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.048,high_candidate,False,False,True,False,review
+wisconsin_sna,Norway Point Bottomlands,,,16.15,-92.561,45.948,0.956,0.004,0.0,0.0,0.0,0.037,0,0.0,0.0,0,0.957,0.003,0.003,0.791,0.025,high_candidate,False,False,False,False,clean
+wisconsin_sna,Mukwa Bottomland Forest,,,0.69,-88.798,44.385,0.987,0.0,0.0,0.0,0.0,0.004,0,0.0,0.0,0,0.983,0.013,0.0,0.0,0.026,high_candidate,False,False,True,False,review
+wisconsin_sna,Brule River Boreal Forest,,,2.64,-91.603,46.716,0.999,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.989,0.01,0.0,0.181,0.027,high_candidate,False,False,True,False,review
+wisconsin_sna,Brule Glacial Spillway,,,10.75,-91.734,46.407,0.975,0.002,0.0,0.0,0.0,0.006,0,0.0,0.0,0,0.993,0.001,0.0,0.608,0.064,high_candidate,False,False,True,False,review
+wisconsin_sna,Kinnickinnic River Gorge and Delta,,,0.36,-92.759,44.827,0.897,0.0,0.0,0.0,0.0,0.055,0,0.0,0.0,0,0.85,0.033,0.061,0.0,0.086,high_candidate,False,False,True,False,review
+wisconsin_sna,"Oxbow Rapids, Upper Wolf River",,,0.62,-88.799,45.223,0.995,0.002,0.0,0.0,0.0,0.003,0,0.0,0.0,0,0.94,0.057,0.0,0.0,0.032,high_candidate,False,False,True,False,review
+wisconsin_sna,Dalles of the St. Croix River,,,0.35,-92.661,45.394,0.602,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.569,0.431,0.0,0.0,0.358,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Interstate Lowland Forest,,,0.5,-92.675,45.38,0.742,0.0,0.0,0.0,0.005,0.033,0,0.0,0.0,0,0.682,0.276,0.004,0.0,0.096,high_candidate,False,False,True,False,review
+wisconsin_sna,Sohlberg Silver Lake,,,1.25,-89.908,43.891,0.914,0.007,0.0,0.002,0.0,0.076,0,0.0,0.0,0,0.852,0.047,0.023,0.0,0.102,high_candidate,False,False,True,False,review
+wisconsin_sna,Belmont Mound Woods,,,0.35,-90.353,42.775,0.995,0.001,0.0,0.0,0.004,0.032,0,0.0,0.0,0,0.964,0.0,0.0,0.0,0.162,high_candidate,False,False,True,False,review
+wisconsin_sna,Snapper Prairie,,,0.12,-88.889,43.163,0.0,0.0,0.0,0.0,0.761,0.239,0,0.0,0.0,0,0.0,0.0,0.0,0.0,0.421,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Kurtz Woods,,,0.18,-87.954,43.363,0.931,0.0,0.0,0.0,0.0,0.021,0,0.0,0.0,0,0.979,0.0,0.0,0.0,0.51,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Sajdak Springs,,,0.13,-91.205,46.435,0.989,0.011,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.744,0.022,high_candidate,False,False,False,False,clean
+wisconsin_sna,Whitman Bottoms Floodplain Forest,,,0.66,-91.8,44.166,0.893,0.0,0.0,0.0,0.0,0.075,0,0.0,0.0,0,0.887,0.003,0.034,0.0,0.058,high_candidate,False,False,True,False,review
+wisconsin_sna,Tula Lake,,,0.65,-92.314,45.629,0.9,0.0,0.0,0.0,0.0,0.013,0,0.0,0.0,0,0.892,0.08,0.015,0.434,0.038,high_candidate,False,False,True,False,review
+wisconsin_sna,Whitefish Dunes,,,1.66,-87.196,44.926,0.832,0.0,0.004,0.001,0.0,0.055,0,0.0,0.0,0,0.931,0.007,0.001,0.0,0.326,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Bass Lake Fen,,,0.39,-89.281,44.004,0.387,0.0,0.0,0.0,0.038,0.495,0,0.0,0.0,0,0.392,0.016,0.058,0.0,0.138,high_candidate,False,False,True,False,review
+wisconsin_sna,Myklebust Lake,,,0.69,-89.132,44.492,0.802,0.0,0.0,0.002,0.001,0.077,0,0.0,0.0,0,0.812,0.098,0.009,0.0,0.208,high_candidate,False,False,True,False,review
+wisconsin_sna,Shaky Lake,,,0.9,-88.725,44.312,0.408,0.0,0.0,0.0,0.006,0.521,0,0.0,0.0,0,0.377,0.001,0.095,0.0,0.045,high_candidate,False,False,True,False,review
+wisconsin_sna,New Hope Pines,,,0.69,-89.274,44.573,0.974,0.003,0.0,0.0,0.0,0.012,0,0.0,0.0,0,0.973,0.002,0.013,0.0,0.08,high_candidate,False,False,True,False,review
+wisconsin_sna,La Crosse River Trail Prairies,,,0.29,-90.945,43.897,0.123,0.0,0.0,0.154,0.282,0.163,0,0.0,0.0,0,0.401,0.0,0.0,0.0,0.713,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Oakfield Ledge,,,0.85,-88.557,43.672,0.511,0.0,0.0,0.001,0.073,0.318,0,0.0,0.0,0,0.609,0.0,0.0,0.0,0.382,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Kissick Alkaline Bog,,,0.56,-91.536,46.017,0.905,0.0,0.0,0.0,0.0,0.025,0,0.0,0.0,0,0.916,0.045,0.013,0.0,0.093,high_candidate,False,False,True,False,review
+wisconsin_sna,Pope Lake,,,0.22,-89.194,44.328,0.765,0.0,0.0,0.0,0.0,0.032,0,0.0,0.0,0,0.771,0.177,0.02,0.0,0.113,high_candidate,False,False,True,False,review
+wisconsin_sna,Ipswich Prairie,,,0.07,-90.425,42.693,0.0,0.0,0.0,0.014,0.735,0.143,0,0.0,0.0,0,0.108,0.0,0.0,0.0,0.55,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Riveredge Creek & Ephemeral Pond,,,0.25,-88.021,43.437,0.96,0.0,0.0,0.0,0.0,0.008,0,0.0,0.0,0,0.992,0.0,0.0,0.0,0.206,high_candidate,False,False,True,False,review
+wisconsin_sna,Roche-a-Cri Woods,,,1.91,-89.824,44.002,0.808,0.09,0.0,0.013,0.001,0.072,0,0.0,0.0,0,0.914,0.0,0.0,0.0,0.236,high_candidate,False,False,True,False,review
+wisconsin_sna,Milllston Ridge Barrens,,,0.78,-90.664,44.163,0.968,0.019,0.0,0.0,0.0,0.016,0,0.0,0.0,0,0.984,0.0,0.0,0.061,0.037,high_candidate,False,False,True,False,review
+wisconsin_sna,Waazija Haci,,,0.58,-90.765,44.34,0.716,0.003,0.0,0.007,0.0,0.03,0,0.0,0.0,0,0.963,0.0,0.0,0.0,0.295,high_candidate,False,False,True,False,review
+wisconsin_sna,Komensky Barrens,,,7.41,-90.682,44.367,0.456,0.03,0.0,0.002,0.0,0.269,0,0.0,0.0,0,0.729,0.0,0.0,0.137,0.127,high_candidate,False,False,True,False,review
+wisconsin_sna,High Cliff Escarpment,,,0.74,-88.305,44.147,0.922,0.0,0.0,0.002,0.0,0.023,0,0.0,0.0,0,0.934,0.041,0.0,0.0,0.259,high_candidate,False,False,True,False,review
+wisconsin_sna,Lulu Lake,,,5.0,-88.436,42.836,0.503,0.0,0.0,0.001,0.076,0.342,0,0.0,0.0,0,0.535,0.005,0.04,0.0,0.251,high_candidate,True,False,True,False,review
+wisconsin_sna,Lost Lake,,,0.68,-89.532,43.48,0.985,0.001,0.0,0.0,0.0,0.003,0,0.0,0.0,0,0.995,0.002,0.0,0.0,0.105,high_candidate,False,False,True,False,review
+wisconsin_sna,Kessler Railroad Prairie,,,0.05,-89.143,42.633,0.412,0.0,0.0,0.0,0.071,0.22,0,0.0,0.0,0,0.709,0.0,0.0,0.0,0.387,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Pewits Nest,,,0.14,-89.791,43.452,0.887,0.0,0.0,0.007,0.001,0.031,0,0.0,0.0,0,0.961,0.0,0.0,0.0,0.409,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Hiles Wetlands,,,2.27,-90.274,44.38,0.391,0.0,0.0,0.0,0.0,0.629,0,0.0,0.0,0,0.368,0.0,0.003,0.441,0.075,high_candidate,False,False,True,False,review
+wisconsin_sna,Owl Creek Fen Savanna,,,3.3,-90.087,44.391,0.474,0.0,0.0,0.0,0.0,0.628,0,0.0,0.0,0,0.372,0.0,0.0,0.733,0.048,high_candidate,False,False,False,False,clean
+wisconsin_sna,Upper Black River,,,6.21,-90.754,44.35,0.908,0.01,0.004,0.0,0.001,0.012,0,0.0,0.0,0,0.895,0.084,0.003,0.009,0.139,high_candidate,False,False,True,False,review
+wisconsin_sna,Washburn Marsh,,,2.45,-90.637,44.248,0.662,0.002,0.0,0.0,0.0,0.326,0,0.0,0.0,0,0.674,0.0,0.0,0.921,0.019,high_candidate,False,False,False,False,clean
+wisconsin_sna,Coon Creek Cliffs,,,0.11,-90.987,43.714,1.0,0.0,0.0,0.002,0.0,0.002,0,0.0,0.0,0,0.996,0.0,0.0,0.0,0.466,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Rush River Delta,,,1.62,-92.329,44.564,0.668,0.0,0.001,0.009,0.065,0.135,0,0.0,0.0,0,0.722,0.04,0.028,0.0,0.274,high_candidate,True,False,True,False,review
+wisconsin_sna,Cranberry Creek Mound Group,,,2.73,-90.064,44.162,0.784,0.123,0.0,0.004,0.0,0.08,0,0.0,0.0,0,0.915,0.0,0.0,0.282,0.107,high_candidate,False,True,True,False,review
+wisconsin_sna,Morgan Coulee Prairie,,,0.24,-92.312,44.613,0.682,0.0,0.0,0.0,0.0,0.061,0,0.0,0.0,0,0.939,0.0,0.0,0.0,0.121,high_candidate,False,False,True,False,review
+wisconsin_sna,McGilvra Woods,,,0.29,-89.815,43.45,0.852,0.0,0.0,0.001,0.023,0.109,0,0.0,0.0,0,0.866,0.0,0.0,0.0,0.366,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Ohmart Wetlands,,,2.9,-91.426,45.265,0.509,0.0,0.0,0.0,0.009,0.648,0,0.0,0.0,0,0.293,0.0,0.049,0.0,0.043,high_candidate,False,False,True,False,review
+wisconsin_sna,Berlin Fen,,,0.08,-88.905,43.963,0.047,0.0,0.0,0.0,0.028,0.907,0,0.0,0.0,0,0.066,0.0,0.0,0.0,0.736,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Sapa Spruce Bog,,,0.1,-88.029,43.394,0.953,0.0,0.0,0.0,0.029,0.014,0,0.0,0.0,0,0.957,0.0,0.0,0.0,0.294,high_candidate,False,False,True,False,review
+wisconsin_sna,Pickerel Lake Fen,,,0.38,-88.444,42.803,0.312,0.0,0.0,0.0,0.274,0.134,0,0.0,0.0,0,0.561,0.002,0.029,0.0,0.294,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Black Earth Rettenmund Prairie,,,0.07,-89.774,43.138,0.035,0.0,0.0,0.002,0.284,0.68,0,0.0,0.0,0,0.033,0.0,0.0,0.0,0.529,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Bass Lake Preserve,,,3.41,-90.024,46.0,0.901,0.023,0.0,0.0,0.0,0.065,0,0.0,0.0,0,0.913,0.018,0.004,0.845,0.027,high_candidate,False,False,False,False,clean
+wisconsin_sna,Baraboo River Floodplain Forest,,,0.09,-89.487,43.504,0.89,0.0,0.0,0.05,0.0,0.0,0,0.0,0.0,0,0.95,0.0,0.0,0.0,0.379,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Clover Valley Fen,,,0.27,-88.704,42.786,0.263,0.0,0.0,0.0,0.036,0.208,0,0.0,0.0,0,0.741,0.0,0.015,0.0,0.262,high_candidate,False,False,True,False,review
+wisconsin_sna,Hortonville Bog,,,3.11,-88.669,44.398,0.914,0.0,0.0,0.0,0.001,0.257,0,0.0,0.0,0,0.742,0.0,0.0,0.0,0.07,high_candidate,False,False,True,False,review
+wisconsin_sna,Red Cedar Lake,,,1.79,-88.977,42.977,0.139,0.0,0.0,0.0,0.001,0.125,0,0.0,0.0,0,0.126,0.194,0.554,0.0,0.242,high_candidate,False,False,True,False,review
+wisconsin_sna,Patterson Hemlocks,,,1.23,-89.97,45.896,0.979,0.001,0.0,0.0,0.0,0.007,0,0.0,0.0,0,0.992,0.001,0.001,0.0,0.097,high_candidate,False,False,True,False,review
+wisconsin_sna,Ferry Bluff,,,1.89,-89.82,43.238,0.943,0.002,0.0,0.0,0.007,0.018,0,0.0,0.0,0,0.973,0.001,0.0,0.0,0.104,high_candidate,False,False,True,False,review
+wisconsin_sna,Mink River Estuary,,,7.23,-87.038,45.244,0.813,0.0,0.0,0.001,0.0,0.123,0,0.0,0.0,0,0.802,0.021,0.053,0.0,0.096,high_candidate,False,False,True,False,review
+wisconsin_sna,Lima Bog,,,0.69,-88.843,42.816,0.629,0.0,0.0,0.0,0.021,0.076,0,0.0,0.0,0,0.79,0.001,0.112,0.0,0.124,high_candidate,False,False,True,False,review
+wisconsin_sna,Wauzeka Bottoms,,,3.56,-90.862,43.083,0.95,0.001,0.0,0.001,0.002,0.013,0,0.0,0.0,0,0.941,0.018,0.026,0.0,0.141,high_candidate,False,False,True,False,review
+wisconsin_sna,Eureka Maple Woods,,,0.2,-90.871,43.738,0.853,0.035,0.0,0.0,0.014,0.198,0,0.0,0.0,0,0.788,0.0,0.0,0.0,0.248,high_candidate,False,False,True,False,review
+wisconsin_sna,Observatory Hill,,,0.72,-89.341,43.706,0.721,0.221,0.0,0.001,0.0,0.279,0,0.0,0.0,0,0.72,0.0,0.0,0.0,0.298,high_candidate,False,True,True,False,review
+wisconsin_sna,Mud Lake-Radley Creek Savanna,,,0.4,-89.169,44.281,0.894,0.0,0.0,0.0,0.0,0.108,0,0.0,0.0,0,0.798,0.0,0.094,0.0,0.091,high_candidate,False,False,True,False,review
+wisconsin_sna,Koro Railroad Prairie,,,0.01,-88.862,43.942,0.0,0.0,0.0,0.0,0.673,0.02,0,0.0,0.0,0,0.308,0.0,0.0,0.0,0.463,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Plainfield Tunnel Channel Lakes,,,0.28,-89.464,44.206,0.656,0.023,0.0,0.002,0.0,0.012,0,0.0,0.0,0,0.6,0.385,0.0,0.0,0.24,high_candidate,False,False,True,False,review
+wisconsin_sna,Pickerel Lake,,,0.58,-89.327,44.317,0.748,0.036,0.0,0.0,0.0,0.018,0,0.0,0.0,0,0.802,0.18,0.0,0.118,0.08,high_candidate,False,False,True,False,review
+wisconsin_sna,Kettle Moraine Oak Opening,,,2.56,-88.596,42.848,0.909,0.001,0.0,0.003,0.001,0.04,0,0.0,0.0,0,0.957,0.0,0.0,0.0,0.201,high_candidate,False,False,True,False,review
+wisconsin_sna,Ward/Swartz Decatur Woods,,,0.05,-89.416,42.647,0.99,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.256,high_candidate,False,False,True,False,review
+wisconsin_sna,Brooks Bluff,,,0.08,-89.715,43.828,0.936,0.011,0.0,0.0,0.0,0.005,0,0.0,0.0,0,0.995,0.0,0.0,0.0,0.318,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Moonlight Bay Bedrock Beach,,,0.41,-87.072,45.088,0.881,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.967,0.032,0.0,0.0,0.059,high_candidate,False,False,True,False,review
+wisconsin_sna,Bloch Oxbow,,,2.47,-87.686,45.006,0.76,0.001,0.0,0.004,0.0,0.186,0,0.0,0.0,0,0.769,0.041,0.0,0.047,0.178,high_candidate,False,False,True,False,review
+wisconsin_sna,Black Lake Bog,,,7.32,-92.281,46.372,0.775,0.009,0.0,0.0,0.0,0.576,0,0.0,0.023,0,0.339,0.033,0.029,0.977,0.014,high_candidate,False,False,False,False,clean
+wisconsin_sna,Dunn Lake,,,3.87,-89.557,46.2,0.978,0.002,0.0,0.0,0.0,0.082,0,0.0,0.0,0,0.898,0.01,0.009,0.662,0.033,high_candidate,False,False,True,False,review
+wisconsin_sna,Jay Creek Pine Forest,,,1.79,-90.506,44.181,0.978,0.017,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.497,0.049,high_candidate,False,False,True,False,review
+wisconsin_sna,Upper Little Wolf,,,0.13,-89.258,44.68,0.955,0.006,0.0,0.0,0.0,0.014,0,0.0,0.0,0,0.986,0.0,0.0,0.0,0.165,high_candidate,False,False,True,False,review
+wisconsin_sna,Eureka Maple Woods,,,0.4,-90.871,43.735,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.075,high_candidate,False,False,True,False,review
+wisconsin_sna,Crooked Lake Wetlands,,,1.17,-88.164,43.626,0.937,0.0,0.0,0.0,0.0,0.034,0,0.0,0.0,0,0.925,0.02,0.022,0.0,0.118,high_candidate,False,False,True,False,review
+wisconsin_sna,Milwaukee River Tamarack Lowlands & Dundee Kame,,,2.07,-88.176,43.639,0.931,0.002,0.0,0.0,0.0,0.088,0,0.0,0.0,0,0.906,0.0,0.006,0.0,0.111,high_candidate,False,False,True,False,review
+wisconsin_sna,Butler Lake and Flynn's Spring,,,0.66,-88.133,43.662,0.824,0.001,0.0,0.003,0.0,0.164,0,0.0,0.0,0,0.78,0.025,0.027,0.0,0.121,high_candidate,False,False,True,False,review
+wisconsin_sna,Johnson Hill Kame,,,0.05,-88.121,43.698,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.104,high_candidate,False,False,True,False,review
+wisconsin_sna,Kettle Moraine Red Oaks,,,0.98,-88.073,43.766,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.19,high_candidate,False,False,True,False,review
+wisconsin_sna,Pecatonica River Woods,,,0.43,-90.339,42.844,0.862,0.0,0.0,0.011,0.008,0.056,0,0.0,0.0,0,0.925,0.0,0.0,0.0,0.32,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Caryville Savanna,,,1.67,-91.744,44.755,0.861,0.0,0.0,0.0,0.007,0.247,0,0.0,0.0,0,0.722,0.024,0.0,0.48,0.075,high_candidate,False,False,True,False,review
+wisconsin_sna,Rush Creek,,,0.12,-91.163,43.389,0.676,0.0,0.0,0.012,0.038,0.153,0,0.0,0.0,0,0.797,0.0,0.0,0.0,0.313,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Apostle Islands Maritime Cliffs,,,0.61,-90.69,47.007,0.913,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.838,0.161,0.0,0.023,0.008,high_candidate,False,False,True,False,review
+wisconsin_sna,Inch Lake,,,2.31,-91.345,46.497,0.913,0.02,0.0,0.0,0.0,0.01,0,0.0,0.0,0,0.934,0.056,0.0,0.289,0.118,high_candidate,False,False,True,False,review
+wisconsin_sna,Marsh Miller Cedars,,,0.36,-91.392,45.156,0.857,0.0,0.0,0.0,0.0,0.054,0,0.0,0.0,0,0.931,0.0,0.014,0.0,0.037,high_candidate,False,False,True,False,review
+wisconsin_sna,Chub and Mud Lake Riverine Marsh,,,8.05,-88.864,43.24,0.086,0.0,0.0,0.0,0.195,0.083,0,0.0,0.0,0,0.191,0.197,0.333,0.019,0.249,high_candidate,True,False,True,False,review
+wisconsin_sna,Chub Lake Oak Savanna,,,0.09,-88.894,43.22,0.538,0.0,0.0,0.0,0.048,0.13,0,0.0,0.0,0,0.777,0.042,0.003,0.0,,high_candidate,False,False,True,False,review
+wisconsin_sna,Mud Lake,,,9.05,-87.1,45.118,0.896,0.001,0.0,0.0,0.001,0.071,0,0.0,0.0,0,0.848,0.035,0.046,0.0,0.046,high_candidate,False,False,True,False,review
+wisconsin_sna,Mud Lake,,,0.32,-87.127,45.098,0.917,0.0,0.0,0.003,0.0,0.052,0,0.0,0.0,0,0.946,0.0,0.0,0.0,0.252,high_candidate,False,False,True,False,review
+wisconsin_sna,Enterprise Hemlocks,,,2.44,-89.305,45.536,0.996,0.0,0.0,0.0,0.0,0.069,0,0.0,0.0,0,0.93,0.0,0.0,0.835,0.026,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Maritime Forests: Sand Island Bogs,,,0.47,-90.94,46.987,1.0,0.0,0.0,0.0,0.0,0.003,0,0.0,0.0,0,0.997,0.0,0.0,0.951,0.006,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Sandscapes: Outer Island,,,0.94,-90.463,47.001,0.53,0.007,0.051,0.0,0.0,0.12,0,0.0,0.0,0,0.394,0.361,0.074,1.0,0.2,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Sandscapes: Raspberry Island,,,0.03,-90.791,46.971,0.524,0.0,0.024,0.0,0.0,0.213,0,0.0,0.0,0,0.639,0.125,0.0,1.0,0.25,high_candidate,False,False,True,False,review
+wisconsin_sna,Port Wing Boreal Forest,,,0.89,-91.397,46.784,0.839,0.01,0.0,0.0,0.005,0.531,0,0.0,0.0,0,0.307,0.078,0.08,0.0,0.058,high_candidate,False,False,True,False,review
+wisconsin_sna,Port Wing Boreal Forest,,,0.06,-91.38,46.785,0.959,0.041,0.0,0.0,0.0,0.819,0,0.0,0.0,0,0.18,0.0,0.001,0.0,0.108,high_candidate,False,False,True,False,review
+wisconsin_sna,Big Manitou Falls and Gorge,,,0.14,-92.125,46.538,1.0,0.0,0.0,0.0,0.0,0.009,0,0.0,0.0,0,0.987,0.004,0.0,0.0,0.157,high_candidate,False,False,True,False,review
+wisconsin_sna,Upper Buckatabon Springs,,,0.32,-89.349,46.044,0.954,0.0,0.0,0.0,0.0,0.155,0,0.0,0.0,0,0.845,0.0,0.0,0.182,0.102,high_candidate,False,False,True,False,review
+wisconsin_sna,Upper Buckatabon Springs,,,0.16,-89.339,46.049,0.957,0.0,0.0,0.0,0.0,0.082,0,0.0,0.0,0,0.89,0.027,0.0,0.0,0.052,high_candidate,False,False,True,False,review
+wisconsin_sna,Bluff Creek,,,1.2,-88.665,42.797,0.866,0.0,0.0,0.003,0.035,0.053,0,0.0,0.0,0,0.908,0.001,0.001,0.0,0.201,high_candidate,False,False,True,False,review
+wisconsin_sna,Plum Creek Woods,,,0.32,-92.17,44.66,0.967,0.0,0.0,0.0,0.011,0.0,0,0.0,0.0,0,0.989,0.0,0.0,0.0,0.175,high_candidate,False,False,True,False,review
+wisconsin_sna,Bibon Swamp,,,38.93,-91.066,46.402,0.913,0.016,0.0,0.0,0.001,0.062,0,0.0,0.0,0,0.935,0.0,0.002,0.535,0.047,high_candidate,False,False,True,False,review
+wisconsin_sna,Coffey Swamp,,,0.76,-86.892,45.404,0.929,0.026,0.0,0.001,0.0,0.059,0,0.0,0.0,0,0.939,0.0,0.002,0.0,0.053,high_candidate,False,False,True,False,review
+wisconsin_sna,Tranus Lake,,,0.87,-91.666,46.015,0.28,0.0,0.0,0.0,0.0,0.037,0,0.0,0.0,0,0.208,0.619,0.135,0.191,0.027,high_candidate,False,False,True,True,review
+wisconsin_sna,Gotham Jack Pine Barrens,,,1.67,-90.28,43.207,0.808,0.001,0.003,0.0,0.0,0.071,0,0.0,0.0,0,0.919,0.006,0.0,0.0,0.202,high_candidate,False,False,True,False,review
+wisconsin_sna,Snake Creek Fen,,,0.07,-89.032,43.863,0.118,0.0,0.0,0.0,0.0,0.902,0,0.0,0.0,0,0.098,0.0,0.0,0.0,0.089,high_candidate,False,False,True,False,review
+wisconsin_sna,Fox Maple Woods,,,0.16,-88.464,45.916,0.928,0.0,0.0,0.035,0.0,0.016,0,0.0,0.0,0,0.949,0.0,0.0,0.0,0.226,high_candidate,False,False,True,False,review
+wisconsin_sna,Mullet Creek White Cedar Wetland,,,0.35,-88.21,43.75,0.998,0.002,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.07,high_candidate,False,False,True,False,review
+wisconsin_sna,Blue Swamp,,,3.15,-90.869,44.797,0.738,0.001,0.0,0.0,0.0,0.324,0,0.0,0.0,0,0.675,0.0,0.001,0.987,0.037,high_candidate,False,False,False,False,clean
+wisconsin_sna,Bear Caves,,,0.16,-88.77,45.228,0.993,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.165,high_candidate,False,False,True,False,review
+wisconsin_sna,Bogus Swamp,,,3.57,-89.213,45.33,0.675,0.005,0.0,0.0,0.0,0.227,0,0.0,0.0,0,0.372,0.0,0.401,0.47,0.038,high_candidate,False,False,True,False,review
+wisconsin_sna,Minito Lake,,,0.1,-89.263,45.422,0.681,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.613,0.347,0.04,0.668,0.04,high_candidate,False,False,True,False,review
+wisconsin_sna,Rock River Prairie,,,0.17,-89.043,42.571,0.341,0.0,0.0,0.036,0.001,0.537,0,0.0,0.0,0,0.402,0.025,0.0,0.0,0.494,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Turtle-Flambeau Patterned Bog,,,22.12,-90.102,46.052,0.853,0.067,0.0,0.0,0.0,0.099,0,0.0,0.007,0,0.849,0.01,0.036,0.742,0.036,high_candidate,False,False,False,False,clean
+wisconsin_sna,Chequamegon Hardwoods,,,0.3,-90.793,46.326,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.598,0.069,high_candidate,False,False,True,False,review
+wisconsin_sna,Headwater Lakes,,,11.76,-89.994,45.96,0.903,0.002,0.0,0.0,0.0,0.04,0,0.0,0.0,0,0.889,0.065,0.006,0.456,0.084,high_candidate,False,False,True,False,review
+wisconsin_sna,Lauterman Lake,,,4.69,-88.519,45.912,0.915,0.005,0.0,0.002,0.0,0.037,0,0.0,0.0,0,0.929,0.029,0.003,0.671,0.047,high_candidate,False,False,True,False,review
+wisconsin_sna,Rush Creek,,,0.08,-91.141,43.41,0.837,0.0,0.0,0.0,0.012,0.022,0,0.0,0.0,0,0.966,0.0,0.0,0.0,0.279,high_candidate,False,False,True,False,review
+wisconsin_sna,Namekagon Fen,,,0.13,-91.099,46.176,0.675,0.005,0.0,0.0,0.0,0.362,0,0.0,0.0,0,0.275,0.0,0.363,0.108,0.033,high_candidate,False,False,True,False,review
+wisconsin_sna,Battle Creek Hemlocks,,,0.41,-88.465,45.347,0.998,0.002,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.147,0.061,high_candidate,False,False,True,False,review
+wisconsin_sna,Lower Chippewa River,,,0.08,-91.901,44.718,0.821,0.007,0.0,0.001,0.0,0.126,0,0.0,0.0,0,0.851,0.021,0.0,0.0,0.421,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Two Lakes Pine-Oak Forest,,,0.46,-89.624,45.783,0.989,0.001,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.982,0.018,0.0,0.0,0.066,high_candidate,False,False,True,False,review
+wisconsin_sna,Stone Lake Pines,,,0.84,-89.394,45.777,0.997,0.002,0.0,0.0,0.0,0.046,0,0.0,0.001,0,0.953,0.0,0.0,1.0,0.01,high_candidate,False,False,False,False,clean
+wisconsin_sna,Orion Mussel Bed,,,0.64,-90.366,43.207,0.106,0.0,0.0,0.001,0.0,0.003,0,0.0,0.0,0,0.151,0.844,0.0,0.0,0.537,high_candidate,False,False,True,True,unfit
+wisconsin_sna,Sugar River Wetlands,,,1.08,-89.563,42.98,0.069,0.0,0.0,0.017,0.515,0.312,0,0.0,0.0,0,0.155,0.0,0.0,0.0,0.541,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Dwight's Point and Pokegama Wetlands,,,12.76,-92.155,46.687,0.734,0.001,0.0,0.001,0.0,0.011,0,0.0,0.0,0,0.708,0.274,0.005,0.0,0.197,high_candidate,False,False,True,False,review
+wisconsin_sna,Bastile Lake,,,0.63,-88.745,45.827,0.685,0.017,0.0,0.0,0.0,0.04,0,0.0,0.0,0,0.673,0.287,0.0,0.386,0.015,high_candidate,False,False,True,False,review
+wisconsin_sna,Allequash Lake and Pines,,,1.61,-89.635,46.031,0.834,0.001,0.0,0.0,0.0,0.029,0,0.0,0.0,0,0.689,0.086,0.196,0.445,0.059,high_candidate,False,False,True,False,review
+wisconsin_sna,Aurora Lake,,,3.37,-89.543,46.026,0.77,0.016,0.0,0.0,0.0,0.109,0,0.0,0.0,0,0.634,0.192,0.064,0.497,0.043,high_candidate,False,False,True,False,review
+wisconsin_sna,Bittersweet Lakes,,,4.33,-89.605,45.936,0.791,0.02,0.0,0.0,0.0,0.005,0,0.0,0.0,0,0.79,0.202,0.003,0.158,0.036,high_candidate,False,False,True,False,review
+wisconsin_sna,Camp Lake and Pines,,,0.86,-89.728,45.999,0.686,0.03,0.0,0.0,0.0,0.022,0,0.0,0.0,0,0.685,0.289,0.004,0.0,0.041,high_candidate,False,False,True,False,review
+wisconsin_sna,Catherine Lake Hemlock-Hardwoods,,,3.52,-89.945,46.23,0.935,0.014,0.0,0.0,0.0,0.043,0,0.0,0.0,0,0.913,0.039,0.004,0.953,0.012,high_candidate,False,False,False,False,clean
+wisconsin_sna,Ericson Creek Forest and Wetlands,,,7.67,-92.022,46.44,0.759,0.056,0.0,0.0,0.0,0.329,0,0.0,0.004,0,0.659,0.0,0.008,0.822,0.03,high_candidate,False,False,False,False,clean
+wisconsin_sna,Day Lake,,,0.85,-89.7,46.064,0.529,0.001,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.494,0.506,0.0,0.097,0.04,high_candidate,False,False,True,True,review
+wisconsin_sna,Devine Lake and Mishonagon Creek,,,4.4,-89.737,45.982,0.912,0.003,0.0,0.0,0.0,0.081,0,0.0,0.001,0,0.887,0.01,0.019,0.023,0.039,high_candidate,False,False,True,False,review
+wisconsin_sna,DuPage Lake Peatlands,,,13.31,-89.969,46.172,0.867,0.002,0.0,0.0,0.0,0.187,0,0.0,0.0,0,0.744,0.062,0.006,0.619,0.032,high_candidate,False,False,True,False,review
+wisconsin_sna,Johnson Lake Barrens and Springs,,,4.58,-89.454,46.117,0.805,0.033,0.0,0.0,0.0,0.158,0,0.0,0.0,0,0.808,0.014,0.02,0.944,0.01,high_candidate,False,False,False,False,clean
+wisconsin_sna,Lake Alva Birch-Hemlock,,,1.27,-89.491,46.09,0.926,0.001,0.0,0.0,0.0,0.006,0,0.0,0.0,0,0.919,0.073,0.001,0.684,0.022,high_candidate,False,False,True,False,review
+wisconsin_sna,Lake Laura Hardwoods,,,3.45,-89.446,46.046,0.943,0.004,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.943,0.057,0.0,0.452,0.078,high_candidate,False,False,True,False,review
+wisconsin_sna,Deansville Fen,,,2.44,-89.121,43.212,0.173,0.0,0.0,0.0,0.363,0.293,0,0.0,0.0,0,0.343,0.0,0.001,0.0,0.278,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Skunk and Foster Lakes,,,1.07,-89.216,44.431,0.919,0.002,0.0,0.0,0.004,0.021,0,0.0,0.0,0,0.905,0.057,0.013,0.0,0.099,high_candidate,False,False,True,False,review
+wisconsin_sna,Coon Fork Barrens,,,2.36,-91.02,44.712,0.689,0.075,0.0,0.001,0.001,0.218,0,0.0,0.0,0,0.781,0.0,0.0,0.614,0.061,high_candidate,False,False,True,False,review
+wisconsin_sna,South Fork Barrens,,,0.37,-90.957,44.731,0.841,0.045,0.0,0.0,0.0,0.014,0,0.0,0.0,0,0.986,0.0,0.0,0.091,0.05,high_candidate,False,False,True,False,review
+wisconsin_sna,Pea Creek Sedge Meadow,,,0.8,-90.978,44.679,0.473,0.004,0.0,0.0,0.0,0.805,0,0.0,0.0,0,0.194,0.0,0.001,0.453,0.073,high_candidate,False,False,True,False,review
+wisconsin_sna,Blue River Bluffs,,,1.65,-90.612,43.175,0.881,0.001,0.0,0.002,0.002,0.049,0,0.0,0.0,0,0.946,0.001,0.0,0.0,0.267,high_candidate,False,False,True,False,review
+wisconsin_sna,Parrish Oak Savanna,,,0.11,-89.812,43.053,0.925,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.0,0.254,high_candidate,False,False,True,False,review
+wisconsin_sna,Lake Evelyn,,,1.23,-90.081,46.273,0.784,0.006,0.0,0.0,0.0,0.08,0,0.0,0.0,0,0.713,0.202,0.005,0.615,0.045,high_candidate,False,False,True,False,review
+wisconsin_sna,Hardscrabble Prairie,,,0.69,-90.419,42.523,0.791,0.0,0.0,0.004,0.006,0.079,0,0.0,0.0,0,0.912,0.0,0.0,0.0,0.274,high_candidate,False,False,True,False,review
+wisconsin_sna,Bear Lake Sedge Meadow,,,0.67,-91.812,45.612,0.31,0.0,0.0,0.0,0.0,0.869,0,0.0,0.0,0,0.08,0.0,0.051,0.0,0.18,high_candidate,False,False,True,False,review
+wisconsin_sna,Rock Creek Felsenmeer,,,0.16,-91.594,45.471,0.687,0.0,0.0,0.0,0.0,0.087,0,0.0,0.0,0,0.913,0.0,0.0,1.0,0.023,high_candidate,False,False,False,False,clean
+wisconsin_sna,Bauer-Brockway Barrens,,,0.84,-90.744,44.297,0.345,0.187,0.0,0.016,0.0,0.631,0,0.0,0.0,0,0.353,0.0,0.0,0.0,0.217,high_candidate,False,True,True,False,review
+wisconsin_sna,Karner Blue Meadow,,,0.16,-89.191,44.176,0.48,0.004,0.0,0.01,0.022,0.563,0,0.0,0.0,0,0.141,0.14,0.124,0.0,0.235,high_candidate,False,False,True,False,review
+wisconsin_sna,Oakfield Railroad Prairie,,,0.16,-88.513,43.712,0.059,0.0,0.0,0.005,0.349,0.126,0,0.0,0.0,0,0.52,0.0,0.0,0.0,0.451,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Centennial Bedrock Glade,,,0.08,-92.662,45.378,0.951,0.0,0.0,0.0,0.0,0.004,0,0.0,0.0,0,0.996,0.0,0.0,0.0,0.323,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Page Creek Marsh,,,2.69,-89.418,43.766,0.353,0.065,0.0,0.006,0.007,0.483,0,0.0,0.0,0,0.461,0.007,0.036,0.0,0.215,high_candidate,False,False,True,False,review
+wisconsin_sna,Rush Lake,,,1.79,-88.768,43.92,0.009,0.0,0.0,0.0,0.134,0.819,0,0.0,0.0,0,0.005,0.0,0.042,0.0,0.235,high_candidate,True,False,True,False,review
+wisconsin_sna,Hogback Prairie,,,4.33,-90.863,43.207,0.556,0.003,0.0,0.0,0.192,0.234,0,0.0,0.0,0,0.568,0.0,0.005,0.182,0.246,high_candidate,True,False,True,False,review
+wisconsin_sna,Cassville Bluffs,,,0.75,-90.924,42.704,0.811,0.0,0.0,0.0,0.012,0.128,0,0.0,0.0,0,0.86,0.0,0.0,0.0,0.24,high_candidate,False,False,True,False,review
+wisconsin_sna,Spur Lake,,,1.27,-89.153,45.719,0.926,0.03,0.0,0.0,0.0,0.189,0,0.0,0.0,0,0.795,0.0,0.016,0.17,0.114,high_candidate,False,False,True,False,review
+wisconsin_sna,Spur Lake,,,0.46,-89.157,45.721,0.703,0.0,0.0,0.0,0.0,0.048,0,0.0,0.0,0,0.019,0.107,0.826,0.25,0.082,high_candidate,False,False,True,False,review
+wisconsin_sna,Caroline Lake,,,1.33,-90.574,46.277,0.986,0.001,0.0,0.0,0.0,0.005,0,0.0,0.0,0,0.981,0.014,0.0,0.28,0.065,high_candidate,False,False,True,False,review
+wisconsin_sna,Limery Ridge Savanna,,,0.83,-91.127,43.08,0.986,0.0,0.0,0.0,0.0,0.004,0,0.0,0.0,0,0.996,0.0,0.0,0.0,0.278,high_candidate,False,False,True,False,review
+wisconsin_sna,Springstead Muskeg,,,2.56,-90.129,45.993,0.651,0.0,0.0,0.0,0.0,0.462,0,0.0,0.0,0,0.53,0.0,0.008,0.702,0.031,high_candidate,False,False,False,False,clean
+wisconsin_sna,Stockbridge Ledge Woods,,,0.17,-88.284,44.047,0.887,0.003,0.0,0.0,0.0,0.023,0,0.0,0.0,0,0.977,0.0,0.0,0.0,0.193,high_candidate,False,False,True,False,review
+wisconsin_sna,Trempealeau River Meadow,,,1.69,-91.607,44.185,0.382,0.0,0.0,0.0,0.012,0.524,0,0.0,0.0,0,0.435,0.002,0.026,0.022,0.176,high_candidate,False,False,True,False,review
+wisconsin_sna,York Prairie,,,0.59,-89.791,42.839,0.101,0.0,0.0,0.003,0.043,0.899,0,0.0,0.0,0,0.054,0.0,0.0,0.0,0.353,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Martin's Woods,,,0.13,-88.23,42.885,0.909,0.0,0.0,0.0,0.0,0.022,0,0.0,0.0,0,0.978,0.0,0.0,0.0,0.338,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Cudahy Woods,,,0.17,-87.904,42.927,0.895,0.0,0.0,0.037,0.0,0.001,0,0.0,0.0,0,0.962,0.0,0.0,0.0,0.705,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Nichols Creek Cedars and Springs,,,0.29,-88.037,43.689,0.976,0.0,0.0,0.0,0.0,0.005,0,0.0,0.0,0,0.995,0.0,0.0,0.0,0.286,high_candidate,False,False,True,False,review
+wisconsin_sna,Huiras Lake,,,0.49,-87.985,43.517,0.681,0.0,0.0,0.0,0.0,0.28,0,0.0,0.0,0,0.677,0.034,0.008,0.0,0.142,high_candidate,False,False,True,False,review
+wisconsin_sna,Kickapoo Valley Reserve,,,14.9,-90.632,43.618,0.849,0.01,0.0,0.004,0.044,0.05,0,0.0,0.0,0,0.898,0.001,0.002,0.274,0.162,high_candidate,False,False,True,False,review
+wisconsin_sna,Germain Hemlocks,,,0.37,-89.609,45.724,0.996,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.998,0.002,0.0,0.0,0.065,high_candidate,False,False,True,False,review
+wisconsin_sna,Trempealeau Mountain,,,0.25,-91.496,44.02,0.934,0.0,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.978,0.02,0.0,0.0,0.042,high_candidate,False,False,True,False,review
+wisconsin_sna,Great River Trail Prairies,,,0.13,-91.313,43.951,0.434,0.0,0.0,0.067,0.027,0.158,0,0.0,0.0,0,0.748,0.0,0.0,0.0,0.577,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Buffalo River Trail Prairies,,,0.62,-91.526,44.58,0.426,0.068,0.0,0.017,0.039,0.318,0,0.0,0.0,0,0.626,0.0,0.0,0.0,0.465,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Buckhorn Barrens,,,6.8,-90.003,43.928,0.688,0.163,0.0,0.001,0.002,0.387,0,0.0,0.0,0,0.57,0.004,0.036,0.0,0.069,high_candidate,False,True,True,False,review
+wisconsin_sna,Yellow River Oxbows,,,3.64,-90.046,43.976,0.898,0.07,0.0,0.001,0.001,0.025,0,0.0,0.0,0,0.939,0.027,0.009,0.0,0.083,high_candidate,False,False,True,False,review
+wisconsin_sna,Yellowstone Savanna,,,0.8,-89.96,42.772,0.581,0.0,0.0,0.005,0.031,0.278,0,0.0,0.0,0,0.686,0.0,0.0,0.487,0.147,high_candidate,False,False,True,False,review
+wisconsin_sna,Emmons Creek Barrens,,,0.18,-89.232,44.307,0.512,0.325,0.0,0.0,0.0,0.313,0,0.0,0.0,0,0.687,0.0,0.0,0.0,0.067,high_candidate,False,True,True,False,unfit
+wisconsin_sna,Germania Wet Prairie,,,0.41,-89.292,43.898,0.759,0.0,0.0,0.0,0.0,0.307,0,0.0,0.0,0,0.692,0.0,0.0,0.111,0.074,high_candidate,False,False,True,False,review
+wisconsin_sna,White River Sedge Meadow,,,12.56,-89.106,43.919,0.333,0.003,0.0,0.001,0.01,0.524,0,0.0,0.0,0,0.44,0.0,0.025,0.474,0.09,high_candidate,False,False,True,False,review
+wisconsin_sna,Dewey Marsh,,,4.95,-89.536,44.655,0.224,0.001,0.0,0.0,0.0,0.846,0,0.0,0.0,0,0.154,0.0,0.0,0.217,0.099,high_candidate,False,False,True,False,review
+wisconsin_sna,White River Prairie/Tamaracks,,,3.03,-89.154,43.962,0.721,0.0,0.0,0.0,0.012,0.325,0,0.0,0.0,0,0.663,0.0,0.0,0.779,0.054,high_candidate,False,False,False,False,clean
+wisconsin_sna,Bear Creek Sedge Meadow,,,0.36,-90.176,43.326,0.154,0.0,0.0,0.005,0.135,0.629,0,0.0,0.0,0,0.219,0.0,0.013,0.0,0.258,high_candidate,True,False,True,False,review
+wisconsin_sna,Mecan Springs,,,0.55,-89.479,44.056,0.797,0.009,0.0,0.001,0.0,0.104,0,0.0,0.0,0,0.735,0.149,0.011,0.0,0.235,high_candidate,False,False,True,False,review
+wisconsin_sna,Hulburt Creek Woods,,,0.73,-89.828,43.632,0.985,0.0,0.0,0.0,0.0,0.013,0,0.0,0.0,0,0.987,0.0,0.0,0.0,0.137,high_candidate,False,False,True,False,review
+wisconsin_sna,Mead Conifer Bogs,,,3.78,-89.837,44.676,0.983,0.002,0.0,0.0,0.0,0.046,0,0.0,0.0,0,0.954,0.0,0.0,0.634,0.037,high_candidate,False,False,True,False,review
+wisconsin_sna,Lodi Marsh,,,2.59,-89.544,43.292,0.386,0.0,0.0,0.001,0.054,0.496,0,0.0,0.0,0,0.425,0.003,0.021,0.0,0.238,high_candidate,True,False,True,False,review
+wisconsin_sna,Goose Lake Drumlins,,,3.14,-89.055,43.101,0.63,0.0,0.0,0.0,0.026,0.169,0,0.0,0.0,0,0.736,0.02,0.05,0.0,0.15,high_candidate,False,False,True,False,review
+wisconsin_sna,Sand Creek Pines,,,0.64,-90.965,44.078,0.968,0.0,0.0,0.0,0.0,0.018,0,0.0,0.0,0,0.982,0.0,0.0,0.144,0.053,high_candidate,False,False,True,False,review
+wisconsin_sna,Ellison Bluff,,,0.79,-87.106,45.252,0.965,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.976,0.024,0.0,0.0,0.052,high_candidate,False,False,True,False,review
+wisconsin_sna,Europe Bay Woods,,,1.78,-86.989,45.26,0.969,0.0,0.001,0.0,0.0,0.012,0,0.0,0.0,0,0.974,0.013,0.0,0.0,0.086,high_candidate,False,False,True,False,review
+wisconsin_sna,Holland Red Maple Swamp,,,0.83,-88.055,44.29,0.998,0.0,0.0,0.0,0.003,0.0,0,0.0,0.0,0,0.997,0.0,0.0,0.0,0.084,high_candidate,False,False,True,False,review
+wisconsin_sna,Rock Island Woods,,,2.94,-86.819,45.418,0.972,0.001,0.0,0.0,0.0,0.023,0,0.0,0.0,0,0.958,0.019,0.0,0.557,0.012,high_candidate,False,False,True,False,review
+wisconsin_sna,Big Island,,,8.39,-92.325,46.067,0.845,0.06,0.0,0.0,0.0,0.012,0,0.0,0.0,0,0.865,0.12,0.002,0.639,0.041,high_candidate,False,False,True,False,review
+wisconsin_sna,Farmington Bottoms,,,4.11,-92.758,45.287,0.819,0.005,0.0,0.0,0.001,0.08,0,0.0,0.0,0,0.728,0.147,0.044,0.0,0.082,high_candidate,False,False,True,False,review
+wisconsin_sna,Osceola Bedrock Glades,,,0.1,-92.685,45.35,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.176,high_candidate,False,False,True,False,review
+wisconsin_sna,Little Lake,,,0.27,-86.942,45.41,0.343,0.0,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.377,0.621,0.0,0.0,0.04,high_candidate,False,False,True,True,review
+wisconsin_sna,Lily Lake,,,0.33,-89.633,45.521,0.645,0.019,0.0,0.0,0.0,0.009,0,0.0,0.0,0,0.545,0.408,0.038,0.0,0.063,high_candidate,False,False,True,False,review
+wisconsin_sna,Lake Lackawanna,,,1.42,-88.319,45.367,0.973,0.0,0.0,0.0,0.0,0.033,0,0.0,0.0,0,0.941,0.004,0.022,0.662,0.028,high_candidate,False,False,True,False,review
+wisconsin_sna,St. Croix Ash Swamp,,,0.27,-92.818,45.74,0.578,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.517,0.458,0.025,0.41,0.024,high_candidate,False,False,True,False,review
+wisconsin_sna,St. Croix Ash Swamp,,,2.2,-92.82,45.732,0.984,0.001,0.0,0.0,0.0,0.012,0,0.0,0.0,0,0.988,0.0,0.0,0.6,0.051,high_candidate,False,False,True,False,review
+wisconsin_sna,Lemonweir Bottomland Hardwood Forest,,,1.3,-89.864,43.773,0.905,0.008,0.0,0.0,0.0,0.089,0,0.0,0.0,0,0.842,0.068,0.0,0.0,0.068,high_candidate,False,False,True,False,review
+wisconsin_sna,Blomberg Lake & Woods,,,3.91,-92.459,45.815,0.658,0.008,0.0,0.0,0.0,0.379,0,0.0,0.0,0,0.548,0.057,0.016,0.347,0.05,high_candidate,False,False,True,False,review
+wisconsin_sna,Fish Lake Meadow,,,7.61,-92.769,45.719,0.101,0.001,0.0,0.0,0.0,0.817,0,0.0,0.0,0,0.06,0.101,0.023,0.885,0.032,high_candidate,False,False,False,False,clean
+wisconsin_sna,Fish Lake Pines,,,0.17,-92.721,45.71,1.0,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,1.0,0.043,high_candidate,False,False,False,False,clean
+wisconsin_sna,Reed Lake Meadow/Barrens,,,14.44,-92.579,45.881,0.3,0.008,0.0,0.0,0.008,0.856,0,0.0,0.0,0,0.106,0.008,0.021,0.521,0.075,high_candidate,False,False,True,False,review
+wisconsin_sna,Loon Lake Woods,,,0.24,-92.132,45.485,0.97,0.0,0.0,0.0,0.0,0.017,0,0.0,0.0,0,0.983,0.0,0.0,0.0,0.22,high_candidate,False,False,True,False,review
+wisconsin_sna,New Auburn Sedge Meadow,,,1.28,-91.572,45.239,0.351,0.0,0.0,0.0,0.003,0.947,0,0.0,0.0,0,0.035,0.0,0.014,0.0,0.178,high_candidate,False,False,True,False,review
+wisconsin_sna,Copper Falls,,,3.02,-90.64,46.387,0.968,0.004,0.001,0.0,0.0,0.006,0,0.0,0.0,0,0.993,0.0,0.0,0.784,0.047,high_candidate,False,False,False,False,clean
+wisconsin_sna,Motts Ravine,,,2.65,-91.608,46.431,0.422,0.338,0.0,0.002,0.003,0.498,0,0.0,0.0,0,0.498,0.0,0.0,0.271,0.108,high_candidate,False,True,True,False,unfit
+wisconsin_sna,Brule Rush Lake,,,0.1,-91.555,46.489,0.528,0.035,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.348,0.652,0.0,0.0,0.098,high_candidate,False,False,True,True,review
+wisconsin_sna,Lawrence Lake,,,1.26,-88.977,45.264,0.814,0.124,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.928,0.07,0.0,0.735,0.034,high_candidate,False,True,False,False,review
+wisconsin_sna,Mirror Lake Pine Oak Forest,,,2.13,-89.828,43.572,0.949,0.012,0.0,0.011,0.0,0.055,0,0.0,0.0,0,0.934,0.0,0.0,0.0,0.29,high_candidate,False,False,True,False,review
+wisconsin_sna,Fern Dell Gorge,,,0.03,-89.821,43.564,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.183,high_candidate,False,False,True,False,review
+wisconsin_sna,Franklin Park Savanna,,,0.35,-88.042,42.864,0.869,0.0,0.0,0.0,0.006,0.013,0,0.0,0.0,0,0.981,0.0,0.0,0.0,0.349,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Upper Fox Headwaters,,,0.79,-89.54,43.933,0.757,0.002,0.0,0.011,0.001,0.183,0,0.0,0.0,0,0.793,0.012,0.0,0.0,0.224,high_candidate,False,False,True,False,review
+wisconsin_sna,Snow Bottom,,,0.97,-90.466,43.035,0.949,0.0,0.0,0.0,0.009,0.065,0,0.0,0.0,0,0.926,0.0,0.0,0.708,0.095,high_candidate,False,False,False,False,clean
+wisconsin_sna,Rocky Run Oak Savanna,,,1.18,-89.34,43.457,0.583,0.002,0.0,0.0,0.014,0.347,0,0.0,0.0,0,0.639,0.0,0.0,0.0,0.128,high_candidate,False,False,True,False,review
+wisconsin_sna,Bergen Bluffs,,,0.13,-91.22,43.626,0.982,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.416,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Puchyan Prairie,,,1.55,-89.018,43.892,0.064,0.0,0.0,0.0,0.109,0.695,0,0.0,0.0,0,0.079,0.003,0.113,0.043,0.146,high_candidate,True,False,True,False,review
+wisconsin_sna,Rush Creek,,,11.28,-91.137,43.378,0.832,0.001,0.0,0.002,0.084,0.033,0,0.0,0.0,0,0.874,0.001,0.006,0.01,0.154,high_candidate,True,False,True,False,review
+wisconsin_sna,Jump River Woods,,,0.89,-90.663,45.411,0.961,0.031,0.0,0.0,0.0,0.043,0,0.0,0.0,0,0.93,0.027,0.0,0.772,0.025,high_candidate,False,False,False,False,clean
+wisconsin_sna,Swan Lake Tamaracks,,,0.83,-89.407,43.547,0.282,0.0,0.0,0.0,0.003,0.656,0,0.0,0.0,0,0.342,0.0,0.0,0.0,0.128,high_candidate,False,False,True,False,review
+wisconsin_sna,Swan Lake Sedge Meadow and Barrens,,,2.83,-89.403,43.53,0.332,0.0,0.0,0.0,0.001,0.653,0,0.0,0.0,0,0.342,0.001,0.003,0.0,0.169,high_candidate,False,False,True,False,review
+wisconsin_sna,Rocky Run Oak Savanna,,,0.66,-89.361,43.458,0.22,0.038,0.0,0.0,0.001,0.715,0,0.0,0.0,0,0.284,0.0,0.0,0.0,0.257,high_candidate,False,False,True,False,review
+wisconsin_sna,Mukwonago River,,,0.17,-88.321,42.856,0.744,0.0,0.0,0.0,0.0,0.061,0,0.0,0.0,0,0.939,0.0,0.0,0.0,0.604,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Eagle Centre Prairie,,,0.03,-88.481,42.873,0.703,0.0,0.0,0.015,0.0,0.2,0,0.0,0.0,0,0.785,0.0,0.0,0.0,0.606,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Portland Maples,,,0.41,-90.863,43.743,0.839,0.001,0.0,0.0,0.0,0.132,0,0.0,0.0,0,0.868,0.0,0.0,0.0,0.21,high_candidate,False,False,True,False,review
+wisconsin_sna,Belmont Prairie,,,0.15,-90.363,42.74,0.071,0.0,0.0,0.001,0.132,0.596,0,0.0,0.0,0,0.271,0.0,0.0,0.0,0.516,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Red Cedar River Savanna,,,0.73,-91.789,44.999,0.917,0.0,0.0,0.0,0.0,0.059,0,0.0,0.0,0,0.937,0.003,0.001,0.0,0.074,high_candidate,False,False,True,False,review
+wisconsin_sna,Jefferson Tamarack Swamp,,,6.6,-88.752,42.99,0.706,0.001,0.0,0.0,0.037,0.177,0,0.0,0.0,0,0.737,0.0,0.049,0.0,0.116,high_candidate,False,False,True,False,review
+wisconsin_sna,The Ridges Sanctuary,,,5.94,-87.109,45.083,0.925,0.001,0.0,0.009,0.0,0.038,0,0.0,0.0,0,0.932,0.006,0.016,0.0,0.164,high_candidate,False,False,True,False,review
+wisconsin_sna,Caroline Lake,,,0.53,-90.549,46.276,0.792,0.076,0.0,0.0,0.0,0.031,0,0.0,0.0,0,0.833,0.133,0.004,0.42,0.067,high_candidate,False,False,True,False,review
+wisconsin_sna,Bass Hollow,,,0.85,-90.028,43.687,0.931,0.018,0.0,0.0,0.006,0.017,0,0.0,0.0,0,0.977,0.0,0.0,0.136,0.198,high_candidate,False,False,True,False,review
+wisconsin_sna,Diamond Lake,,,1.0,-90.676,45.108,0.399,0.054,0.0,0.0,0.178,0.165,0,0.0,0.0,0,0.467,0.171,0.018,0.015,0.194,high_candidate,True,False,True,False,review
+wisconsin_sna,Big and Little Marsh,,,1.31,-86.871,45.365,0.951,0.0,0.0,0.0,0.0,0.022,0,0.0,0.0,0,0.956,0.006,0.015,0.0,0.104,high_candidate,False,False,True,False,review
+wisconsin_sna,Princeton Prairie,,,0.53,-89.037,43.9,0.007,0.0,0.0,0.0,0.057,0.731,0,0.0,0.0,0,0.004,0.0,0.208,0.446,0.069,high_candidate,True,False,True,False,review
+wisconsin_sna,Lower Chippewa River,,,0.88,-92.007,44.609,0.403,0.012,0.0,0.0,0.089,0.411,0,0.0,0.0,0,0.426,0.001,0.073,0.0,0.2,high_candidate,True,False,True,False,review
+wisconsin_sna,North Bay,,,3.22,-87.085,45.135,0.939,0.001,0.0,0.005,0.0,0.021,0,0.0,0.0,0,0.947,0.004,0.023,0.0,0.111,high_candidate,False,False,True,False,review
+wisconsin_sna,Five-Mile Bluff Prairie,,,0.79,-92.069,44.47,0.956,0.0,0.0,0.0,0.003,0.019,0,0.0,0.0,0,0.978,0.0,0.0,0.0,0.102,high_candidate,False,False,True,False,review
+wisconsin_sna,Lunch Creek Wetlands,,,2.46,-89.328,44.03,0.351,0.012,0.0,0.0,0.001,0.694,0,0.0,0.0,0,0.3,0.0,0.005,0.0,0.124,high_candidate,False,False,True,False,review
+wisconsin_sna,Pokegama Carnegie Wetlands,,,1.26,-92.135,46.653,0.693,0.022,0.0,0.0,0.0,0.598,0,0.0,0.0,0,0.395,0.0,0.007,0.0,0.213,high_candidate,False,False,True,False,review
+wisconsin_sna,Nourse Sugarbush,,,1.77,-90.92,46.787,0.983,0.003,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.998,0.0,0.0,0.647,0.033,high_candidate,False,False,True,False,review
+wisconsin_sna,Moose Lake,,,17.39,-90.213,46.204,0.935,0.005,0.0,0.0,0.0,0.01,0,0.0,0.0,0,0.932,0.057,0.001,0.828,0.024,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apple River Canyon,,,0.74,-92.72,45.154,0.949,0.01,0.0,0.0,0.0,0.019,0,0.0,0.0,0,0.981,0.0,0.0,0.0,0.187,high_candidate,False,False,True,False,review
+wisconsin_sna,Romance Prairie,,,0.31,-91.141,43.555,0.912,0.0,0.0,0.0,0.0,0.039,0,0.0,0.0,0,0.961,0.0,0.0,0.0,0.222,high_candidate,False,False,True,False,review
+wisconsin_sna,Snow Bottom,,,0.85,-90.533,43.056,0.626,0.0,0.0,0.0,0.004,0.335,0,0.0,0.0,0,0.661,0.0,0.0,0.434,0.13,high_candidate,False,False,True,False,review
+wisconsin_sna,Logan Creek,,,0.77,-87.219,44.951,0.892,0.0,0.0,0.006,0.002,0.041,0,0.0,0.0,0,0.947,0.001,0.004,0.0,0.2,high_candidate,False,False,True,False,review
+wisconsin_sna,Waubesa Wetlands,,,0.01,-89.346,42.997,0.251,0.0,0.0,0.0,0.0,0.774,0,0.0,0.0,0,0.226,0.0,0.0,0.0,,high_candidate,False,False,True,False,review
+wisconsin_sna,North of North Shattuck Lake,,,2.44,-91.433,45.231,0.918,0.002,0.0,0.0,0.0,0.057,0,0.0,0.0,0,0.877,0.058,0.009,0.059,0.113,high_candidate,False,False,True,False,review
+wisconsin_sna,Fort McCoy,,,0.17,-90.668,43.946,0.978,0.0,0.0,0.0,0.0,0.012,0,0.0,0.0,0,0.988,0.0,0.0,0.0,0.213,high_candidate,False,False,True,False,review
+wisconsin_sna,Fort McCoy,,,0.18,-90.634,43.952,0.82,0.156,0.0,0.0,0.0,0.142,0,0.0,0.0,0,0.858,0.0,0.0,0.0,0.108,high_candidate,False,True,True,False,review
+wisconsin_sna,Lower Chippewa River,,,1.46,-91.586,44.764,0.407,0.001,0.001,0.0,0.002,0.489,0,0.0,0.0,0,0.455,0.052,0.0,0.0,0.149,high_candidate,False,False,True,False,review
+wisconsin_sna,Cherokee Marsh,,,0.14,-89.342,43.166,0.076,0.0,0.0,0.002,0.031,0.865,0,0.0,0.0,0,0.101,0.0,0.0,0.0,0.406,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Gobler Lake,,,2.8,-89.888,45.64,0.868,0.002,0.0,0.0,0.0,0.337,0,0.0,0.0,0,0.611,0.023,0.029,0.618,0.027,high_candidate,False,False,True,False,review
+wisconsin_sna,Gobler Lake,,,0.33,-89.879,45.626,0.686,0.0,0.0,0.0,0.0,0.658,0,0.0,0.0,0,0.334,0.0,0.008,1.0,0.01,high_candidate,False,False,False,False,clean
+wisconsin_sna,Squirrel River Pines,,,0.32,-89.885,45.841,0.652,0.002,0.0,0.0,0.0,0.371,0,0.0,0.0,0,0.593,0.0,0.035,0.158,0.054,high_candidate,False,False,True,False,review
+wisconsin_sna,Squirrel River Pines,,,2.59,-89.827,45.827,0.946,0.002,0.0,0.0,0.0,0.148,0,0.0,0.0,0,0.776,0.0,0.076,0.236,0.038,high_candidate,False,False,True,False,review
+wisconsin_sna,Quincy Bluff and Wetlands,,,26.76,-89.86,43.884,0.687,0.109,0.0,0.001,0.003,0.348,0,0.0,0.0,0,0.625,0.001,0.022,0.359,0.088,high_candidate,False,True,True,False,review
+wisconsin_sna,Cassville Bluffs,,,0.22,-90.92,42.697,0.925,0.0,0.0,0.0,0.0,0.032,0,0.0,0.0,0,0.968,0.0,0.0,0.0,0.34,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Ableman's Gorge,,,0.43,-89.929,43.487,0.825,0.0,0.0,0.006,0.0,0.022,0,0.0,0.0,0,0.971,0.0,0.0,0.0,0.493,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Barksdale Ponds,,,2.07,-91.296,46.584,0.908,0.031,0.0,0.0,0.0,0.02,0,0.0,0.0,0,0.896,0.084,0.0,0.228,0.092,high_candidate,False,False,True,False,review
+wisconsin_sna,Camp Nine Pines,,,11.97,-91.376,46.409,0.994,0.001,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.999,0.0,0.0,0.683,0.04,high_candidate,False,False,True,False,review
+wisconsin_sna,Lost Canoe,,,4.53,-89.604,46.067,0.742,0.031,0.0,0.0,0.0,0.027,0,0.0,0.0,0,0.7,0.182,0.091,0.722,0.02,high_candidate,False,False,False,False,clean
+wisconsin_sna,Papoose Creek Pines,,,2.28,-89.852,46.149,0.985,0.009,0.0,0.0,0.0,0.012,0,0.0,0.0,0,0.987,0.0,0.001,0.03,0.131,high_candidate,False,False,True,False,review
+wisconsin_sna,Bayshore Blufflands,,,0.62,-87.386,44.937,0.571,0.001,0.0,0.004,0.0,0.565,0,0.0,0.0,0,0.431,0.0,0.0,0.0,0.233,high_candidate,False,False,True,False,review
+wisconsin_sna,Johnson Falls,,,0.85,-88.153,45.286,0.958,0.0,0.0,0.004,0.0,0.007,0,0.0,0.0,0,0.97,0.019,0.0,0.0,0.156,high_candidate,False,False,True,False,review
+wisconsin_sna,Mountain Lake,,,0.05,-91.371,46.346,0.966,0.008,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.887,0.113,0.0,0.0,0.016,high_candidate,False,False,True,False,review
+wisconsin_sna,Bearsdale Creek & Hyatt Spring,,,4.2,-91.397,46.317,0.957,0.002,0.0,0.0,0.0,0.02,0,0.0,0.0,0,0.969,0.001,0.011,0.683,0.043,high_candidate,False,False,True,False,review
+wisconsin_sna,North Country Trail Hardwoods,,,1.5,-90.993,46.306,0.964,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.884,0.02,high_candidate,False,False,False,False,clean
+wisconsin_sna,English Lake Hemlocks,,,0.62,-90.759,46.31,0.98,0.008,0.0,0.001,0.0,0.016,0,0.0,0.0,0,0.961,0.017,0.007,0.064,0.103,high_candidate,False,False,True,False,review
+wisconsin_sna,Northeast Lake,,,4.13,-91.206,46.264,0.814,0.002,0.0,0.0,0.0,0.013,0,0.0,0.0,0,0.801,0.179,0.007,0.501,0.052,high_candidate,False,False,True,False,review
+wisconsin_sna,Brunsweiler River and Mineral Lake,,,6.15,-90.842,46.297,0.988,0.0,0.0,0.0,0.0,0.005,0,0.0,0.0,0,0.988,0.006,0.0,0.409,0.079,high_candidate,False,False,True,False,review
+wisconsin_sna,Dry Lake,,,1.45,-90.578,46.224,0.885,0.003,0.0,0.0,0.0,0.128,0,0.0,0.0,0,0.747,0.019,0.106,0.538,0.031,high_candidate,False,False,True,False,review
+wisconsin_sna,McCarthy Lake and Cedars,,,1.91,-90.795,46.214,0.819,0.009,0.0,0.0,0.0,0.178,0,0.0,0.0,0,0.744,0.057,0.021,0.971,0.015,high_candidate,False,False,False,False,clean
+wisconsin_sna,Fairyland,,,2.46,-91.102,46.19,0.984,0.0,0.0,0.0,0.0,0.006,0,0.0,0.0,0,0.99,0.0,0.004,0.082,0.103,high_candidate,False,False,True,False,review
+wisconsin_sna,Memorial Grove Hemlocks,,,0.74,-90.052,45.892,0.916,0.003,0.0,0.001,0.0,0.052,0,0.0,0.0,0,0.94,0.0,0.006,0.031,0.158,high_candidate,False,False,True,False,review
+wisconsin_sna,Tucker Lake Hemlocks,,,2.73,-90.055,45.942,0.775,0.0,0.0,0.0,0.0,0.077,0,0.0,0.0,0,0.765,0.147,0.01,0.874,0.021,high_candidate,False,False,False,False,clean
+wisconsin_sna,Lake Owen Hardwoods,,,6.37,-91.191,46.311,0.986,0.002,0.0,0.0,0.0,0.006,0,0.0,0.0,0,0.985,0.008,0.0,0.275,0.092,high_candidate,False,False,True,False,review
+wisconsin_sna,Eighteen Mile Creek,,,6.49,-91.164,46.273,0.996,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.995,0.003,0.0,0.487,0.055,high_candidate,False,False,True,False,review
+wisconsin_sna,Drummond Woods,,,9.62,-91.215,46.35,0.978,0.0,0.0,0.001,0.0,0.005,0,0.0,0.0,0,0.986,0.006,0.002,0.013,0.157,high_candidate,False,False,True,False,review
+wisconsin_sna,Bear Lake Slough,,,9.26,-90.809,46.014,0.99,0.0,0.0,0.0,0.0,0.014,0,0.0,0.0,0,0.985,0.0,0.001,0.888,0.011,high_candidate,False,False,False,False,clean
+wisconsin_sna,Upper Brunet River,,,9.08,-90.812,45.952,0.967,0.008,0.0,0.0,0.0,0.043,0,0.0,0.0,0,0.955,0.001,0.002,0.842,0.021,high_candidate,False,False,False,False,clean
+wisconsin_sna,Kirby Lake Hardwoods,,,0.45,-88.109,45.232,0.983,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.938,0.061,0.0,0.0,0.077,high_candidate,False,False,True,False,review
+wisconsin_sna,Holland Sand Prairie,,,0.25,-91.294,43.967,0.108,0.003,0.0,0.002,0.045,0.892,0,0.0,0.0,0,0.061,0.0,0.0,0.0,0.49,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Borst Valley Sedge Meadow,,,0.08,-91.497,44.457,0.223,0.0,0.0,0.0,0.0,0.898,0,0.0,0.0,0,0.102,0.0,0.0,0.0,0.259,high_candidate,False,False,True,False,review
+wisconsin_sna,Red Banks Alvar,,,0.05,-87.803,44.601,0.968,0.0,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.998,0.0,0.0,0.0,0.224,high_candidate,False,False,True,False,review
+wisconsin_sna,Empire Prairies,,,0.18,-89.443,43.234,0.11,0.0,0.0,0.0,0.051,0.93,0,0.0,0.0,0,0.02,0.0,0.0,0.0,0.446,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Empire Prairies,,,0.08,-89.31,43.392,0.416,0.0,0.0,0.0,0.0,0.663,0,0.0,0.0,0,0.337,0.0,0.0,0.0,0.286,high_candidate,False,False,True,False,review
+wisconsin_sna,Hawkinson Creek Wet Prairie,,,0.32,-91.451,44.494,0.677,0.0,0.0,0.002,0.0,0.163,0,0.0,0.0,0,0.835,0.0,0.0,0.0,0.269,high_candidate,False,False,True,False,review
+wisconsin_sna,Rock Lake,,,4.78,-91.15,46.171,0.946,0.0,0.0,0.0,0.0,0.005,0,0.0,0.0,0,0.934,0.062,0.0,0.569,0.024,high_candidate,False,False,True,False,review
+wisconsin_sna,Haymeadow Creek,,,3.88,-89.174,46.118,0.858,0.001,0.0,0.0,0.0,0.129,0,0.0,0.0,0,0.862,0.002,0.007,0.407,0.068,high_candidate,False,False,True,False,review
+wisconsin_sna,Black Creek Bog,,,2.33,-90.829,46.039,0.768,0.0,0.0,0.0,0.0,0.339,0,0.0,0.001,0,0.543,0.0,0.118,0.818,0.012,high_candidate,False,False,False,False,clean
+wisconsin_sna,Ghost Lake,,,1.6,-91.045,46.095,0.97,0.0,0.0,0.0,0.0,0.034,0,0.0,0.0,0,0.942,0.014,0.011,0.327,0.071,high_candidate,False,False,True,False,review
+wisconsin_sna,Wilson Lake,,,3.9,-91.13,46.142,0.871,0.004,0.0,0.0,0.0,0.172,0,0.0,0.0,0,0.791,0.016,0.021,0.839,0.011,high_candidate,False,False,False,False,clean
+wisconsin_sna,Argonne Experimental Forest,,,4.55,-88.976,45.75,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.321,0.061,high_candidate,False,False,True,False,review
+wisconsin_sna,Kentuck Lake,,,1.18,-88.987,45.999,0.987,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.998,0.0,0.0,0.605,0.015,high_candidate,False,False,True,False,review
+wisconsin_sna,Alvin Creek Headwaters,,,4.25,-88.854,45.952,0.97,0.0,0.0,0.006,0.0,0.038,0,0.0,0.0,0,0.947,0.0,0.008,0.527,0.03,high_candidate,False,False,True,False,review
+wisconsin_sna,Rat Lake Swamp/Popple River Headwaters,,,9.85,-88.768,45.806,0.99,0.001,0.0,0.0,0.0,0.018,0,0.0,0.0,0,0.977,0.002,0.003,0.772,0.033,high_candidate,False,False,False,False,clean
+wisconsin_sna,Echo Lake,,,2.86,-89.035,45.917,0.951,0.028,0.0,0.0,0.0,0.019,0,0.0,0.0,0,0.965,0.015,0.001,0.395,0.067,high_candidate,False,False,True,False,review
+wisconsin_sna,Pat Shay Lake,,,3.44,-89.038,45.902,0.864,0.001,0.0,0.0,0.0,0.067,0,0.0,0.0,0,0.812,0.111,0.01,0.339,0.064,high_candidate,False,False,True,False,review
+wisconsin_sna,Anvil Lake Trail,,,3.97,-89.054,45.922,0.985,0.0,0.0,0.001,0.0,0.02,0,0.0,0.0,0,0.979,0.0,0.0,0.717,0.068,high_candidate,False,False,False,False,clean
+wisconsin_sna,Camp 3 Lake,,,5.42,-88.588,45.616,0.982,0.01,0.0,0.0,0.0,0.015,0,0.0,0.0,0,0.984,0.001,0.0,0.624,0.021,high_candidate,False,False,True,False,review
+wisconsin_sna,Lake Noquebay Sedge Meadow,,,2.68,-87.862,45.261,0.521,0.0,0.0,0.0,0.0,0.619,0,0.0,0.0,0,0.325,0.001,0.055,0.606,0.044,high_candidate,False,False,True,False,review
+wisconsin_sna,Peshtigo River Delta Marshes,,,1.83,-87.705,44.977,0.243,0.0,0.0,0.0,0.0,0.661,0,0.0,0.0,0,0.285,0.009,0.045,0.143,0.035,high_candidate,False,False,True,False,review
+wisconsin_sna,Snoose Creek,,,4.45,-90.897,45.972,0.996,0.003,0.0,0.0,0.0,0.003,0,0.0,0.0,0,0.996,0.0,0.0,0.451,0.06,high_candidate,False,False,True,False,review
+wisconsin_sna,No Name Lake,,,1.14,-90.795,45.969,0.939,0.001,0.0,0.0,0.0,0.06,0,0.0,0.0,0,0.913,0.003,0.025,0.985,0.015,high_candidate,False,False,False,False,clean
+wisconsin_sna,Brule River Cliffs,,,1.29,-88.536,46.015,0.99,0.0,0.0,0.0,0.0,0.014,0,0.0,0.0,0,0.986,0.0,0.0,0.095,0.047,high_candidate,False,False,True,False,review
+wisconsin_sna,St. Peter's Dome,,,21.32,-90.889,46.348,0.974,0.002,0.0,0.0,0.0,0.006,0,0.0,0.0,0,0.99,0.0,0.004,0.727,0.049,high_candidate,False,False,False,False,clean
+wisconsin_sna,Spring Green Preserve,,,4.47,-90.091,43.212,0.583,0.013,0.0,0.0,0.008,0.324,0,0.0,0.0,0,0.668,0.0,0.0,0.0,0.214,high_candidate,False,False,True,False,review
+wisconsin_sna,Peshtigo Harbor Lacustrine Forest,,,1.78,-87.717,44.986,1.0,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.013,0.037,high_candidate,False,False,True,False,review
+wisconsin_sna,Peshtigo Brook Meadow and Woods,,,1.93,-88.326,45.092,0.55,0.047,0.0,0.0,0.0,0.347,0,0.0,0.0,0,0.647,0.0,0.006,0.507,0.047,high_candidate,False,False,True,False,review
+wisconsin_sna,North Bend Wet Prairie,,,0.13,-91.111,44.076,0.968,0.0,0.0,0.0,0.018,0.006,0,0.0,0.0,0,0.975,0.0,0.0,0.0,0.088,high_candidate,False,False,True,False,review
+wisconsin_sna,Black River Savanna,,,2.29,-91.083,44.084,0.919,0.0,0.0,0.0,0.003,0.035,0,0.0,0.0,0,0.947,0.01,0.004,0.0,0.046,high_candidate,False,False,True,False,review
+wisconsin_sna,Half Moon Bottoms,,,0.82,-91.135,44.076,0.959,0.0,0.0,0.0,0.002,0.019,0,0.0,0.0,0,0.931,0.022,0.026,0.0,0.029,high_candidate,False,False,True,False,review
+wisconsin_sna,Van Loon Floodplain Forest,,,0.5,-91.334,44.009,0.932,0.0,0.0,0.0,0.003,0.029,0,0.0,0.0,0,0.958,0.008,0.002,0.0,0.031,high_candidate,False,False,True,False,review
+wisconsin_sna,Van Loon Floodplain Forest,,,0.79,-91.324,43.992,0.98,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.974,0.026,0.0,0.0,0.086,high_candidate,False,False,True,False,review
+wisconsin_sna,Devil's Backbone (Chase Creek),,,0.64,-91.065,42.849,0.927,0.01,0.0,0.0,0.001,0.034,0,0.0,0.0,0,0.964,0.0,0.0,0.0,0.128,high_candidate,False,False,True,False,review
+wisconsin_sna,Van Loon Floodplain Savanna,,,6.37,-91.314,44.046,0.851,0.001,0.0,0.0,0.014,0.065,0,0.0,0.0,0,0.831,0.016,0.074,0.0,0.055,high_candidate,False,False,True,False,review
+wisconsin_sna,Thornapple Hemlocks,,,1.84,-90.735,45.942,0.997,0.002,0.0,0.0,0.0,0.006,0,0.0,0.0,0,0.994,0.0,0.0,0.954,0.019,high_candidate,False,False,False,False,clean
+wisconsin_sna,Spider Lake,,,1.11,-90.9,46.23,0.981,0.002,0.0,0.0,0.0,0.006,0,0.0,0.0,0,0.986,0.0,0.009,0.878,0.016,high_candidate,False,False,False,False,clean
+wisconsin_sna,Scott Lake & Shelp Lake,,,6.78,-89.022,45.767,0.891,0.001,0.0,0.0,0.0,0.074,0,0.0,0.0,0,0.877,0.022,0.027,0.65,0.018,high_candidate,False,False,True,False,review
+wisconsin_sna,Kickapoo Wild Woods,,,2.57,-90.904,43.109,0.983,0.0,0.0,0.0,0.0,0.008,0,0.0,0.0,0,0.984,0.006,0.002,0.0,0.098,high_candidate,False,False,True,False,review
+wisconsin_sna,Muddy Creek Sedge Meadow,,,0.79,-91.748,44.854,0.08,0.0,0.0,0.0,0.0,0.942,0,0.0,0.0,0,0.058,0.0,0.0,0.0,0.118,high_candidate,False,False,True,False,review
+wisconsin_sna,Jackson Creek Woods,,,0.5,-89.166,44.67,0.991,0.0,0.0,0.0,0.0,0.015,0,0.0,0.0,0,0.985,0.0,0.0,0.045,0.133,high_candidate,False,False,True,False,review
+wisconsin_sna,Plover River Woods,,,1.15,-89.288,44.97,0.996,0.004,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.066,high_candidate,False,False,True,False,review
+wisconsin_sna,Suk Cerney Peatlands,,,14.63,-90.227,44.061,0.698,0.031,0.0,0.0,0.0,0.231,0,0.0,0.0,0,0.714,0.002,0.053,0.707,0.041,high_candidate,False,False,False,False,clean
+wisconsin_sna,Meadow Valley Barrens,,,0.25,-90.289,44.138,0.613,0.16,0.0,0.0,0.0,0.371,0,0.0,0.0,0,0.629,0.0,0.0,0.302,0.206,high_candidate,False,True,True,False,review
+wisconsin_sna,Meadow Valley Barrens,,,2.3,-90.265,44.094,0.611,0.24,0.0,0.002,0.0,0.363,0,0.0,0.0,0,0.635,0.0,0.0,0.111,0.139,high_candidate,False,True,True,False,review
+wisconsin_sna,Blueberry Trail,,,1.02,-90.305,44.07,0.976,0.0,0.0,0.0,0.0,0.004,0,0.0,0.0,0,0.996,0.0,0.0,0.078,0.142,high_candidate,False,False,True,False,review
+wisconsin_sna,Kingston Pines,,,2.17,-90.298,44.203,0.839,0.002,0.0,0.0,0.0,0.17,0,0.0,0.0,0,0.829,0.0,0.001,0.468,0.026,high_candidate,False,False,True,False,review
+wisconsin_sna,Hog Island Tamaracks,,,1.87,-90.311,44.256,0.77,0.0,0.0,0.0,0.0,0.215,0,0.0,0.0,0,0.78,0.0,0.005,0.625,0.034,high_candidate,False,False,True,False,review
+wisconsin_sna,Yellow River Floodplain Forest,,,0.35,-90.119,44.311,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.089,high_candidate,False,False,True,False,review
+wisconsin_sna,Doering Woods,,,1.15,-90.101,45.927,0.991,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.314,0.091,high_candidate,False,False,True,False,review
+wisconsin_sna,Hagar Mountain,,,4.07,-88.413,45.196,0.971,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.508,0.061,high_candidate,False,False,True,False,review
+wisconsin_sna,Wisconsin Slough,,,0.31,-88.617,45.984,0.936,0.004,0.0,0.0,0.0,0.051,0,0.0,0.0,0,0.916,0.025,0.008,0.138,0.015,high_candidate,False,False,True,False,review
+wisconsin_sna,Wedde Creek Savanna,,,0.15,-89.373,43.964,0.157,0.0,0.0,0.0,0.0,0.66,0,0.0,0.0,0,0.34,0.0,0.0,0.055,0.15,high_candidate,False,False,True,False,review
+wisconsin_sna,Mecan River Pine Oak Forest,,,0.58,-89.342,43.957,0.99,0.001,0.0,0.001,0.0,0.002,0,0.0,0.0,0,0.997,0.0,0.0,0.099,0.059,high_candidate,False,False,True,False,review
+wisconsin_sna,Kinnickinnic Wet Prairie,,,0.18,-92.486,44.895,0.001,0.0,0.0,0.0,0.021,0.94,0,0.0,0.0,0,0.039,0.0,0.0,0.0,0.395,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Bradley Creek Swamp Conifers,,,0.09,-89.228,44.648,0.745,0.255,0.0,0.0,0.0,0.022,0,0.0,0.0,0,0.978,0.0,0.0,0.0,0.109,high_candidate,False,True,True,False,review
+wisconsin_sna,Flume Creek Cedars,,,0.56,-89.239,44.601,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.038,high_candidate,False,False,True,False,review
+wisconsin_sna,Ekdall Wetlands,,,0.25,-92.675,45.912,0.834,0.0,0.0,0.0,0.0,0.034,0,0.0,0.0,0,0.789,0.174,0.003,0.638,0.03,high_candidate,False,False,True,False,review
+wisconsin_sna,Chippewa Trail,,,0.06,-90.012,45.916,1.0,0.0,0.0,0.0,0.0,0.043,0,0.0,0.0,0,0.957,0.0,0.0,0.0,0.039,high_candidate,False,False,True,False,review
+wisconsin_sna,Haymeadow Flowage,,,8.49,-89.018,45.876,0.852,0.006,0.0,0.0,0.0,0.094,0,0.0,0.001,0,0.822,0.078,0.006,0.675,0.026,high_candidate,False,False,True,False,review
+wisconsin_sna,Cave Point-Clay Banks,,,2.17,-87.288,44.826,0.809,0.007,0.002,0.002,0.0,0.15,0,0.0,0.0,0,0.833,0.002,0.011,0.0,0.208,high_candidate,False,False,True,False,review
+wisconsin_sna,Bohn Lake,,,0.37,-89.438,44.122,0.811,0.002,0.0,0.0,0.001,0.021,0,0.0,0.0,0,0.789,0.188,0.002,0.0,0.131,high_candidate,False,False,True,False,review
+wisconsin_sna,Atkins Lake and Hiles Swamp,,,3.36,-89.053,45.653,0.815,0.01,0.0,0.0,0.0,0.164,0,0.0,0.06,0,0.586,0.0,0.19,0.62,0.013,high_candidate,False,False,True,False,review
+wisconsin_sna,Ekdall Wetlands,,,1.24,-92.665,45.914,0.995,0.001,0.0,0.0,0.0,0.011,0,0.0,0.0,0,0.989,0.0,0.0,0.886,0.035,high_candidate,False,False,False,False,clean
+wisconsin_sna,Muehl Springs,,,0.29,-88.019,43.866,0.729,0.0,0.0,0.036,0.0,0.07,0,0.0,0.0,0,0.89,0.0,0.004,0.0,0.411,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Kangaroo Lake,,,0.24,-87.168,45.056,0.795,0.0,0.0,0.0,0.0,0.051,0,0.0,0.0,0,0.921,0.0,0.028,0.0,0.156,high_candidate,False,False,True,False,review
+wisconsin_sna,Toft Point,,,0.16,-87.094,45.072,0.997,0.0,0.0,0.0,0.0,0.031,0,0.0,0.0,0,0.969,0.0,0.0,0.0,0.08,high_candidate,False,False,True,False,review
+wisconsin_sna,Foulds Creek,,,5.64,-90.077,45.849,0.989,0.002,0.0,0.0,0.0,0.007,0,0.0,0.0,0,0.993,0.0,0.0,0.658,0.045,high_candidate,False,False,True,False,review
+wisconsin_sna,Grandma Lake Wetlands,,,1.92,-88.612,45.818,0.81,0.0,0.0,0.0,0.0,0.159,0,0.0,0.0,0,0.733,0.064,0.044,0.368,0.048,high_candidate,False,False,True,False,review
+wisconsin_sna,Riley Lake,,,5.07,-90.169,45.804,0.561,0.001,0.0,0.0,0.0,0.544,0,0.0,0.001,0,0.433,0.0,0.023,0.9,0.024,high_candidate,False,False,False,False,clean
+wisconsin_sna,Wheeler Lake,,,3.28,-88.518,45.792,0.927,0.01,0.0,0.0,0.0,0.105,0,0.0,0.0,0,0.838,0.021,0.036,1.0,0.007,high_candidate,False,False,False,False,clean
+wisconsin_sna,Lower Narrows,,,0.16,-89.637,43.5,0.885,0.0,0.0,0.025,0.009,0.07,0,0.0,0.0,0,0.897,0.0,0.0,0.0,0.381,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Detroit Harbor,,,0.47,-86.938,45.353,0.961,0.0,0.0,0.008,0.0,0.097,0,0.0,0.0,0,0.887,0.002,0.006,0.0,0.277,high_candidate,False,False,True,False,review
+wisconsin_sna,Crandon Ribbed Fen,,,0.39,-88.921,45.612,0.687,0.005,0.0,0.0,0.0,0.095,0,0.0,0.0,0,0.329,0.0,0.576,0.0,0.028,high_candidate,False,False,True,False,review
+wisconsin_sna,Brant Brook Pines,,,1.41,-92.738,45.849,0.671,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.643,0.355,0.001,0.32,0.048,high_candidate,False,False,True,False,review
+wisconsin_sna,Brant Brook Pines,,,0.61,-92.726,45.87,0.983,0.017,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.718,0.051,high_candidate,False,False,False,False,clean
+wisconsin_sna,Flambeau Wetlands,,,1.44,-90.262,46.066,0.945,0.018,0.0,0.0,0.0,0.023,0,0.0,0.0,0,0.97,0.002,0.005,0.994,0.01,high_candidate,False,False,False,False,clean
+wisconsin_sna,Kohler-Peet Barrens,,,3.38,-92.546,45.936,0.246,0.295,0.0,0.001,0.002,0.78,0,0.0,0.0,0,0.217,0.0,0.0,0.287,0.122,high_candidate,False,True,True,False,review
+wisconsin_sna,Empire Prairies,,,0.06,-89.392,43.183,0.023,0.0,0.0,0.0,0.13,0.751,0,0.0,0.0,0,0.119,0.0,0.0,0.0,0.517,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Popple River Corridor,,,0.79,-88.515,45.758,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.209,0.011,high_candidate,False,False,True,False,review
+wisconsin_sna,Atkins Lake and Hiles Swamp,,,10.92,-89.034,45.678,0.972,0.001,0.0,0.0,0.0,0.102,0,0.0,0.017,0,0.874,0.0,0.008,0.758,0.009,high_candidate,False,False,False,False,clean
+wisconsin_sna,Plum Lake Hemlock Forest,,,3.02,-89.497,46.018,0.955,0.002,0.0,0.0,0.0,0.012,0,0.0,0.0,0,0.966,0.013,0.01,0.413,0.046,high_candidate,False,False,True,False,review
+wisconsin_sna,Rainbow Wetlands,,,9.55,-89.488,45.855,0.541,0.018,0.0,0.0,0.001,0.326,0,0.0,0.0,0,0.616,0.006,0.05,0.843,0.029,high_candidate,False,False,False,False,clean
+wisconsin_sna,North Otter Creek,,,2.93,-88.787,45.607,0.99,0.009,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.552,0.022,high_candidate,False,False,True,False,review
+wisconsin_sna,Wabikon Lake,,,7.39,-88.792,45.549,0.961,0.01,0.0,0.001,0.0,0.028,0,0.0,0.0,0,0.948,0.004,0.018,0.854,0.049,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Yew Forest: Rocky Island,,,3.93,-90.682,47.037,0.971,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.967,0.033,0.0,0.968,0.009,high_candidate,False,False,False,False,clean
+wisconsin_sna,Castle Mound Pine Forest,,,0.47,-90.823,44.281,0.974,0.0,0.0,0.001,0.0,0.0,0,0.0,0.0,0,0.999,0.0,0.0,0.0,0.307,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Little Bear Hemlocks,,,0.24,-89.723,44.607,0.651,0.0,0.0,0.0,0.006,0.243,0,0.0,0.0,0,0.751,0.0,0.0,0.0,0.312,high_candidate,False,False,True,False,unfit
+wisconsin_sna,LTC Old-Growth Forest,,,0.1,-87.75,43.927,0.831,0.0,0.0,0.0,0.015,0.006,0,0.0,0.0,0,0.979,0.0,0.0,0.0,0.695,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Deer Mountain,,,8.46,-88.452,45.463,0.999,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.721,0.018,high_candidate,False,False,False,False,clean
+wisconsin_sna,Glocke Lake,,,0.66,-88.57,45.332,0.851,0.001,0.0,0.001,0.0,0.0,0,0.0,0.0,0,0.845,0.154,0.0,0.0,0.074,high_candidate,False,False,True,False,review
+wisconsin_sna,Kidrick Swamp,,,9.06,-90.649,45.315,0.997,0.0,0.0,0.0,0.0,0.052,0,0.0,0.004,0,0.942,0.0,0.002,0.821,0.022,high_candidate,False,False,False,False,clean
+wisconsin_sna,Forbes Springs,,,0.09,-88.391,45.319,0.985,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.126,high_candidate,False,False,True,False,review
+wisconsin_sna,Cathedral Pines,,,7.59,-88.583,45.299,0.986,0.0,0.0,0.004,0.0,0.004,0,0.0,0.0,0,0.987,0.004,0.001,0.0,0.136,high_candidate,False,False,True,False,review
+wisconsin_sna,LaFave Swamp,,,0.51,-88.339,45.304,0.995,0.005,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.41,0.072,high_candidate,False,False,True,False,review
+wisconsin_sna,Thunder Mountain,,,0.31,-88.311,45.304,0.984,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.878,0.02,high_candidate,False,False,False,False,clean
+wisconsin_sna,North Branch Bottoms,,,0.37,-88.423,45.296,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.647,0.05,high_candidate,False,False,True,False,review
+wisconsin_sna,Bear Creek Hemlocks,,,4.19,-90.728,45.289,0.98,0.003,0.0,0.0,0.0,0.018,0,0.0,0.0,0,0.982,0.0,0.0,0.902,0.028,high_candidate,False,False,False,False,clean
+wisconsin_sna,Cathedral Pines,,,0.24,-88.573,45.279,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.179,high_candidate,False,False,True,False,review
+wisconsin_sna,Snow Falls Creek,,,0.62,-88.444,45.269,0.414,0.586,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,1.0,0.035,high_candidate,False,True,False,False,unfit
+wisconsin_sna,Tar Dam Pines,,,3.43,-88.37,45.26,0.99,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.879,0.033,high_candidate,False,False,False,False,clean
+wisconsin_sna,Twin Lakes Bog,,,0.15,-90.438,45.278,0.995,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.992,0.008,0.0,0.0,0.111,high_candidate,False,False,True,False,review
+wisconsin_sna,Camp Five Lake,,,0.28,-88.512,45.26,0.864,0.0,0.0,0.023,0.0,0.129,0,0.0,0.0,0,0.837,0.001,0.009,0.0,0.21,high_candidate,False,False,True,False,review
+wisconsin_sna,Yellow River Ice-walled Lake Plain,,,2.93,-90.639,45.253,0.996,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.706,0.047,high_candidate,False,False,False,False,clean
+wisconsin_sna,Nelligan Lake,,,6.07,-88.319,45.222,0.998,0.001,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.609,0.055,high_candidate,False,False,True,False,review
+wisconsin_sna,Sunrise Lake,,,2.4,-88.394,45.22,0.99,0.004,0.0,0.0,0.0,0.004,0,0.0,0.0,0,0.991,0.005,0.0,0.355,0.086,high_candidate,False,False,True,False,review
+wisconsin_sna,Brush Creek Hemlocks,,,1.1,-90.657,45.226,0.983,0.003,0.0,0.0,0.0,0.014,0,0.0,0.0,0,0.986,0.0,0.0,0.743,0.028,high_candidate,False,False,False,False,clean
+wisconsin_sna,Waupee Lake Swamp,,,11.82,-88.34,45.18,0.979,0.0,0.0,0.0,0.0,0.018,0,0.0,0.0,0,0.973,0.009,0.001,0.804,0.016,high_candidate,False,False,False,False,clean
+wisconsin_sna,Richter Lake Hemlocks,,,1.34,-90.566,45.185,0.958,0.005,0.0,0.0,0.0,0.016,0,0.0,0.0,0,0.979,0.001,0.003,0.224,0.112,high_candidate,False,False,True,False,review
+wisconsin_sna,Bonita Country,,,4.76,-88.548,45.149,0.979,0.001,0.0,0.0,0.0,0.006,0,0.0,0.0,0,0.986,0.003,0.005,0.886,0.047,high_candidate,False,False,False,False,clean
+wisconsin_sna,Perkinstown Hemlocks,,,0.42,-90.615,45.163,0.997,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.152,0.09,high_candidate,False,False,True,False,review
+wisconsin_sna,Swamp Creek Fen,,,0.33,-89.003,45.458,0.927,0.0,0.0,0.0,0.0,0.028,0,0.0,0.0,0,0.913,0.046,0.013,0.302,0.006,high_candidate,False,False,True,False,review
+wisconsin_sna,Plainfield Tunnel Channel Lakes,,,0.01,-89.467,44.206,0.661,0.0,0.0,0.061,0.0,0.0,0,0.0,0.0,0,0.939,0.0,0.0,0.0,0.376,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Ridgeway Pine Relict,,,1.77,-90.015,43.008,0.781,0.006,0.0,0.004,0.073,0.109,0,0.0,0.0,0,0.814,0.0,0.0,0.0,0.183,high_candidate,True,False,True,False,review
+wisconsin_sna,South Branch Beech Grove,,,3.15,-88.596,45.132,0.999,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.845,0.037,high_candidate,False,False,False,False,clean
+wisconsin_sna,Priest Rock,,,0.1,-88.451,45.135,0.994,0.0,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.998,0.0,0.0,0.0,0.238,high_candidate,False,False,True,False,review
+wisconsin_sna,Pirus Road Swamp,,,0.76,-90.589,45.13,0.967,0.003,0.0,0.0,0.0,0.009,0,0.0,0.0,0,0.988,0.002,0.001,0.716,0.049,high_candidate,False,False,False,False,clean
+wisconsin_sna,Rice Creek,,,1.76,-89.751,46.163,0.905,0.0,0.0,0.0,0.0,0.045,0,0.0,0.0,0,0.862,0.089,0.004,0.689,0.017,high_candidate,False,False,True,False,review
+wisconsin_sna,Nixon Lake,,,2.98,-89.573,46.102,0.783,0.006,0.0,0.0,0.0,0.305,0,0.0,0.0,0,0.497,0.064,0.134,0.585,0.04,high_candidate,False,False,True,False,review
+wisconsin_sna,Shallow Lake,,,0.42,-89.477,45.775,0.766,0.028,0.0,0.0,0.0,0.044,0,0.0,0.0,0,0.704,0.189,0.063,0.226,0.079,high_candidate,False,False,True,False,review
+wisconsin_sna,Big Swamp,,,11.8,-89.457,45.81,0.575,0.008,0.0,0.0,0.0,0.435,0,0.0,0.0,0,0.528,0.03,0.006,0.904,0.019,high_candidate,False,False,False,False,clean
+wisconsin_sna,Toy Lake Swamp,,,9.35,-89.926,46.175,0.957,0.016,0.0,0.0,0.0,0.028,0,0.0,0.0,0,0.958,0.0,0.014,0.424,0.03,high_candidate,False,False,True,False,review
+wisconsin_sna,Trout River,,,0.44,-89.716,46.028,0.593,0.001,0.0,0.0,0.0,0.027,0,0.0,0.0,0,0.454,0.409,0.11,0.348,0.066,high_candidate,False,False,True,False,review
+wisconsin_sna,Wind Pudding Lake,,,1.38,-89.637,45.761,0.646,0.114,0.0,0.0,0.0,0.029,0,0.0,0.0,0,0.591,0.181,0.2,0.415,0.043,high_candidate,False,True,True,False,review
+wisconsin_sna,Frog Lake and Pines,,,5.23,-90.012,46.116,0.951,0.003,0.0,0.0,0.0,0.029,0,0.0,0.0,0,0.936,0.026,0.007,0.568,0.054,high_candidate,False,False,True,False,review
+wisconsin_sna,Tomahawk Lake Hemlocks,,,1.0,-89.627,45.804,0.955,0.001,0.0,0.0,0.0,0.008,0,0.0,0.0,0,0.962,0.029,0.002,0.0,0.218,high_candidate,False,False,True,False,review
+wisconsin_sna,Ridgeway Pine Relict,,,0.43,-90.025,42.996,0.875,0.002,0.0,0.0,0.001,0.104,0,0.0,0.0,0,0.895,0.0,0.0,0.0,0.149,high_candidate,False,False,True,False,review
+wisconsin_sna,Hunting River Alders,,,0.41,-89.153,45.391,0.987,0.013,0.0,0.0,0.0,0.016,0,0.0,0.0,0,0.982,0.0,0.002,0.192,0.041,high_candidate,False,False,True,False,review
+wisconsin_sna,Mill Bluff,,,0.33,-90.298,43.953,0.966,0.0,0.0,0.001,0.0,0.0,0,0.0,0.0,0,0.999,0.0,0.0,0.0,0.287,high_candidate,False,False,True,False,review
+wisconsin_sna,Red Banks Alvar,,,0.24,-87.847,44.608,0.922,0.011,0.0,0.003,0.0,0.038,0,0.0,0.0,0,0.959,0.0,0.0,0.0,0.455,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Tunnelville Cliffs,,,0.62,-90.681,43.564,0.623,0.0,0.0,0.0,0.017,0.215,0,0.0,0.0,0,0.768,0.0,0.0,0.058,0.114,high_candidate,False,False,True,False,review
+wisconsin_sna,French Creek Fen,,,0.89,-89.393,43.614,0.533,0.0,0.0,0.0,0.084,0.617,0,0.0,0.0,0,0.26,0.002,0.038,0.162,0.139,high_candidate,True,False,True,False,review
+wisconsin_sna,Grassy Lake,,,1.18,-89.171,43.422,0.123,0.001,0.0,0.0,0.001,0.278,0,0.0,0.0,0,0.121,0.101,0.498,0.0,0.139,high_candidate,False,False,True,False,review
+wisconsin_sna,Pine Island Savanna,,,1.12,-89.579,43.549,0.781,0.001,0.003,0.0,0.0,0.173,0,0.0,0.0,0,0.76,0.064,0.0,0.0,0.063,high_candidate,False,False,True,False,review
+wisconsin_sna,Pine Island Savanna,,,0.56,-89.593,43.548,0.633,0.073,0.0,0.0,0.0,0.389,0,0.0,0.0,0,0.575,0.036,0.0,0.0,0.132,high_candidate,False,False,True,False,review
+wisconsin_sna,Pine Island Savanna,,,1.55,-89.614,43.556,0.826,0.018,0.0,0.0,0.0,0.243,0,0.0,0.0,0,0.734,0.023,0.0,0.0,0.083,high_candidate,False,False,True,False,review
+wisconsin_sna,Springvale Wet Meadow,,,1.1,-89.152,43.545,0.015,0.0,0.0,0.003,0.417,0.46,0,0.0,0.0,0,0.111,0.0,0.01,0.0,0.336,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Thorp Pond,,,0.33,-87.235,45.074,0.967,0.0,0.0,0.0,0.0,0.019,0,0.0,0.0,0,0.979,0.0,0.002,0.0,0.032,high_candidate,False,False,True,False,review
+wisconsin_sna,Cedarburg Bog,,,0.36,-88.016,43.383,0.912,0.0,0.0,0.0,0.0,0.107,0,0.0,0.0,0,0.869,0.0,0.023,0.0,0.044,high_candidate,False,False,True,False,review
+wisconsin_sna,Lake Two Pines,,,1.17,-91.303,46.452,0.873,0.014,0.0,0.0,0.0,0.043,0,0.0,0.0,0,0.889,0.055,0.014,0.958,0.018,high_candidate,False,False,False,False,clean
+wisconsin_sna,White River Boreal Forest,,,1.8,-90.829,46.521,0.988,0.009,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.999,0.001,0.0,0.707,0.036,high_candidate,False,False,False,False,clean
+wisconsin_sna,Lower Chippewa River,,,1.16,-91.682,44.754,0.607,0.001,0.0,0.001,0.012,0.289,0,0.0,0.0,0,0.684,0.014,0.0,0.0,0.184,high_candidate,False,False,True,False,review
+wisconsin_sna,Lower Chippewa River,,,0.15,-91.689,44.759,0.306,0.0,0.0,0.0,0.342,0.304,0,0.0,0.0,0,0.353,0.002,0.0,0.0,0.43,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Lower Chippewa River,,,3.34,-91.645,44.768,0.524,0.004,0.007,0.002,0.112,0.228,0,0.0,0.0,0,0.627,0.024,0.0,0.0,0.23,high_candidate,True,False,True,False,review
+wisconsin_sna,Lower Chippewa River,,,0.47,-91.736,44.759,0.598,0.0,0.0,0.0,0.004,0.061,0,0.0,0.0,0,0.935,0.0,0.0,0.477,0.132,high_candidate,False,False,True,False,review
+wisconsin_sna,Big Swamp Tamarack Fen,,,1.43,-91.787,44.589,0.995,0.0,0.0,0.0,0.0,0.117,0,0.0,0.0,0,0.883,0.0,0.0,0.0,0.099,high_candidate,False,False,True,False,review
+wisconsin_sna,Red Banks Alvar,,,0.13,-87.795,44.607,0.919,0.0,0.0,0.0,0.0,0.072,0,0.0,0.0,0,0.928,0.0,0.0,0.0,0.219,high_candidate,False,False,True,False,review
+wisconsin_sna,Border Lakes,,,9.29,-89.658,46.221,0.935,0.006,0.0,0.0,0.0,0.026,0,0.0,0.0,0,0.924,0.041,0.009,0.685,0.042,high_candidate,False,False,True,False,review
+wisconsin_sna,Wolf River Bottoms,,,0.2,-88.586,44.6,0.993,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.02,high_candidate,False,False,True,False,review
+wisconsin_sna,One Stone Lake Hemlocks,,,1.38,-89.234,45.842,0.896,0.0,0.0,0.0,0.0,0.146,0,0.0,0.0,0,0.792,0.057,0.005,0.645,0.023,high_candidate,False,False,True,False,review
+wisconsin_sna,Plainfield Tunnel Channel Lakes,,,0.09,-89.469,44.205,0.537,0.011,0.0,0.001,0.0,0.279,0,0.0,0.0,0,0.365,0.355,0.0,0.0,0.315,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Catfish Eddy Terraces,,,0.3,-90.851,44.273,0.99,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.985,0.015,0.0,0.0,0.197,high_candidate,False,False,True,False,review
+wisconsin_sna,Mud Lake Forest and Ponds,,,0.53,-89.276,43.415,0.952,0.0,0.0,0.0,0.0,0.032,0,0.0,0.0,0,0.967,0.001,0.0,0.0,0.216,high_candidate,False,False,True,False,review
+wisconsin_sna,French Creek North,,,5.74,-89.368,43.652,0.45,0.027,0.0,0.0,0.009,0.558,0,0.0,0.0,0,0.4,0.002,0.031,0.221,0.092,high_candidate,False,False,True,False,review
+wisconsin_sna,Red Banks Alvar,,,0.57,-87.845,44.602,0.689,0.0,0.0,0.0,0.0,0.28,0,0.0,0.0,0,0.72,0.0,0.0,0.0,0.143,high_candidate,False,False,True,False,review
+wisconsin_sna,Dunnville Barrens,,,2.56,-91.856,44.734,0.547,0.077,0.0,0.001,0.016,0.378,0,0.0,0.0,0,0.6,0.0,0.004,0.382,0.129,high_candidate,False,False,True,False,review
+wisconsin_sna,Jean Brunet Woods,,,1.59,-91.15,45.187,0.83,0.0,0.0,0.0,0.0,0.01,0,0.0,0.0,0,0.794,0.159,0.036,0.0,0.1,high_candidate,False,False,True,False,review
+wisconsin_sna,Muralt Bluff Prairie,,,0.28,-89.482,42.681,0.603,0.0,0.0,0.001,0.144,0.105,0,0.0,0.0,0,0.75,0.0,0.0,0.0,0.302,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Chippewa Moraine Lakes,,,0.28,-91.35,45.217,0.518,0.0,0.0,0.0,0.0,0.008,0,0.0,0.0,0,0.425,0.522,0.046,0.0,0.15,high_candidate,False,False,True,True,review
+wisconsin_sna,Chippewa Moraine Lakes,,,0.96,-91.333,45.29,0.748,0.007,0.0,0.0,0.0,0.173,0,0.0,0.0,0,0.583,0.162,0.083,0.817,0.036,high_candidate,False,False,False,False,clean
+wisconsin_sna,Giant White Pine Grove,,,0.17,-88.979,45.794,1.0,0.0,0.0,0.0,0.0,0.004,0,0.0,0.0,0,0.996,0.0,0.0,0.882,0.007,high_candidate,False,False,False,False,clean
+wisconsin_sna,Little Willow Drumlin,,,2.27,-90.067,45.779,0.98,0.001,0.0,0.0,0.0,0.017,0,0.0,0.0,0,0.983,0.0,0.0,0.992,0.014,high_candidate,False,False,False,False,clean
+wisconsin_sna,Lost Creek Bog,,,3.44,-91.132,46.847,0.969,0.009,0.0,0.001,0.0,0.067,0,0.0,0.0,0,0.903,0.001,0.028,0.0,0.112,high_candidate,False,False,True,False,review
+wisconsin_sna,North Bay,,,1.72,-87.081,45.173,0.956,0.002,0.0,0.0,0.0,0.04,0,0.0,0.0,0,0.96,0.0,0.0,0.0,0.086,high_candidate,False,False,True,False,review
+wisconsin_sna,Straight Lake Tamarack Fen,,,0.34,-92.423,45.607,0.788,0.0,0.0,0.0,0.0,0.469,0,0.0,0.0,0,0.505,0.01,0.016,0.0,0.075,high_candidate,False,False,True,False,review
+wisconsin_sna,McCaslin Mountain,,,2.0,-88.452,45.385,0.999,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.838,0.029,high_candidate,False,False,False,False,clean
+wisconsin_sna,Barney Creek,,,1.0,-88.665,45.361,0.999,0.001,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.983,0.025,high_candidate,False,False,False,False,clean
+wisconsin_sna,Silver Creek & Mondeaux River,,,2.22,-90.483,45.372,0.981,0.011,0.0,0.0,0.0,0.014,0,0.0,0.0,0,0.982,0.0,0.004,1.0,0.019,high_candidate,False,False,False,False,clean
+wisconsin_sna,Thunder River Swamp,,,2.58,-88.348,45.351,0.999,0.0,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.793,0.046,high_candidate,False,False,False,False,clean
+wisconsin_sna,Lulu Lake,,,2.54,-88.474,42.832,0.616,0.023,0.0,0.0,0.004,0.261,0,0.0,0.0,0,0.705,0.007,0.022,0.0,0.166,high_candidate,False,False,True,False,review
+wisconsin_sna,Otter Creek Oak Barrens,,,1.63,-91.845,45.085,0.982,0.004,0.0,0.0,0.0,0.01,0,0.0,0.0,0,0.99,0.0,0.0,0.767,0.054,high_candidate,False,False,False,False,clean
+wisconsin_sna,Meridian Park,,,0.71,-87.163,45.009,0.967,0.0,0.0,0.0,0.0,0.013,0,0.0,0.0,0,0.958,0.02,0.009,0.0,0.167,high_candidate,False,False,True,False,review
+wisconsin_sna,Lower Chippewa River,,,0.39,-92.008,44.6,0.931,0.0,0.0,0.0,0.0,0.049,0,0.0,0.0,0,0.949,0.002,0.0,0.0,0.104,high_candidate,False,False,True,False,review
+wisconsin_sna,Richwood Bottoms,,,3.79,-90.652,43.182,0.975,0.001,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.981,0.017,0.0,0.0,0.048,high_candidate,False,False,True,False,review
+wisconsin_sna,Adiantum Woods,,,1.1,-90.894,43.065,0.982,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.948,0.052,0.0,0.075,0.044,high_candidate,False,False,True,False,review
+wisconsin_sna,Mink River Estuary,,,1.34,-87.011,45.23,0.969,0.001,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.988,0.011,0.0,0.0,0.026,high_candidate,False,False,True,False,review
+wisconsin_sna,Jones Lake,,,0.18,-91.471,46.542,0.782,0.003,0.0,0.0,0.0,0.034,0,0.0,0.0,0,0.482,0.017,0.467,0.0,0.124,high_candidate,False,False,True,False,review
+wisconsin_sna,Pan Hollow,,,1.45,-89.868,43.377,0.917,0.0,0.0,0.0,0.001,0.051,0,0.0,0.0,0,0.948,0.0,0.0,0.238,0.099,high_candidate,False,False,True,False,review
+wisconsin_sna,Hogback Prairie,,,0.26,-90.862,43.284,0.633,0.0,0.0,0.003,0.0,0.091,0,0.0,0.0,0,0.906,0.0,0.0,0.0,0.247,high_candidate,False,False,True,False,review
+wisconsin_sna,Hogback Prairie,,,0.23,-90.849,43.278,0.835,0.0,0.0,0.0,0.004,0.024,0,0.0,0.0,0,0.972,0.0,0.0,0.0,0.274,high_candidate,False,False,True,False,review
+wisconsin_sna,Bear Bluff,,,1.24,-90.424,44.224,0.919,0.008,0.0,0.0,0.0,0.017,0,0.0,0.0,0,0.983,0.0,0.0,0.307,0.047,high_candidate,False,False,True,False,review
+wisconsin_sna,Haley Creek Swamp,,,0.16,-88.444,45.866,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.808,0.011,high_candidate,False,False,False,False,clean
+wisconsin_sna,Orion Mussel Bed,,,0.07,-90.411,43.202,0.994,0.0,0.0,0.0,0.09,0.005,0,0.0,0.0,0,0.904,0.001,0.0,0.0,0.641,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Huiras Lake,,,0.31,-87.983,43.524,0.319,0.0,0.0,0.005,0.05,0.417,0,0.0,0.0,0,0.527,0.0,0.0,0.0,0.376,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Diamond Lake,,,0.01,-90.683,45.104,0.665,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.295,high_candidate,False,False,True,False,review
+wisconsin_sna,Mary Lake,,,0.21,-89.901,46.252,0.93,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.904,0.096,0.0,0.018,0.109,high_candidate,False,False,True,False,review
+wisconsin_sna,Borah Creek Prairie,,,0.57,-90.701,42.937,0.216,0.0,0.0,0.001,0.066,0.597,0,0.0,0.0,0,0.337,0.0,0.0,0.0,0.308,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Standing Cedars,,,3.5,-92.741,45.23,0.899,0.002,0.0,0.0,0.0,0.082,0,0.0,0.0,0,0.918,0.0,0.0,0.0,0.106,high_candidate,False,False,True,False,review
+wisconsin_sna,Five Mile Barrens,,,6.88,-91.986,46.172,0.689,0.187,0.0,0.007,0.0,0.287,0,0.0,0.0,0,0.705,0.0,0.0,0.46,0.118,high_candidate,False,True,True,False,review
+wisconsin_sna,Eagle Eye,,,0.28,-91.033,43.593,0.725,0.0,0.0,0.0,0.033,0.201,0,0.0,0.0,0,0.761,0.0,0.005,0.017,0.115,high_candidate,False,False,True,False,review
+wisconsin_sna,Tunnel Channel Woods,,,1.85,-92.395,45.606,0.971,0.006,0.0,0.0,0.0,0.042,0,0.0,0.0,0,0.956,0.002,0.0,0.0,0.074,high_candidate,False,False,True,False,review
+wisconsin_sna,Berg Prairie and Billy Goat Ridge,,,0.37,-91.013,43.838,0.871,0.035,0.0,0.0,0.0,0.023,0,0.0,0.0,0,0.977,0.0,0.0,0.0,0.223,high_candidate,False,False,True,False,review
+wisconsin_sna,Northeast Coulee Oak Woodland,,,1.16,-91.026,43.866,0.994,0.0,0.0,0.0,0.001,0.001,0,0.0,0.0,0,0.999,0.0,0.0,0.0,0.134,high_candidate,False,False,True,False,review
+wisconsin_sna,Island Lake Hemlocks,,,0.46,-90.308,46.282,0.986,0.0,0.0,0.0,0.0,0.004,0,0.0,0.0,0,0.996,0.0,0.0,0.523,0.015,high_candidate,False,False,True,False,review
+wisconsin_sna,Sugar Camp Hemlocks,,,0.33,-89.24,45.752,0.991,0.004,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.03,0.12,high_candidate,False,False,True,False,review
+wisconsin_sna,Snow Bottom,,,0.48,-90.486,43.048,0.963,0.0,0.0,0.0,0.012,0.069,0,0.0,0.0,0,0.919,0.0,0.0,0.484,0.141,high_candidate,False,False,True,False,review
+wisconsin_sna,Waubesa Wetlands,,,1.34,-89.352,42.988,0.342,0.0,0.0,0.0,0.036,0.64,0,0.0,0.0,0,0.308,0.003,0.014,0.0,0.291,high_candidate,False,False,True,False,review
+wisconsin_sna,Trenton Bluff Prairie,,,0.46,-92.539,44.61,0.755,0.0,0.0,0.001,0.011,0.033,0,0.0,0.0,0,0.955,0.0,0.0,0.0,0.504,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Ketchum Creek Pines,,,1.72,-90.573,44.219,0.969,0.001,0.0,0.0,0.0,0.036,0,0.0,0.0,0,0.964,0.0,0.0,0.281,0.086,high_candidate,False,False,True,False,review
+wisconsin_sna,Robinson Creek Pines,,,0.51,-90.666,44.192,0.988,0.009,0.0,0.0,0.0,0.009,0,0.0,0.0,0,0.991,0.0,0.0,0.0,0.06,high_candidate,False,False,True,False,review
+wisconsin_sna,Barneveld Prairie,,,3.87,-89.843,42.985,0.09,0.014,0.0,0.005,0.135,0.795,0,0.0,0.0,0,0.065,0.001,0.0,0.0,0.426,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Peninsula Niagara Escarpment,,,0.98,-87.225,45.155,0.983,0.0,0.0,0.002,0.0,0.0,0,0.0,0.0,0,0.979,0.019,0.0,0.0,0.293,high_candidate,False,False,True,False,review
+wisconsin_sna,Hawkins Hemlock Hardwood Forest,,,0.16,-90.681,45.42,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,1.0,0.019,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Maritime Forests: Sand Island,,,0.67,-90.935,46.996,0.926,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.959,0.041,0.0,0.487,0.005,high_candidate,False,False,True,False,review
+wisconsin_sna,Apostle Islands Maritime Forests: Bear Island Perched Bog,,,0.17,-90.751,47.008,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,1.0,0.005,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Maritime Forests: Bear Island Hemlocks,,,0.59,-90.747,47.014,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,1.0,0.005,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Maritime Forests: Devils Island,,,1.15,-90.726,47.072,0.967,0.002,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.98,0.019,0.0,0.16,0.01,high_candidate,False,False,True,False,review
+wisconsin_sna,Apostle Islands Yew Forest: Raspberry Island,,,1.09,-90.794,46.975,0.967,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.963,0.037,0.0,0.922,0.012,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Maritime Forests: Stockton Island,,,5.95,-90.529,46.948,0.995,0.0,0.0,0.0,0.0,0.014,0,0.0,0.0,0,0.973,0.008,0.005,1.0,0.005,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Maritime Forests: Oak Island,,,2.56,-90.734,46.956,0.993,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.976,0.024,0.0,1.0,0.005,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Maritime Forests: North Twin Island,,,0.67,-90.588,47.067,0.961,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.936,0.064,0.0,1.0,0.005,high_candidate,False,False,False,False,clean
+wisconsin_sna,Townline Lake and Woods,,,2.83,-91.379,45.207,0.953,0.001,0.0,0.0,0.001,0.016,0,0.0,0.0,0,0.919,0.04,0.024,0.302,0.095,high_candidate,False,False,True,False,review
+wisconsin_sna,Apostle Islands Maritime Forests: Sand Island Bogs,,,0.25,-90.948,46.972,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,1.0,0.006,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Maritime Forests: Outer Island,,,13.0,-90.425,47.057,0.978,0.002,0.0,0.0,0.0,0.005,0,0.0,0.0,0,0.973,0.022,0.0,0.994,0.005,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Maritime Forests: Outer Island,,,0.47,-90.41,47.02,0.981,0.0,0.0,0.0,0.0,0.005,0,0.0,0.0,0,0.988,0.007,0.0,1.0,0.005,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Yew Forest: Cat Island,,,5.39,-90.559,47.019,0.976,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.97,0.03,0.0,1.0,0.008,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Sandscapes: Rocky Island,,,0.09,-90.68,47.023,0.528,0.0,0.005,0.0,0.0,0.598,0,0.0,0.0,0,0.284,0.113,0.0,1.0,0.296,high_candidate,False,False,True,False,review
+wisconsin_sna,Apostle Islands Sandscapes: Stockton Island,,,2.52,-90.558,46.925,0.741,0.007,0.021,0.0,0.0,0.198,0,0.0,0.0,0,0.652,0.035,0.095,0.982,0.032,high_candidate,False,False,False,False,clean
+wisconsin_sna,Apostle Islands Sandscapes: Long Island,,,1.02,-90.774,46.72,0.495,0.0,0.082,0.0,0.0,0.279,0,0.0,0.0,0,0.506,0.132,0.001,0.582,0.107,high_candidate,False,False,True,False,review
+wisconsin_sna,Apostle Islands Yew Forest: York Island,,,1.1,-90.861,46.984,0.916,0.0,0.0,0.0,0.0,0.003,0,0.0,0.0,0,0.929,0.068,0.0,0.483,0.006,high_candidate,False,False,True,False,review
+wisconsin_sna,Dorothy Lake,,,0.39,-91.302,45.224,0.877,0.044,0.0,0.0,0.0,0.028,0,0.0,0.0,0,0.906,0.038,0.028,0.843,0.028,high_candidate,False,False,False,False,clean
+wisconsin_sna,Deer Fly Swamp,,,0.08,-91.315,45.195,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.048,high_candidate,False,False,True,False,review
+wisconsin_sna,Tealey Creek Cedars,,,0.48,-91.286,45.274,1.0,0.0,0.0,0.0,0.0,0.014,0,0.0,0.0,0,0.986,0.0,0.0,1.0,0.022,high_candidate,False,False,False,False,clean
+wisconsin_sna,Deer Island,,,8.59,-90.381,44.299,0.718,0.006,0.0,0.0,0.0,0.216,0,0.0,0.0,0,0.784,0.0,0.001,0.754,0.022,high_candidate,False,False,False,False,clean
+wisconsin_sna,Brockway Ponds,,,0.21,-90.709,44.319,0.459,0.024,0.0,0.0,0.0,0.338,0,0.0,0.0,0,0.448,0.044,0.169,0.814,0.085,high_candidate,False,False,False,False,clean
+wisconsin_sna,Empire Prairies,,,0.33,-89.259,43.411,0.008,0.0,0.0,0.0,0.257,0.716,0,0.0,0.0,0,0.014,0.0,0.012,0.0,0.463,high_candidate,True,False,True,False,unfit
+wisconsin_sna,Glenn Creek Barrens,,,0.34,-90.685,44.192,0.906,0.029,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.034,high_candidate,False,False,True,False,review
+wisconsin_sna,Millston Sand Barrens,,,0.73,-90.697,44.229,0.947,0.005,0.0,0.0,0.0,0.004,0,0.0,0.0,0,0.996,0.0,0.0,0.0,0.159,high_candidate,False,False,True,False,review
+wisconsin_sna,Spaulding Fen,,,1.94,-90.434,44.332,0.343,0.001,0.0,0.0,0.0,0.712,0,0.0,0.0,0,0.288,0.0,0.0,0.629,0.048,high_candidate,False,False,True,False,review
+wisconsin_sna,Houghton Falls,,,0.18,-90.86,46.693,0.993,0.007,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.189,high_candidate,False,False,True,False,review
+wisconsin_sna,North Fork Pines,,,0.34,-90.667,45.845,0.997,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.24,0.073,high_candidate,False,False,True,False,review
+wisconsin_sna,Swamp Lake,,,4.22,-90.696,45.797,0.763,0.002,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.755,0.242,0.001,0.637,0.039,high_candidate,False,False,True,False,review
+wisconsin_sna,Skinner Creek Hardwoods,,,0.92,-90.793,45.618,0.997,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.79,0.043,high_candidate,False,False,False,False,clean
+wisconsin_sna,Hanson Lake Wetlands,,,1.22,-90.733,45.817,0.853,0.061,0.0,0.0,0.0,0.011,0,0.0,0.0,0,0.823,0.135,0.031,0.984,0.014,high_candidate,False,False,False,False,clean
+wisconsin_sna,Bass Lake Peatlands,,,3.86,-90.672,45.772,0.825,0.0,0.0,0.0,0.0,0.114,0,0.0,0.0,0,0.728,0.094,0.064,0.844,0.014,high_candidate,False,False,False,False,clean
+wisconsin_sna,Oxbo Pines,,,1.16,-90.675,45.872,0.99,0.002,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.987,0.013,0.0,0.475,0.018,high_candidate,False,False,True,False,review
+wisconsin_sna,Flambeau River Hardwood Forest,,,1.08,-90.779,45.714,0.993,0.0,0.0,0.0,0.0,0.003,0,0.0,0.0,0,0.974,0.023,0.001,1.0,0.027,high_candidate,False,False,False,False,clean
+wisconsin_sna,Ableman's Gorge,,,0.08,-89.922,43.491,0.906,0.0,0.0,0.0,0.0,0.003,0,0.0,0.0,0,0.997,0.0,0.0,0.0,0.631,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Upper Kaubashine Creek,,,1.07,-89.789,45.795,0.868,0.013,0.0,0.0,0.0,0.294,0,0.0,0.002,0,0.7,0.0,0.004,0.259,0.021,high_candidate,False,False,True,False,review
+wisconsin_sna,Magnolia Bluff,,,0.22,-89.354,42.731,0.967,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.249,high_candidate,False,False,True,False,review
+wisconsin_sna,Carver-Roehl Woods,,,0.11,-88.827,42.604,0.987,0.0,0.0,0.002,0.005,0.0,0,0.0,0.0,0,0.994,0.0,0.0,0.0,0.302,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Devine Lake and Mishonagon Creek,,,0.0,-89.729,45.952,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.073,high_candidate,False,False,True,False,review
+wisconsin_sna,Point Beach Ridges,,,2.02,-87.531,44.171,0.952,0.0,0.001,0.002,0.0,0.019,0,0.0,0.0,0,0.974,0.005,0.0,0.0,0.285,high_candidate,False,False,True,False,review
+wisconsin_sna,Point Beach Ridges,,,0.24,-87.526,44.173,0.036,0.0,0.172,0.015,0.0,0.617,0,0.0,0.0,0,0.147,0.05,0.0,0.0,0.731,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Nipissing Swamp,,,0.98,-87.525,44.206,0.746,0.002,0.044,0.0,0.0,0.166,0,0.0,0.0,0,0.79,0.0,0.0,0.0,0.178,high_candidate,False,False,True,False,review
+wisconsin_sna,Rush Creek,,,0.32,-91.15,43.401,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.065,high_candidate,False,False,True,False,review
+wisconsin_sna,Rush Creek,,,0.04,-91.188,43.403,0.95,0.0,0.0,0.016,0.0,0.0,0,0.0,0.0,0,0.984,0.0,0.0,0.0,0.637,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Swan Lake Wet-Mesic Prairie,,,0.2,-89.43,43.539,0.614,0.004,0.0,0.0,0.0,0.158,0,0.0,0.0,0,0.842,0.0,0.0,0.0,0.298,high_candidate,False,False,True,False,review
+wisconsin_sna,Cave Point-Clay Banks,,,1.91,-87.221,44.889,0.941,0.001,0.0,0.0,0.0,0.009,0,0.0,0.0,0,0.944,0.046,0.001,0.0,0.037,high_candidate,False,False,True,False,review
+wisconsin_sna,Highway K Woods,,,0.13,-88.585,44.637,0.906,0.009,0.0,0.009,0.0,0.027,0,0.0,0.0,0,0.964,0.0,0.0,0.0,0.221,high_candidate,False,False,True,False,review
+wisconsin_sna,Deer Creek Tamarack Bog,,,1.19,-88.634,44.584,0.96,0.001,0.0,0.0,0.0,0.027,0,0.0,0.0,0,0.973,0.0,0.0,0.356,0.036,high_candidate,False,False,True,False,review
+wisconsin_sna,LaSage Bottoms,,,0.51,-88.601,44.394,0.983,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.968,0.03,0.001,0.0,0.059,high_candidate,False,False,True,False,review
+wisconsin_sna,Winchester Meadow,,,1.8,-88.753,44.184,0.063,0.001,0.0,0.0,0.003,0.722,0,0.0,0.0,0,0.019,0.0,0.257,0.0,0.088,high_candidate,False,False,True,False,review
+wisconsin_sna,White River Breaks,,,0.65,-90.987,46.479,0.981,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.999,0.0,0.0,0.722,0.025,high_candidate,False,False,False,False,clean
+wisconsin_sna,Allen Creek Wetlands,,,0.07,-88.837,42.879,0.286,0.0,0.0,0.0,0.0,0.336,0,0.0,0.0,0,0.664,0.0,0.0,0.0,0.337,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Trade River Forest and Wetlands,,,3.68,-92.747,45.56,0.935,0.0,0.0,0.0,0.002,0.073,0,0.0,0.0,0,0.921,0.0,0.003,0.202,0.071,high_candidate,False,False,True,False,review
+wisconsin_sna,Sterling Barrens,,,1.3,-92.81,45.568,0.64,0.008,0.0,0.0,0.0,0.514,0,0.0,0.0,0,0.486,0.0,0.0,0.061,0.212,high_candidate,False,False,True,False,review
+wisconsin_sna,Honey Creek,,,1.46,-89.981,43.357,0.847,0.001,0.0,0.0,0.002,0.066,0,0.0,0.0,0,0.931,0.0,0.0,0.324,0.161,high_candidate,False,False,True,False,review
+wisconsin_sna,Van Vliet Hemlocks,,,1.67,-89.752,46.206,0.954,0.001,0.0,0.0,0.0,0.016,0,0.0,0.0,0,0.949,0.033,0.001,0.193,0.031,high_candidate,False,False,True,False,review
+wisconsin_sna,Nell Lake,,,0.48,-89.851,46.257,0.79,0.0,0.0,0.0,0.0,0.059,0,0.0,0.0,0,0.765,0.154,0.023,0.154,0.101,high_candidate,False,False,True,False,review
+wisconsin_sna,Lower Chippewa River,,,0.68,-91.994,44.414,0.871,0.0,0.0,0.01,0.0,0.049,0,0.0,0.0,0,0.941,0.0,0.0,0.0,0.321,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Belden Swamp,,,7.26,-92.187,46.359,0.705,0.02,0.0,0.0,0.0,0.58,0,0.0,0.016,0,0.384,0.001,0.019,0.947,0.022,high_candidate,False,False,False,False,clean
+wisconsin_sna,Blueberry Swamp,,,3.5,-91.69,46.56,0.99,0.006,0.0,0.0,0.0,0.025,0,0.0,0.0,0,0.974,0.0,0.0,0.551,0.057,high_candidate,False,False,True,False,review
+wisconsin_sna,Fort McCoy,,,0.42,-90.637,44.137,0.894,0.004,0.0,0.0,0.0,0.031,0,0.0,0.0,0,0.969,0.0,0.0,0.024,0.083,high_candidate,False,False,True,False,review
+wisconsin_sna,Clifford F. Messinger Dry Prairie and Savanna Preserve,,,0.01,-88.593,42.826,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.11,high_candidate,False,False,True,False,review
+wisconsin_sna,Clifford F. Messinger Dry Prairie and Savanna Preserve,,,0.02,-88.607,42.828,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.096,high_candidate,False,False,True,False,review
+wisconsin_sna,Clifford F. Messinger Dry Prairie and Savanna Preserve,,,0.01,-88.494,42.874,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.419,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Big Beaver Meadow,,,0.13,-91.994,45.119,0.968,0.004,0.0,0.0,0.0,0.024,0,0.0,0.0,0,0.976,0.0,0.0,0.0,0.226,high_candidate,False,False,True,False,review
+wisconsin_sna,Savage Lake,,,7.62,-88.471,45.881,0.916,0.004,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.915,0.052,0.031,0.634,0.044,high_candidate,False,False,True,False,review
+wisconsin_sna,Waubesa Wetlands,,,0.16,-89.345,42.989,0.38,0.0,0.0,0.0,0.119,0.443,0,0.0,0.0,0,0.401,0.032,0.005,0.0,0.184,high_candidate,True,False,True,False,review
+wisconsin_sna,Big Eau Pleine Woods,,,0.34,-89.843,44.736,0.968,0.002,0.0,0.0,0.0,0.003,0,0.0,0.0,0,0.997,0.001,0.0,0.027,0.099,high_candidate,False,False,True,False,review
+wisconsin_sna,Nine Mile Island,,,5.51,-91.921,44.684,0.775,0.001,0.005,0.001,0.003,0.163,0,0.0,0.0,0,0.807,0.023,0.0,0.083,0.121,high_candidate,False,False,True,False,review
+wisconsin_sna,Dells of the Wisconsin River,,,5.21,-89.794,43.674,0.915,0.007,0.0,0.003,0.001,0.029,0,0.0,0.0,0,0.954,0.012,0.0,0.0,0.289,high_candidate,False,False,True,False,review
+wisconsin_sna,Namekagon Barrens,,,26.04,-92.071,46.13,0.199,0.102,0.0,0.001,0.005,0.91,0,0.0,0.0,0,0.079,0.001,0.005,0.109,0.113,high_candidate,False,True,True,False,review
+wisconsin_sna,County Line Barrens and Forest,,,1.37,-92.035,46.08,0.93,0.007,0.0,0.0,0.0,0.001,0,0.0,0.0,0,0.997,0.001,0.0,0.718,0.031,high_candidate,False,False,False,False,clean
+wisconsin_sna,Jackson Marsh,,,2.39,-88.135,43.342,0.984,0.0,0.0,0.0,0.0,0.011,0,0.0,0.0,0,0.988,0.0,0.0,0.0,0.135,high_candidate,False,False,True,False,review
+wisconsin_sna,Nichols Creek East Cedars,,,0.49,-88.027,43.684,0.976,0.0,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.998,0.0,0.0,0.0,0.18,high_candidate,False,False,True,False,review
+wisconsin_sna,Kamrath Creek Forest and Fen,,,0.24,-88.034,43.732,0.996,0.0,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.998,0.0,0.0,0.0,0.156,high_candidate,False,False,True,False,review
+wisconsin_sna,Baileys Harbor Boreal Forest and Wetlands,,,3.35,-87.06,45.104,0.97,0.0,0.0,0.002,0.0,0.009,0,0.0,0.0,0,0.978,0.009,0.001,0.0,0.081,high_candidate,False,False,True,False,review
+wisconsin_sna,Snow Bottom,,,0.1,-90.516,43.044,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.07,high_candidate,False,False,True,False,review
+wisconsin_sna,Sugar Creek Bluff,,,1.76,-91.075,43.348,0.818,0.0,0.0,0.002,0.001,0.11,0,0.0,0.0,0,0.88,0.0,0.006,0.0,0.181,high_candidate,False,False,True,False,review
+wisconsin_sna,Lower Tomahawk River Pines,,,0.98,-89.743,45.613,0.964,0.035,0.0,0.001,0.0,0.007,0,0.0,0.0,0,0.992,0.0,0.0,0.034,0.056,high_candidate,False,False,True,False,review
+wisconsin_sna,Avon Bottoms,,,6.68,-89.32,42.528,0.935,0.001,0.0,0.001,0.001,0.064,0,0.0,0.0,0,0.93,0.004,0.0,0.043,0.133,high_candidate,False,False,True,False,review
+wisconsin_sna,Woods Creek,,,0.21,-88.548,45.841,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,1.0,0.01,high_candidate,False,False,False,False,clean
+wisconsin_sna,Rib Mountain Talus Forest,,,0.55,-89.686,44.919,0.987,0.001,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.187,high_candidate,False,False,True,False,review
+wisconsin_sna,Bear Beach,,,0.39,-91.636,46.738,0.488,0.001,0.0,0.0,0.0,0.002,0,0.0,0.0,0,0.443,0.556,0.0,0.0,0.125,high_candidate,False,False,True,True,review
+wisconsin_sna,Lower Chippewa River,,,0.56,-91.944,44.827,0.589,0.0,0.0,0.0,0.0,0.294,0,0.0,0.0,0,0.701,0.005,0.0,0.0,0.159,high_candidate,False,False,True,False,review
+wisconsin_sna,Lower Chippewa River,,,0.1,-91.944,44.85,0.979,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,0.998,0.002,0.0,0.0,0.396,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Empire Swamp,,,6.36,-92.087,46.33,0.955,0.025,0.0,0.0,0.0,0.043,0,0.0,0.0,0,0.956,0.0,0.001,0.919,0.018,high_candidate,False,False,False,False,clean
+wisconsin_sna,Pickerel Lake Fen,,,0.17,-88.437,42.813,0.613,0.0,0.0,0.0,0.0,0.28,0,0.0,0.0,0,0.645,0.004,0.071,0.0,0.254,high_candidate,False,False,True,False,review
+wisconsin_sna,Spread Eagle Barrens,,,26.8,-88.177,45.863,0.65,0.089,0.0,0.0,0.0,0.334,0,0.0,0.0,0,0.658,0.007,0.0,0.168,0.094,high_candidate,False,False,True,False,review
+wisconsin_sna,Spread Eagle Barrens,,,5.36,-88.137,45.825,0.872,0.042,0.0,0.0,0.0,0.085,0,0.0,0.0,0,0.904,0.01,0.001,0.09,0.1,high_candidate,False,False,True,False,review
+wisconsin_sna,Newport Conifer-Hardwoods,,,2.18,-86.987,45.226,0.964,0.0,0.001,0.0,0.0,0.003,0,0.0,0.0,0,0.974,0.022,0.0,0.0,0.049,high_candidate,False,False,True,False,review
+wisconsin_sna,Clifford F. Messinger Dry Prairie and Savanna Preserve,,,0.21,-88.517,42.874,0.755,0.0,0.0,0.0,0.0,0.225,0,0.0,0.0,0,0.775,0.0,0.0,0.0,0.323,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Clifford F. Messinger Dry Prairie and Savanna Preserve,,,0.01,-88.496,42.878,0.986,0.0,0.0,0.0,0.0,0.006,0,0.0,0.0,0,0.994,0.0,0.0,0.0,0.357,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Clifford F. Messinger Dry Prairie and Savanna Preserve,,,0.0,-88.463,42.931,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.1,high_candidate,False,False,True,False,review
+wisconsin_sna,Clifford F. Messinger Dry Prairie and Savanna Preserve,,,0.01,-88.446,42.941,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.09,high_candidate,False,False,True,False,review
+wisconsin_sna,Totogan Pines,,,0.97,-91.983,46.067,0.7,0.266,0.0,0.0,0.0,0.052,0,0.0,0.0,0,0.948,0.0,0.0,0.263,0.026,high_candidate,False,True,True,False,review
+wisconsin_sna,Upper Tomahawk River Pines,,,0.77,-89.841,45.77,0.869,0.008,0.0,0.0,0.0,0.2,0,0.0,0.0,0,0.79,0.0,0.01,0.092,0.038,high_candidate,False,False,True,False,review
+wisconsin_sna,Upper Tomahawk River Pines,,,2.61,-89.817,45.798,0.94,0.004,0.0,0.0,0.0,0.111,0,0.0,0.0,0,0.882,0.0,0.006,0.7,0.028,high_candidate,False,False,False,False,clean
+wisconsin_sna,Charles Pond,,,0.38,-87.938,44.767,0.822,0.0,0.0,0.0,0.0,0.05,0,0.0,0.0,0,0.816,0.123,0.011,0.0,0.161,high_candidate,False,False,True,False,review
+wisconsin_sna,Clifford F. Messinger Dry Prairie and Savanna Preserve,,,0.01,-88.451,42.941,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.254,high_candidate,False,False,True,False,review
+wisconsin_sna,Clifford F. Messinger Dry Prairie and Savanna Preserve,,,0.01,-88.457,42.942,1.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0,1.0,0.0,0.0,0.0,0.328,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Boscobel Bluffs,,,1.55,-90.678,43.133,0.923,0.009,0.0,0.0,0.0,0.015,0,0.0,0.0,0,0.985,0.0,0.0,0.0,0.225,high_candidate,False,False,True,False,review
+wisconsin_sna,Coffey Swamp,,,0.05,-86.895,45.394,0.854,0.0,0.0,0.006,0.0,0.371,0,0.0,0.0,0,0.622,0.0,0.0,0.0,0.236,high_candidate,False,False,True,False,review
+wisconsin_sna,Red Banks Alvar,,,0.22,-87.856,44.605,0.752,0.014,0.0,0.019,0.0,0.12,0,0.0,0.0,0,0.861,0.0,0.0,0.0,0.772,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Grand Island,,,1.09,-87.808,45.67,0.976,0.004,0.0,0.0,0.0,0.014,0,0.0,0.0,0,0.977,0.008,0.0,0.001,0.053,high_candidate,False,False,True,False,review
+wisconsin_sna,Chiwaukee Prairie,,,2.3,-87.817,42.555,0.399,0.001,0.013,0.013,0.014,0.404,0,0.0,0.0,0,0.552,0.003,0.001,0.0,0.626,high_candidate,False,False,True,False,unfit
+wisconsin_sna,Lower Chippewa River,,,4.29,-91.849,44.712,0.648,0.088,0.003,0.0,0.055,0.201,0,0.0,0.0,0,0.715,0.027,0.0,0.335,0.15,high_candidate,True,False,True,False,review
+wisconsin_sna,Wolf River Woods,,,1.63,-88.675,45.13,0.97,0.0,0.0,0.003,0.0,0.002,0,0.0,0.0,0,0.965,0.03,0.0,0.035,0.1,high_candidate,False,False,True,False,review
+wisconsin_sna,Totagatic Lake and Forest,,,3.59,-91.402,46.171,0.468,0.0,0.0,0.0,0.0,0.026,0,0.0,0.0,0,0.401,0.32,0.253,0.639,0.018,high_candidate,False,False,True,False,review
+wisconsin_sna,Hunting River Alders,,,0.61,-89.139,45.4,0.966,0.0,0.0,0.0,0.0,0.116,0,0.0,0.0,0,0.779,0.0,0.105,0.711,0.031,high_candidate,False,False,False,False,clean
