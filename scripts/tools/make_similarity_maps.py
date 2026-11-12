@@ -51,7 +51,7 @@ def run_one(run: str, out_dir: Path) -> None:
     with rasterio.open(folder / f"{stem}_standardized_deviation.tif") as src:
         reference = ~np.ma.getmaskarray(src.read(1, masked=True)) & ~scored
 
-    with rasterio.open(config.application_mask_path) as mask:
+    with rasterio.open(config.inference.application_mask_path) as mask:
         x, y = Transformer.from_crs("EPSG:4326", mask.crs, always_xy=True).transform(
             sample["longitude"].to_numpy(), sample["latitude"].to_numpy())
         in_mask = np.array([v[0] for v in mask.sample(zip(x, y))]) == 1
