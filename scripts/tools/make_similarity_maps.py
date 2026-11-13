@@ -126,7 +126,7 @@ def run_one(run: str, out_dir: Path) -> None:
     aoi = gpd.read_file(ROOT / "config" / "aoi" / f"{base}.geojson").to_crs("EPSG:6933")
     outline = gpd.GeoSeries([affinity.scale(g, 0.001, 0.001, origin=(0, 0)) for g in aoi.geometry])
     aspect = (extent[3] - extent[2]) / (extent[1] - extent[0])
-    fig, axes = plt.subplots(1, 2, figsize=(15, min(7.5 * aspect + 1.8, 12)), facecolor="white")
+    fig, axes = plt.subplots(1, 2, figsize=(15, min(7.5 * aspect + 1.8, 12)), facecolor="white", layout="constrained")
     for ax, which in zip(axes, ("sim", "outside")):
         outline.plot(ax=ax, facecolor=GREY, edgecolor=MUTED, linewidth=0.7, zorder=0)
         ax.imshow(np.ma.masked_invalid(sim_b), extent=extent, cmap=SIM, vmin=0, vmax=1, interpolation="nearest", zorder=2)
@@ -139,7 +139,7 @@ def run_one(run: str, out_dir: Path) -> None:
     axes[0].set_title("Environmental similarity to the reference", fontsize=12, loc="left", color=INK)
     axes[1].set_title("Environments outside the reference range", fontsize=12, loc="left", color=INK)
     sm = plt.cm.ScalarMappable(cmap=SIM, norm=plt.Normalize(0, 1))
-    cb = fig.colorbar(sm, ax=list(axes), orientation="horizontal", fraction=0.04, pad=0.03, aspect=60)
+    cb = fig.colorbar(sm, ax=list(axes), orientation="horizontal", fraction=0.04, pad=0.02, aspect=60)
     cb.set_label("Share of reference pixels farther from the reference core (1 = typical of reference)", fontsize=8.5, color=MUTED)
     cb.outline.set_visible(False)
     axes[1].legend(handles=[Patch(facecolor=ORANGE, label=f"Outside reference range: {100 * summary['outside_share']:.0f}% of the scored zone")],
