@@ -2,3 +2,4 @@ __pycache__
 outputs/
 data/
 .ruff_cache/
+data/habitat/tile_checkpoints/

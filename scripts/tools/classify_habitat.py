@@ -35,7 +35,7 @@ from ..analysis_config import load_analysis_configuration
 from ..raster_cache_utils import load_wgs84_aoi, select_intersecting_tiles
 
 ROOT = Path(__file__).resolve().parents[2]
-WORKERS, TIMEOUT_SECONDS, MAX_ATTEMPTS = 4, 300, 3
+WORKERS, TIMEOUT_SECONDS, MAX_ATTEMPTS = 4, 600, 8
 ESA_TREE, ESA_NONNATURAL = (10, 95), (40, 50, 60, 70, 80)  # tree cover, mangrove | crop, built, bare, snow, water
 BANDS = ["nonnatural", "esa_tree", "canopy"]
 
@@ -68,18 +68,27 @@ def classify(name: str, canopy_percent: float, min_fraction: float) -> Path:
         data = np.load(io.BytesIO(ee.data.computePixels(request)), allow_pickle=False)
         return np.stack([data[b] for b in BANDS])
 
+    checkpoint = ROOT / "data" / "habitat" / "tile_checkpoints" / f"{name}_{canopy_percent:g}"
+    checkpoint.mkdir(parents=True, exist_ok=True)
+
     def fetch(tile):
+        """One tile's three share bands; saved to disk the moment it arrives so a rerun resumes."""
+        path = checkpoint / f"{tile.tile_id}.npy"
+        if path.exists():
+            return np.load(path)
         try:
-            return request_block(tile.left, tile.top, size)
+            out = request_block(tile.left, tile.top, size)
         except ee.EEException as error:
             if "too large" not in str(error):  # high latitudes: too many 10 m pixels per request
                 raise
-        half = size // 2
-        out = np.zeros((len(BANDS), size, size), dtype="float32")
-        for row in (0, half):
-            for col in (0, half):
-                out[:, row:row + half, col:col + half] = request_block(
-                    tile.left + col * pixel, tile.top - row * pixel, half)
+            half = size // 2
+            out = np.zeros((len(BANDS), size, size), dtype="float32")
+            for row in (0, half):
+                for col in (0, half):
+                    out[:, row:row + half, col:col + half] = request_block(
+                        tile.left + col * pixel, tile.top - row * pixel, half)
+        np.save(path.with_suffix(".tmp.npy"), out)
+        path.with_suffix(".tmp.npy").replace(path)
         return out
 
     pool = ThreadPoolExecutor(max_workers=WORKERS)
