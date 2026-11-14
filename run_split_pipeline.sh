@@ -1,5 +1,6 @@
 #!/bin/bash
-# Usage: ./run_split_pipeline.sh NAME KIND      KIND = forestv2 or grassv2
+# Usage: ./run_split_pipeline.sh NAME KIND [SOURCE_CACHE]     KIND = forestv2 or grassv2
+#   optional SOURCE_CACHE forces the tile source, e.g. data/gee_cache_guatemala_forestv2
 #   e.g. ./run_split_pipeline.sh soknot grassv2
 # Habitat-split run: reference sites and inference mask come from the forest/grassland habitat split
 # (forest_inputs/forest_reference_v2 + forest_masks_v2, or grass_inputs/grass_reference_v2 + grass_masks_v2).
@@ -8,7 +9,7 @@
 # otherwise they are fetched. Then sample -> predictors-only fit -> all-variables fit -> integrity map.
 set -u
 ulimit -n 4096 2>/dev/null || ulimit -n 2048 2>/dev/null || true
-NAME=$1; KIND=$2
+NAME=$1; KIND=$2; SRC_ARG=${3:-}
 cd "$(dirname "$0")"
 PY=.venv/bin/python
 RUN=${NAME}_${KIND}
@@ -17,10 +18,11 @@ ALL=config/${RUN}_all.toml
 PRED=config/${RUN}_predictors_only.toml
 if [ "$KIND" = forestv2 ]; then REF=forest_inputs/forest_reference_v2/${NAME}_reference_500m.tif
 else REF=grass_inputs/grass_reference_v2/${NAME}_reference_500m.tif; fi
-# Tile source: the landscape's original cache, else a finished sibling run's cache (same tiles, other reference band).
-SRC=""
+# Tile source: SOURCE_CACHE if given; else the landscape's original cache, else a finished sibling run's cache (same tiles, other reference band).
+SRC="$SRC_ARG"
 for c in data/gee_cache_${NAME} data/gee_raster_cache data/gee_cache_${NAME}_forestv2 data/gee_cache_${NAME}_grassv2; do
   [ "$c" = data/gee_raster_cache ] && [ "$NAME" != central_india_boundary ] && continue
+  [ -n "$SRC" ] && break
   [ "$c" = data/gee_cache_${RUN} ] && continue
   if [ "$(ls $c/tiles/*/*.tif 2>/dev/null | wc -l)" -gt 0 ]; then SRC=$c; break; fi
 done

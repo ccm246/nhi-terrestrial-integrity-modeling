@@ -25,7 +25,8 @@ ROOT = Path(__file__).resolve().parents[2]
 NAMES = {"kaza": "KAZA", "pacha": "PACHA", "central_india_boundary": "Central India", "nepal_tal": "Nepal TAL",
          "soknot": "SOKNOT", "carpathian": "Carpathian", "sabah": "Sabah", "seka": "SEKA",
          "adirondacks": "Adirondacks", "nepal_tal_2026": "Nepal TAL 2026",
-         "adirondacks_large": "Adirondacks (large extent)", "upper_midwest": "Upper Midwest", "guatemala": "Guatemala"}
+         "adirondacks_large": "Adirondacks (large extent)", "upper_midwest": "Upper Midwest", "guatemala": "Guatemala",
+         "guatemala_pa": "Guatemala (highland protected areas in reference)", "guatemala_mid": "Guatemala (highland forest in reference)"}
 RAMP = LinearSegmentedColormap.from_list("departure", ["#1a9850", "#a6d96a", "#fee08b", "#f46d43", "#a50026"])
 PURPLE, GREY, INK, MUTED = "#7b3294", "#e9e8e3", "#0b0b0b", "#52514e"
 # MODIS IGBP land cover (2018), grouped and muted so the departure ramp stays the focus.
