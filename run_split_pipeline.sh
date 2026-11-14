@@ -17,12 +17,18 @@ ALL=config/${RUN}_all.toml
 PRED=config/${RUN}_predictors_only.toml
 if [ "$KIND" = forestv2 ]; then REF=forest_inputs/forest_reference_v2/${NAME}_reference_500m.tif
 else REF=grass_inputs/grass_reference_v2/${NAME}_reference_500m.tif; fi
-SRC=data/gee_cache_${NAME}; [ "$NAME" = central_india_boundary ] && SRC=data/gee_raster_cache
+# Tile source: the landscape's original cache, else a finished sibling run's cache (same tiles, other reference band).
+SRC=""
+for c in data/gee_cache_${NAME} data/gee_raster_cache data/gee_cache_${NAME}_forestv2 data/gee_cache_${NAME}_grassv2; do
+  [ "$c" = data/gee_raster_cache ] && [ "$NAME" != central_india_boundary ] && continue
+  [ "$c" = data/gee_cache_${RUN} ] && continue
+  if [ "$(ls $c/tiles/*/*.tif 2>/dev/null | wc -l)" -gt 0 ]; then SRC=$c; break; fi
+done
 S=outputs/samples/${RUN}_all_2018_spatial_sample.parquet
 step() { local log=$1; shift; echo "$(date +%T) $*" >> "$L/steps.log"; "$@" > "$L/$log.log" 2>&1 || { echo "FAILED: $log" >> "$L/steps.log"; return 1; }; }
 run() { step "$@" || exit 1; }
 cloned=0
-if [ "$(ls $SRC/tiles/*/*.tif 2>/dev/null | wc -l)" -gt 0 ]; then
+if [ -n "$SRC" ]; then
   step clone $PY -m scripts.tools.clone_cache_with_reference $ALL $SRC $REF && cloned=1
   [ $cloned = 0 ] && sed -i '' '/^FAILED: clone/d' "$L/steps.log"
 fi
