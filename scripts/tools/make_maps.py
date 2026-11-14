@@ -55,6 +55,44 @@ def describe(run: str) -> tuple[str, str, str]:
     return base, f"{NAMES.get(base, base)} {kind}", wave
 
 
+def true_reference(run: str, transform, shape):
+    """Boolean reference-site mask on the inference grid, from the reference raster the run was trained on.
+
+    Returns None when the run's reference raster is not on disk (waves 1 and 2); callers then fall back to
+    "complete deviation, not scored", which over-counts wherever ordinary pixels lack some response.
+    """
+    base = re.sub(r"_(w2|forestv2|grassv2|forest|hm|wild)$", "", run)
+    if run.endswith("_forestv2"):
+        path = ROOT / "forest_inputs" / "forest_reference_v2" / f"{base}_reference_500m.tif"
+    elif run.endswith("_grassv2"):
+        path = ROOT / "grass_inputs" / "grass_reference_v2" / f"{base}_reference_500m.tif"
+    elif run.endswith("_hm") or run.endswith("_wild"):
+        path = ROOT / "transfer_inputs" / base / f"reference_{run.rsplit('_', 1)[1]}_500m.tif"
+    elif run.endswith("_forest"):
+        path = ROOT / "forest_inputs" / "forest_reference" / f"{base}_reference_500m.tif"
+    else:
+        return None
+    if not path.exists():
+        return None
+    height, width = shape
+    out = np.zeros((height, width), bool)
+    with rasterio.open(path) as src:
+        data = src.read(1) == 1
+        col0 = int(round((src.transform.c - transform.c) / transform.a))
+        row0 = int(round((transform.f - src.transform.f) / -transform.e))
+    r0, r1 = max(row0, 0), min(row0 + data.shape[0], height)
+    c0, c1 = max(col0, 0), min(col0 + data.shape[1], width)
+    if r0 < r1 and c0 < c1:
+        out[r0:r1, c0:c1] = data[r0 - row0:r1 - row0, c0 - col0:c1 - col0]
+    return out
+
+
+def reference_pixels(run, transform, deviation_mask, scored):
+    """True reference sites if the raster exists, else the old approximation."""
+    exact = true_reference(run, transform, scored.shape)
+    return exact if exact is not None else (deviation_mask & ~scored)
+
+
 def block(array, valid, factor, how):
     rows, cols = (array.shape[0] // factor) * factor, (array.shape[1] // factor) * factor
     v = np.where(valid, array, 0.0)[:rows, :cols].reshape(rows // factor, factor, cols // factor, factor)
@@ -100,7 +138,7 @@ def make_map(run: str, out_dir: Path) -> Path | None:
     with rasterio.open(files["inference_status"]) as src:
         status = src.read(1, masked=True)
     scored = ~np.ma.getmaskarray(percentile)
-    reference = ~np.ma.getmaskarray(deviation) & ~scored          # complete response, not scored = reference
+    reference = reference_pixels(run, transform, ~np.ma.getmaskarray(deviation), scored)
     in_target = ~np.ma.getmaskarray(status) & (status.filled(0) > 0)
     height, width = percentile.shape
     factor = max(1, int(np.ceil(max(height, width) / 1800)))

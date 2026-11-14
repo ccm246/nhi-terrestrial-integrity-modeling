@@ -27,7 +27,7 @@ from matplotlib.patches import Patch
 from rasterio.features import geometry_mask, rasterize
 from shapely import affinity
 
-from .make_maps import (GREY, INK, LANDCOVER, MUTED, PURPLE, RAMP, ROOT, block, describe, landcover_groups)
+from .make_maps import (GREY, INK, LANDCOVER, MUTED, PURPLE, RAMP, ROOT, block, describe, landcover_groups, reference_pixels)
 
 TEAL = "#2f8f83"
 WAVE1 = ["kaza", "pacha", "central_india_boundary", "nepal_tal", "soknot", "carpathian", "sabah"]
@@ -47,7 +47,7 @@ def load(run, max_px=1800):
     with rasterio.open(folder / f"{stem}_inference_status.tif") as s:
         status = s.read(1, masked=True)
     d["scored"] = ~np.ma.getmaskarray(pct)
-    d["reference"] = ~np.ma.getmaskarray(dev) & ~d["scored"]
+    d["reference"] = reference_pixels(run, d["transform"], ~np.ma.getmaskarray(dev), d["scored"])
     d["target"] = ~np.ma.getmaskarray(status) & (status.filled(0) > 0)
     d["pct"] = pct
     d["folder"], d["stem"] = folder, stem

@@ -1,8 +1,8 @@
 ,value
 predictors_used,13.0
-reference_environments_km2,6978.25
-forest_zone_km2,13461.5
+reference_environments_km2,8349.75
+zone_km2,13461.5
 outside_reference_environment_km2,1859.75
 outside_share,0.1381532518664339
 mean_similarity_scored,0.22270193696022034
-mean_similarity_reference,0.4982714056968689
+mean_similarity_reference,0.48980557918548584

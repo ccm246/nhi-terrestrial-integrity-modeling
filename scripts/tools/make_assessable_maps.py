@@ -22,7 +22,7 @@ from matplotlib.colors import ListedColormap
 from matplotlib.patches import Patch
 from shapely import affinity
 
-from .make_maps import GREY, INK, MUTED, PURPLE, RAMP, ROOT, block, describe
+from .make_maps import GREY, INK, MUTED, PURPLE, RAMP, ROOT, block, describe, reference_pixels
 
 NOT_ASSESSABLE = "#b9b7b0"
 THRESHOLD = 0.05
@@ -38,7 +38,7 @@ def run_one(run: str, sim_dir: Path, out_dir: Path) -> None:
         departure = src.read(1, masked=True)
     scored = ~np.ma.getmaskarray(departure)
     with rasterio.open(f"{stem}_standardized_deviation.tif") as src:
-        reference = ~np.ma.getmaskarray(src.read(1, masked=True)) & ~scored
+        reference = reference_pixels(run, transform, ~np.ma.getmaskarray(src.read(1, masked=True)), scored)
     with rasterio.open(sim_dir / f"{run}_similarity.tif") as src:
         similarity = src.read(1)
     inside = np.isfinite(similarity) & (similarity > THRESHOLD)

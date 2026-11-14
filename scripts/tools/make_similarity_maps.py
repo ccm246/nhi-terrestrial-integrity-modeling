@@ -29,7 +29,7 @@ from shapely import affinity
 
 from ..analysis_config import load_analysis_configuration
 from ..raster_cache_utils import resolve_analysis_cache_tiles
-from .make_maps import GREY, INK, MUTED, PURPLE, ROOT, block, describe
+from .make_maps import GREY, INK, MUTED, PURPLE, ROOT, block, describe, reference_pixels
 from .reference_coverage import MIN_COVERAGE, wmean_cov, wquantile
 
 SIM = LinearSegmentedColormap.from_list("similarity", ["#f3e9d2", "#a8cfc3", "#3f9a8d", "#17555e", "#0b2f3a"])
@@ -49,7 +49,7 @@ def run_one(run: str, out_dir: Path) -> None:
     with rasterio.open(folder / f"{stem}_reference_departure_percentile.tif") as src:
         scored = ~np.ma.getmaskarray(src.read(1, masked=True))
     with rasterio.open(folder / f"{stem}_standardized_deviation.tif") as src:
-        reference = ~np.ma.getmaskarray(src.read(1, masked=True)) & ~scored
+        reference = reference_pixels(run, transform, ~np.ma.getmaskarray(src.read(1, masked=True)), scored)
 
     with rasterio.open(config.inference.application_mask_path) as mask:
         x, y = Transformer.from_crs("EPSG:4326", mask.crs, always_xy=True).transform(
